@@ -1,1 +1,4 @@
-<iframe width="420" height="315" src="https://www.youtube.com/watch?time_continue=3&v=NHqdbufchAo" frameborder="0" allowfullscreen></iframe>
+<video width="620" height="480" controls>
+  <source src="../LiderAhenkKurulum.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
