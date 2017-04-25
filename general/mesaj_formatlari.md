@@ -334,7 +334,7 @@ _ _ _
    "pluginVersion":"1.0.0",
    "protocol":"HTTP",
    "parameterMap":{  
-      "url":"http://www.agem.com.tr/msb"
+      "url":"http://www.liderahenk.org"
    },
    "timestamp":1465282879968
 }

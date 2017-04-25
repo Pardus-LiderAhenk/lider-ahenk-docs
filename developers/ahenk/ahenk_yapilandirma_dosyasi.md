@@ -18,7 +18,7 @@ port = 5222
 use_tls = false
 receiverjid = lider_sunucu
 receiverresource = Smack
-servicename = im.agem.com.tr
+servicename = im.liderahenk.org.tr
 receivefileparam = /tmp/
 
 [SESSION]
