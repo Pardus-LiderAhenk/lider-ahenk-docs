@@ -24,11 +24,9 @@ Ahenk sistemleri değişik özellikteki sistemlerde sistem karmaşasını artır
 
 Ahenk çekirdeği ve eklentiler sistemlere ayrı ayrı paketler olarak kurulabilmektedir. Ahenk, kendisine iletilen bir göreve veya politikaya ilişkin eklenti kurulu değil ise “Dosya  Sunucu” üzerinden ilgili eklenti paketini otomatik kurabilmektedir.
 
-## Süreçler ve servisler,yapılandırma dosyası
+### Süreçler ve Servisler
 
 Ahenk; Lider'den gelen görevleri/politikaları bulunduğu bilgisayar üzerinde çalıştırıp sonuçlarını yine Lider'e  döndüren  bir  servistir.  Yetenekleri  eklentilerle  genişletilebilir.  Sistem  üzerindeki  olaylardan veya Liderden gelen mesajlar ile iç süreçleri tetiklenir. Bu süreçleri şöyle listeleyebiliriz:
-
-### Süreçler ve Servisler
 
 #### Ahenk Servisinin Çalışmaya Başlaması
 
@@ -216,17 +214,7 @@ Ejabberd XMPP Sunucusu için  ilgili detaya link üzerinden erişebilirsiniz.
 
 ### MACHINE
 
-**type**:  Yaygın  olmayan  makine  tiplerini  saklamak  ya  da  özel  durumlarda  kullanmak  üzere makinelere verilebilecek değiştirilebilir alan
-
-<table align="center">
-    <tr align="center">
-        <td>Lider – Ahenk Merkezi Yönetim Sistemi Altyapısının Geliştirilmesi ve İyileştirilmesi Projesi</td>
-        <td rowspan=2></td>
-    </tr>
-    <tr align="center">
-        <td>Lider Ahenk Tasarım ve Kod Analizi Dokümanı</td>
-    </tr>
-</table>
+**type**:  Yaygın  olmayan  makine  tiplerini  saklamak  ya  da  özel  durumlarda  kullanmak  üzere makinelere verilebilecek değiştirilebilir alandır.
 
 ### MAIL
 
