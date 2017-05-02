@@ -7,10 +7,12 @@
 
 **Şifre:** lider
 
+
 **Donanım**
 2 GB Ram
 1 CPU
 18 GB Disk
+
 
 **Openldap(Slapd)**
 
