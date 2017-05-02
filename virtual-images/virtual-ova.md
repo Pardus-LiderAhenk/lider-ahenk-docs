@@ -45,7 +45,7 @@
 
 
 ## Lider Sunucu Ayarları
- Lider Sunucu için belirlediğiniz sanal makinanın ip adresini;
+ Lider Sunucu için belirlediğiniz sanal makinanın ip adresini satıların başındaki # işaretini kaldırarak;
 
 **/etc/hosts** dosyası altındaki 'ip_adresi' alanına;
 
