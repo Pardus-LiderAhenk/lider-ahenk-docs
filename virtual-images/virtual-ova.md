@@ -60,11 +60,14 @@ xmpp.host = ip_adresi
 
 ve 
 
+
 * ```sh
 file.server.host = ip_adresi
 ```
 
+
 tanımlayarak karaf servisi;
+
 
 * ```sh
 cd /opt/lider-distro-1.0.0-SNAPSHOT/bin/
