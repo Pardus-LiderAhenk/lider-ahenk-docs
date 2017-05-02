@@ -32,7 +32,7 @@ Bir Ahenk makine için çalışmakta olan bu görev, Ahenk makinesinde bulunan �
 
 Bu görev ekranında, kullanıcının belirlediği dizinler üzerinde anlık virüs taraması
 
-![antivirus-anlik-tarama](1.0.0/images/antivirus-anlik-tarama.png)
+![antivirus-anlik-tarama](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/antivirus-anlik-tarama.png)
 
 - yapılmaktadır. Birden çok dizin taranmak isteniyorsa noktalı virgül ‘;’ işareti ile bu dizinler
 
