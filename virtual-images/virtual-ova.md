@@ -14,7 +14,7 @@
 18 GB Disk
 
 
-**Openldap(Slapd)**
+**OpenLDAP(Slapd)**
 
 | Kullanıcı	| Şifre |
 | ------ | ------ |
@@ -27,7 +27,7 @@
 | ------ | ------ |
 |  root |  msifre  |
 
-**Ejabber-XMMP**
+**Ejabberd-XMMP**
 
 | Kullanıcı	| Şifre |
 | ------ | ------ |
