@@ -24,8 +24,8 @@ Gerekli bütün bilgiler yazıldıktan sonra **"Çalıştır**" butonuna basılm
 
 ## Kullanıcı Düzenleme
 
-![Localuser Duzenle](images/https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/localuser-duzenle.png)
+![Localuser Duzenle](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/localuser-duzenle.png)
 
 Kullanıcı adını değiştirmek için **"Yeni Kullanıcı Adı"** alanı doldurulur. Parola kısmı boş bırakılırsa kullanıcının önceki parolası değiştirilmeyecektir. Ev dizini, aktiflik/pasiflik durumu ve gruplar kısımları da düzenlendikten sonra **“Çalıştır”** butonuna basılır ve listeleme ekranında kullanıcının son durumu görülür.
 
-![Localuser Son](images/https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/localuser-son.png)
+![Localuser Son](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/localuser-son.png)
