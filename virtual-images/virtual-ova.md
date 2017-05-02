@@ -1,9 +1,9 @@
 # LiderAhenk OVA
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu Virtualbox dosyası aşağıdaki bilgileri içermektedir. **Virtualbox > Dosya > Aygıtı İçe Aktar** yolu ile içe aktararak kullanabilirsiniz.
 
-**İşletim Sistemi :**Pardus Kurumsal 5
-**Kullanıcı Adı:**Pardus
-**Şifre:**lidervirtual-ova-images
+**İşletim Sistemi :** Pardus Kurumsal 5
+**Kullanıcı Adı:** Pardus
+**Şifre:** lidervirtual-ova-images
 
 **Donanım**
 2 GB Ram
