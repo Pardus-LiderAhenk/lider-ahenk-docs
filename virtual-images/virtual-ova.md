@@ -1,22 +1,16 @@
 #  LiderAhenk OVA
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu Virtualbox dosyası aşağıdaki bilgileri içermektedir. **Virtualbox > Dosya > Aygıtı İçe Aktar** yolu ile içe aktararak kullanabilirsiniz.
 
-**İşletim Sistemi :**Pardus Kurumsal 5
-
-**Kullanıcı Adı:**Pardus
-
-**Şifre:**lider
+**İşletim Sistemi :** Pardus Kurumsal 5
+**Kullanıcı Adı:** Pardus
+**Şifre:** lider
 
 **Donanım**
-
 2 GB Ram
-
 1 CPU
-
 18 GB Disk
 
 **Openldap(Slapd)**
-
 | Kullanıcı	| Şifre |
 | ------ | ------ |
 |  root  |  ssifre  |
@@ -68,7 +62,6 @@ ve
 * ```sh
 file.server.host = ip_adresi
 ```
-
 tanımlayarak karaf servisi;
 
 * ```sh
