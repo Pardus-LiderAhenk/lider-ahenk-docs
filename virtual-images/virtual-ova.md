@@ -43,7 +43,7 @@
 ## Lider Sunucu Ayarları
  Lider Sunucu için belirlediğiniz sanal makinanın ip adresini;
 
-* **/etc/hosts** dosyası altındaki 'ip_adresi' alanına;
+**/etc/hosts** dosyası altındaki 'ip_adresi' alanına;
 
 ```sh
 ip_adresi lider.liderahenk.org
@@ -53,23 +53,17 @@ ip_adresi db.liderahenk.org
 ip_adresi im.liderahenk.org 
 ```
 
-* **/opt/lider-distro-1.0.0-SNAPSHOT/etc/tr.org.liderahenk.cfg** dosyasında 
+**/opt/lider-distro-1.0.0-SNAPSHOT/etc/tr.org.liderahenk.cfg** dosyasında 
 ```sh
 xmpp.host = ip_adresi
 ```
-
 ve 
-
-
-* ```sh
+```sh
 file.server.host = ip_adresi
 ```
-
-
 tanımlayarak karaf servisi;
 
-
-* ```sh
+```sh
 cd /opt/lider-distro-1.0.0-SNAPSHOT/bin/
 ./karaf
 ./start
@@ -79,7 +73,7 @@ komutları ile başlatılmalıdır.
 
 ## Ahenk Kurulumu
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masaüstündeki lider-ahenk-installer dizini altında  lider-ahenk-installer simgesine tıklayarak kuruluma başlayabilirsiniz.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masaüstündeki **lider-ahenk-installer** dizini altında  **lider-ahenk-installer** simgesine tıklayarak kuruluma başlayabilirsiniz.
 
 ![Ahenk Kurulum-1](virtual-ova-images/ahenk-kur.png)
 
