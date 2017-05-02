@@ -1,13 +1,18 @@
-# LiderAhenk OVA
+#  LiderAhenk OVA
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu Virtualbox dosyası aşağıdaki bilgileri içermektedir. **Virtualbox > Dosya > Aygıtı İçe Aktar** yolu ile içe aktararak kullanabilirsiniz.
 
-**İşletim Sistemi :** Pardus Kurumsal 5
-**Kullanıcı Adı:** Pardus
-**Şifre:** lidervirtual-ova-images
+**İşletim Sistemi :**Pardus Kurumsal 5
+
+**Kullanıcı Adı:**Pardus
+
+**Şifre:**lider
 
 **Donanım**
+
 2 GB Ram
+
 1 CPU
+
 18 GB Disk
 
 **Openldap(Slapd)**
@@ -74,11 +79,13 @@ cd /opt/lider-distro-1.0.0-SNAPSHOT/bin/
 
 komutları ile başlatılmalıdır.
 
-##Ahenk Kurulumu
+## Ahenk Kurulumu
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masaüstündeki lider-ahenk-installer dizini altında  lider-ahenk-installer simgesine tıklayarak kuruluma başlayabilirsiniz.
 
 ![Ahenk Kurulum-1](virtual-ova-images/ahenk-kur.png)
+
+![Ahenk Kurulum-7](virtual-ova-images/ahenk-kur-versiyon-kontrol.png)
 
 ![Ahenk Kurulum-2](virtual-ova-images/ahenk-kur-bilgiler.png)
 
@@ -90,7 +97,6 @@ komutları ile başlatılmalıdır.
 
 ![Ahenk Kurulum-6](virtual-ova-images/ahenk-kur-son.png)
 
-![Ahenk Kurulum-7](virtual-ova-images/ahenk-kur-versiyon-kontrol.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu işlemlerden sonra ahenk bilgisayarda kullanıcı  oturumu kapatılarak yeniden giriş yapılır. **LiderAhenk Kullanıcı Sözleşmesi** onaylanarak devam edilir.
 
