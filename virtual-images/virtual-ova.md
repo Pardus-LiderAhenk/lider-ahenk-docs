@@ -11,6 +11,7 @@
 18 GB Disk
 
 **Openldap(Slapd)**
+
 | Kullanıcı	| Şifre |
 | ------ | ------ |
 |  root  |  ssifre  |
@@ -62,6 +63,7 @@ ve
 * ```sh
 file.server.host = ip_adresi
 ```
+
 tanımlayarak karaf servisi;
 
 * ```sh
