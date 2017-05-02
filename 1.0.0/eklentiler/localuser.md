@@ -29,4 +29,3 @@ Gerekli bütün bilgiler yazıldıktan sonra **"Çalıştır**" butonuna basılm
 Kullanıcı adını değiştirmek için **"Yeni Kullanıcı Adı"** alanı doldurulur. Parola kısmı boş bırakılırsa kullanıcının önceki parolası değiştirilmeyecektir. Ev dizini, aktiflik/pasiflik durumu ve gruplar kısımları da düzenlendikten sonra **“Çalıştır”** butonuna basılır ve listeleme ekranında kullanıcının son durumu görülür.
 
 ![Im335](images/localuser-son.png)
-
