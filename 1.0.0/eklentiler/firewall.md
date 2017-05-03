@@ -10,10 +10,15 @@ Eklentinin politika tarafında uygulanmak istenen güvenlik duvarı kuralı/kura
 
 **
 *filter
+
 :INPUT ACCEPT [9:927]
+
 :FORWARD ACCEPT [0:0]
+
 :OUTPUT ACCEPT [3:378]
+
 uygulanmak_istenen_firewall_kuralı
+
 COMMIT**
 
 
