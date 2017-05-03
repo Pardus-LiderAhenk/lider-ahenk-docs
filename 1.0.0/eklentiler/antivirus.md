@@ -28,6 +28,8 @@ Profil ekranında kullanıcı antivirüs programının çalışma durumunu, usb 
 
 Bir Ahenk makine için çalışmakta olan bu görev, Ahenk makinesinde bulunan ‘clamav’- antivirüs programının mevcut sürümü hakkında bilgi vermektedir.
 
+![Im28](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/antivirus-version.png)
+
 # Anlık Tarama
 
 Bu görev ekranında, kullanıcının belirlediği dizinler üzerinde anlık virüs taraması
