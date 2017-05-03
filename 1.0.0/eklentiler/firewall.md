@@ -4,7 +4,7 @@ Varolan güvenlik duvarı kurallarını getirmeyi ve yeni güvenlik duvarı kura
 
 Görev tarafında, eklenti ekranının açılmasıyla birlikte ilgili Ahenk makinesindeki güvenlik duvarı kuralları getirilir. Bu ekran üzerinde herhangi bir düzenleme yapılamaz. Yeni güvenlik duvarı kuralı eklemek için eklentinin politika tarafını kullanmak gereklidir.
 
-![Firewall Eklenti](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/firewall-eklenti.png)
+![Firewall Eklenti](images/firewall-eklenti.png)
 
 Eklentinin politika tarafında uygulanmak istenen güvenlik duvarı kuralı/kuralları COMMIT ifadesinden önce belirtilir. Bir örnekle açıklamak gerekirse;
 
@@ -24,6 +24,6 @@ Eklentinin politika tarafında uygulanmak istenen güvenlik duvarı kuralı/kura
 
 ifadesi güvenlik duvarı kuralını uygulamak için yeterli olacaktır.
 
-![Firewall Politika](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/firewall-politika.png)
+![Firewall Politika](images/firewall-politika.png)
 
 **:INPUT, :FORWARD** ve **:OUTPUT** ifadeleriyle başlayan kısımlar görev esnasında getirilen güvenlik duvarı kurallarının **:INPUT, :FORWARD** ve **:OUTPUT** ifadeleriyle başlayan kısımlarının aynısıdır.

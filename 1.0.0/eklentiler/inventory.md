@@ -6,7 +6,7 @@ Varlık Yönetimi, bir görev eklentisidir.
 
 Ağdaki Cihazlar görevinin çalıştırılmasıyla eklenti editörü açılır.
 
-![Im281](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/inventory.png)
+![Im281](images/inventory.png)
 
 Eklentide iki tane tarama seçeneği bulunmaktadır: Ahenk üzerinden tarama, Lider- üzerinden tarama. Hem eklentinin bulunduğu Lider makinesinden hem de Ahenk makinesinden tarama yapılabilmektedir.
 

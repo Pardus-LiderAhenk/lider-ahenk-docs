@@ -6,7 +6,7 @@ Yerel kullanıcılar, bir görev eklentisidir. Dört farklı özelliğe sahiptir
 
 ## Listeleme
 
-![Localuser Liste](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/localuser-liste.png)
+![Localuser Liste](images/localuser-liste.png)
 
 Yerel Kullanıcılar ekranının açılmasıyla birlikte bilgisayar üzerinde bulunan bütün kullanıcılar ait oldukları gruplar, ev dizinleri ve aktif olup olmama durumlarıyla birlikte listelenir.
 
@@ -24,8 +24,8 @@ Gerekli bütün bilgiler yazıldıktan sonra **"Çalıştır**" butonuna basılm
 
 ## Kullanıcı Düzenleme
 
-![Localuser Duzenle](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/localuser-duzenle.png)
+![Localuser Duzenle](images/localuser-duzenle.png)
 
 Kullanıcı adını değiştirmek için **"Yeni Kullanıcı Adı"** alanı doldurulur. Parola kısmı boş bırakılırsa kullanıcının önceki parolası değiştirilmeyecektir. Ev dizini, aktiflik/pasiflik durumu ve gruplar kısımları da düzenlendikten sonra **“Çalıştır”** butonuna basılır ve listeleme ekranında kullanıcının son durumu görülür.
 
-![Localuser Son](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/localuser-son.png)
+![Localuser Son](images/localuser-son.png)
