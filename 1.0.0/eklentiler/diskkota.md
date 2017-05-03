@@ -6,9 +6,8 @@ Herhangi bir kullanıcıya ait soft kota ve hard kota sınırlarının belirlenm
 
 Eklenti, hem görev hem de politika özelliğine sahiptir.
 
-![Im48](images/Im48)
+![Im48](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/kota-profil.png)
 
-![Im53](images/Im53)
 
 - Eklentinin görev tarafında ilgili Ahenk makinesinin bütün kullanıcılarının kota durumu
 
@@ -18,7 +17,7 @@ Eklenti, hem görev hem de politika özelliğine sahiptir.
 
 - disk kullanımlarıyla birlikte listelenecektir.
 
-![Im60](images/Im60)
+![Im60](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/mevcut-kota-bilgisi.png)
 
 Eklentinin profil tarafında ise bir kullanıcının soft kota ve hard kota sınırları
 
