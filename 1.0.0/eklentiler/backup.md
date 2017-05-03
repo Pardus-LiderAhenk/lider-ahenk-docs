@@ -2,7 +2,7 @@
 
 Dizinlerin yedeklenmesini sağlayan eklentidir. Eklenti, hem görev hem de politika özelliğine sahiptir.
 
-![backup-plugin](mages/backup-plugin.png)
+![backup-plugin](images/backup-plugin.png)
 
 **"Kullanıcı Adı, Parola, Hedef IP, Hedef Kapı**" ve **"Hedef Dizin"** alanları doldurulur. SSH- anahtarı kullanılacaksa **"SSH Anahtarını Kullan"** seçeneği, LVM Gölgeleme kullanılacaksa **"LVM Gölgeleme Kullan"** seçeneği seçilir.
 
