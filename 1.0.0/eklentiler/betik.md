@@ -6,16 +6,16 @@ Betik oluşturmak ve var olan betik tanımlarına ulaşmak için sol üst menüd
 
 Yeni bir betik tanımı ekleneceği zaman açılan pencere aşağıdaki gibidir.
 
-![Script Ilk](images/script-ilk.png)
+![Script Ilk](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/script-ilk.png)
 
 
 Betik türü olarak **bash, python, perl** ve **ruby** seçenekleri mevcuttur. Betik içeriği girilerek **"Tamam"** butonuna tıklandığı takdirde betik oluşturulur.
 
-![Script Yaz](images/script-yaz.png)
+![Script Yaz](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/script-yaz.png)
 
 Oluşturulmuş olan betikleri çalıştırmak için bir ya da daha fazla ahenk makina seçilir. Sağ tıklama ile  açılan menüde **"Görev Çalıştır -> Betik Çalıştır"** seçenekleri takip edilir.  Açılan pencere aşağıdaki gibidir.
 
-![Script Calistir](images/script-calistir.png)
+![Script Calistir](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/script-calistir.png)
 
 Oluşturulan betiklerden biri seçilir ve betik parametreleri (eğer var ise) belirtilerek görev çalıştırılır.
 
