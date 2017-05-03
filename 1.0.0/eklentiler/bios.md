@@ -4,6 +4,6 @@ Bios-Güncelleyici eklentisi Ahenk makinesinde BIOS güncellemeyi sağlayan bir 
 
 BIOS güncellemesi yapılması istenen Ahenk seçilerek sağ butona tıklanır ve **"Görev- Çalıştır -> BIOS Güncellemesi"** seçenekleri takip edilir. Açılan pencere aşağıdaki gibidir.
 
-![BIOS Guncellemesi](images/bios-guncellemesi.png)
+![BIOS Guncellemesi](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/bios-guncellemesi.png)
 
 Mevcut BIOS bilgileri gelen makineye istenilen BIOS güncellemesinin bulunduğu URL bilgisi girilerek ve istenirse mevcut BIOS yedeklenerek BIOS güncelleme işlemi yapılır.
