@@ -1,8 +1,6 @@
 # Güvenlik Duvarı Eklentisi
 
-Varolan güvenlik duvarı kurallarını getirmeyi ve yeni güvenlik duvarı kuralları tanımlamayı sağlayan bir eklentidir.
-
-Eklenti, hem görev hem de politika özelliğine sahiptir.
+Varolan güvenlik duvarı kurallarını getirmeyi ve yeni güvenlik duvarı kuralları tanımlamayı sağlayan bir eklentidir. Eklenti, hem görev hem de politika özelliğine sahiptir.
 
 Görev tarafında, eklenti ekranının açılmasıyla birlikte ilgili Ahenk makinesindeki güvenlik duvarı kuralları getirilir. Bu ekran üzerinde herhangi bir düzenleme yapılamaz. Yeni güvenlik duvarı kuralı eklemek için eklentinin politika tarafını kullanmak gereklidir.
 
