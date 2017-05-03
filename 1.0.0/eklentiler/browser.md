@@ -48,6 +48,6 @@ Site engelleme ayarları bu ekrandan yapılmaktadır.
 
 ## Ayarlar Sekmesi
 
-Tarayıcı ayarları bu sekmeden güncellenebilmektedir. Ekrandaki tabloya veri eklemek için **"Ekle"** butonuna tıklanır. Açılan penceredeki **"Özellik Adı ve Değer"** alanları doldurularak kayıt eklenir.
+Tarayıcı ayarları bu sekmeden güncellenebilmektedir. Ekrandaki tabloya veri eklemek için **"Ekle"** butonuna tıklanır. Açılan penceredeki **"Özellik Adı** ve **Değer"** alanları doldurularak kayıt eklenir.
 
 ![Browser Ayarlar](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/browser-ayarlar.png)
