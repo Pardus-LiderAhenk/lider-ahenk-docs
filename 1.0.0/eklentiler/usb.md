@@ -1,32 +1,18 @@
 
-- 1.16. USB Eklentisi
+# USB Eklentisi
 
-- USB modülleri ve aygıtları üzerindeki izinleri düzenler.
+USB modülleri ve aygıtları üzerindeki izinleri düzenler. Eklenti, hem görev hem de politika özelliğine sahiptir.
 
-- Eklenti, hem görev hem de politika özelliğine sahiptir.
+![USB Yonetimi](images/usb-yonetimi-ahenk.png)
 
-![Im255](images/Im255)
+İlgili Ahenk makinesi üzerinde web kamerası, yazıcı, USB bellek ve fare-klavye izinlerini düzenler. İzin verme seçeneğinin seçilmesi sonucunda kullanıcı izin verilmeyen usb modülünü kullanamaz. İzin ver ya da verme seçeneklerinden hiçbirinin seçilmemesi durumunda ilgili usb elemanına izin verilmeyecektir. Bu nedenle izin için mutlaka İzin ver seçeneğinin seçilmiş olması gereklidir.
 
-- İlgili Ahenk makinesi üzerinde web kamerası, yazıcı, USB bellek ve fare-klavye izinlerini
+![USB Eklentisi Politika ](images/usb-eklentisi.png)
 
-- düzenler. İzin verme seçeneğinin seçilmesi sonucunda kullanıcı izin verilmeyen usb
+Eklentinin politika tarafında ise ek olarak beyazliste ve karaliste bulunmaktadır. Beyazlisteye eklenen USB aygıtlarına her koşulda izin verilirken karalisteye eklenen aygıtlara ise hiçbir şekilde izin verilmemektedir.
 
-- modülünü kullanamaz. İzin ver ya da verme seçeneklerinden hiçbirinin seçilmemesi
+![USB Eklentisi Politika ](images/usb-kara-liste.png)
 
-- durumunda ilgili usb elemanına izin verilmeyecektir. Bu nedenle izin için mutlaka İzin ver
+Bunu sağlamak için istenen listeye istenilen aygıtın retici firması, modeli ve seri numarası girilir. Herhangi bir aygıt seçilip Düzenle butonuna basılmasıyla aygıt üzerinde düzenleme yapılır. Yine aynı şekilde Sil butonuna basılmasıyla seçilen kayıt silinir.
 
-- seçeneğinin seçilmiş olması gereklidir.
-
-![Im260](images/Im260)
-
-Eklentinin politika tarafında ise ek olarak beyazliste ve karaliste bulunmaktadır.
-
-- Beyazlisteye eklenen USB aygıtlarına her koşulda izin verilirken karalisteye eklenen aygıtlara
-
-- ise hiçbir şekilde izin verilmemektedir. Bunu sağlamak için istenen listeye istenilen aygıtın
-
-- üretici firması, modeli ve seri numarası girilir. Herhangi bir aygıt seçilip Düzenle butonuna
-
-- basılmasıyla aygıt üzerinde düzenleme yapılır. Yine aynı şekilde Sil butonuna basılmasıyla
-
-- seçilen kayıt silinir.
+![USB Eklentisi Politika ](images/usb-kara-liste-son.png)
