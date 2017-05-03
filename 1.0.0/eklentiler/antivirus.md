@@ -20,9 +20,9 @@ Profil ekranında kullanıcı antivirüs programının çalışma durumunu, usb 
 
 - butonunun seçili olmaması yeterlidir.
 
-![Im17](images/Im17)
+![Im17](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/antivirus-profil-1.png)
 
-![Im25](images/Im25)
+![Im25](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/antivirus-profil-2.png)
 
 # Mevcut Antivirüs Programı Versiyonu
 
@@ -32,8 +32,15 @@ Bir Ahenk makine için çalışmakta olan bu görev, Ahenk makinesinde bulunan �
 
 Bu görev ekranında, kullanıcının belirlediği dizinler üzerinde anlık virüs taraması
 
-![Im24](images/Im24)
+![Im24](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/antivirus-anlik-tarama.png)
 
 - yapılmaktadır. Birden çok dizin taranmak isteniyorsa noktalı virgül ‘;’ işareti ile bu dizinler
 
 - birbirinden ayrılmalıdır.
+
+# Antivirüs Konfigürasyonu
+
+Bu görev Ahenk makinesinde bulunan 'clamav' antivirüs programının konfigürasyonun düzenlenmesini sağlamaktadır.
+
+![Im26](https://github.com/Pardus-LiderAhenk/lider-ahenk-docs/blob/master/1.0.0/images/antivirus.conf.png)
+
