@@ -6,7 +6,6 @@ Antivirüs eklentisi hem profil hem de görev eklentisidir. Kullanıcının ‘C
 
 - Antivirüs profiline üst menüde Lider -> Profil Tanımları başlığından ulaşılabilir.
 
-- Antivürüs görev menüsü ise şekildeki gibidir.
 
 # Antivirüs Profili
 
