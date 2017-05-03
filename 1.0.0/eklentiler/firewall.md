@@ -8,18 +8,18 @@ Görev tarafında, eklenti ekranının açılmasıyla birlikte ilgili Ahenk maki
 
 Eklentinin politika tarafında uygulanmak istenen güvenlik duvarı kuralı/kuralları COMMIT ifadesinden önce belirtilir. Bir örnekle açıklamak gerekirse;
 
-**
-*filter
 
-:INPUT ACCEPT [9:927]
+****filter**
 
-:FORWARD ACCEPT [0:0]
+**:INPUT ACCEPT [9:927]**
 
-:OUTPUT ACCEPT [3:378]
+**:FORWARD ACCEPT [0:0]**
 
-uygulanmak_istenen_firewall_kuralı
+**:OUTPUT ACCEPT [3:378]**
 
-COMMIT**
+**uygulanmak_istenen_firewall_kuralı**
+
+**COMMIT**
 
 
 ifadesi güvenlik duvarı kuralını uygulamak için yeterli olacaktır.
