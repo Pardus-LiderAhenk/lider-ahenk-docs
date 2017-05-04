@@ -1,39 +1,33 @@
 # Antivirüs Eklentisi
 
-Antivirüs eklentisi hem profil hem de görev eklentisidir. Kullanıcının ‘Clamav’ antivirus- programının konfigurasyonunu sağlamasını ve Ahenk makinesinde anlık olarak virüs
-
-- taraması yapmasını sağlamaktadır.
+Antivirüs eklentisi hem profil hem de görev eklentisidir. Kullanıcının **"Clamav"** antivirus- programının konfigurasyonunu sağlamasını ve Ahenk makinesinde anlık olarak virüs taraması yapmasını sağlamaktadır.
 
 - Antivirüs profiline üst menüde Lider -> Profil Tanımları başlığından ulaşılabilir.
 
-- Antivürüs görev menüsü ise şekildeki gibidir.
 
-# Antivirüs Profili
+## Antivirüs Profili
 
-Profil ekranında kullanıcı antivirüs programının çalışma durumunu, usb kaynakların- taranıp taranmayacağı bilgisini, programın hangi sıklıkla çalışacağını, hangi sıklıkla
+Profil ekranında kullanıcı antivirüs programının çalışma durumunu, usb kaynakların- taranıp taranmayacağı bilgisini, programın hangi sıklıkla çalışacağını, hangi sıklıkla güncelleneceğini, tarama yapılacak kaynakları, indirilen dosyaların taranıp taranmayacağı bilgisini ve indirilen dosyaların hangi dizin altında olduğu bilgisini güncelleyebilmektedir. Herhangi bir değişiklik yapmak istenilmeyen alan var ise sol tarafta bulunan kontrol butonunun seçili olmaması yeterlidir.
 
-- güncelleneceğini, tarama yapılacak kaynakları, indirilen dosyaların taranıp taranmayacağı
+![Im17](images/antivirus-profil-1.png)
 
-- bilgisini ve indirilen dosyaların hangi dizin altında olduğu bilgisini güncelleyebilmektedir.
+![Im25](images/antivirus-profil-2.png)
 
-- Herhangi bir değişiklik yapmak istenilmeyen alan var ise sol tarafta bulunan kontrol
+## Mevcut Antivirüs Programı Versiyonu
 
-- butonunun seçili olmaması yeterlidir.
+Bir Ahenk makine için çalışmakta olan bu görev, Ahenk makinesinde bulunan **"clamav"** antivirüs programının mevcut sürümü hakkında bilgi vermektedir.
 
-![Im17](images/Im17)
+![Im28](images/antivirus-version.png)
 
-![Im25](images/Im25)
+## Anlık Tarama
 
-# Mevcut Antivirüs Programı Versiyonu
+Bu görev ekranında, kullanıcının belirlediği dizinler üzerinde anlık virüs taraması yapılmaktadır. Birden çok dizin taranmak isteniyorsa noktalı virgül ‘;’ işareti ile bu dizinler birbirinden ayrılmalıdır.
 
-Bir Ahenk makine için çalışmakta olan bu görev, Ahenk makinesinde bulunan ‘clamav’- antivirüs programının mevcut sürümü hakkında bilgi vermektedir.
+![Im24](images/antivirus-anlik-tarama.png)
 
-# Anlık Tarama
+## Antivirüs Konfigürasyonu
 
-Bu görev ekranında, kullanıcının belirlediği dizinler üzerinde anlık virüs taraması
+Bu görev Ahenk makinesinde bulunan **"clamav"** antivirüs programının konfigürasyonun düzenlenmesini sağlamaktadır.
 
-![Im24](images/Im24)
+![Im26](images/antivirus.conf.png)
 
-- yapılmaktadır. Birden çok dizin taranmak isteniyorsa noktalı virgül ‘;’ işareti ile bu dizinler
-
-- birbirinden ayrılmalıdır.

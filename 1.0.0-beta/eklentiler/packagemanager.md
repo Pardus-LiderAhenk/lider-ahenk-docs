@@ -1,97 +1,57 @@
 # Paket Yönetimi Eklentisi
 
-Paket Yönetimi eklentisi bir görev eklentisidir. Eklenti, Ahenk makinelerinde paket
+Paket Yönetimi eklentisi bir görev eklentisidir. Eklenti, Ahenk makinelerinde paket kontrolü, paket yükleme-kaldırma, depo ekleme gibi paket işlemleri ile ilgili temel görevleri yerine getirmektedir. Çalıştırılan görevler doğrultusunda edinilen bilgi ile oluşturulan dört rapor da eklenti bünyesindedir.
 
-- kontrolü, paket yükleme-kaldırma, depo ekleme gibi paket işlemleri ile ilgili temel görevleri
+**Paket  Yönetimi Eklentisi**'ne  herhangi bir Ahenk makinesine sağ tıklanılarak **"Görev- Çalıştır"** menüsünün **"Paket Yöneticisi"** alt menüsünden ulaşılmaktadır.
 
-- yerine getirmektedir. Çalıştırılan görevler doğrultusunda edinilen bilgi ile oluşturulan dört
+## Paket Kontrolü
 
-- rapor da eklenti bünyesindedir.
+Adı ve (isteğe bağlı olarak) sürüm bilgisi belirtilen paketin seçilmiş olan Ahenk/ler içerisinde yüklü olup olmadığı bilgisini tabloda kullanıcıya sunar. 
 
-Paket  Yönetimi Eklentisine  herhangi bir Ahenk makinesine sağ tıklanılarak ‘Görev- Çalıştır’ menüsünün ‘Paket Yöneticisi’ alt menüsünden ulaşılmaktadır.
+![Package Manager Filter](images/package-manager-filter.png)
 
-- 1.12.1. Paket Kontrolü
+Paket kontrolü görevi aynı anda birçok makine üzerinde işlem yapılabilen bir görevdir. Tabloda gösterilen bilgiler üzerinde çeşitli filtrelemeler yapılabilir, arama grupları oluşturulabilmektedir (Yüklü olan makineler seçilsin, istenilen bir paket versiyonu yüklü olan makineler seçilsin, yüklü olmayan makineler seçilsin özellikleri yanında manuel olarak da seçim yapılarak arama grubu oluşturulabilmektedir.).
 
-Adı ve (isteğe bağlı olarak) sürüm bilgisi belirtilen paketin seçilmiş olan Ahenk/ler
+## Paket Arşivi
 
-- içerisinde yüklü olup olmadığı bilgisini tabloda kullanıcıya sunar. Paket kontrolü görevi aynı
+Bir Ahenk makine için çalışan bu görev, **"Paket Adı"** bölümüne girilen paket ismini içeren paketlerin yüklenme,  güncellenme, kurulum zamanı bilgilerini kullanıcıya sunar. Kullanıcının önceki bir sürümü seçmesi ve **"Sürüme Dön"** butonuna tıklaması halinde Ahenk makine ilgili paketin seçilen versiyonuna geri döner.
 
-- anda birçok makine üzerinde işlem yapılabilen bir görevdir. Tabloda gösterilen bilgiler
+![Package Manager Arsiv](images/package-manager-arsiv.png)
 
-- üzerinde çeşitli filtrelemeler yapılabilir, arama grupları oluşturulabilmektedir (Yüklü olan
+## Paket Depoları
 
-- makineler seçilsin, istenilen bir paket versiyonu yüklü olan makineler seçilsin, yüklü olmayan
+Bir Ahenk makine için çalışan bu görev, makinede bulunan tüm depoların listelenmesini sağlamaktadır.
 
-- makineler seçilsin özellikleri yanında manuel olarak da seçim yapılarak arama grubu
+![Package Manager Depolar](images/package-manager-depolar.png)
 
-- oluşturulabilmektedir.).
+Kullanıcı buradan seçtiği depoyu çıkarabilmekte ve **"Ekle"** butonuna tıklayarak açılan- pencereye yeni bir depo URL’i girebilmektedir. **"Çalıştır"** butonuna tıklandığı takdirde yeni eklenen depolar Ahenk makineye eklenecek; çıkarılan depolar ise Ahenk makineden çıkarılacaktır.
 
-![Im166](images/Im166)
+## Paket Kur/Kaldır
 
-![Im171](images/Im171)
+Bir Ahenk makine için çalışan bu görev, makinedeki tüm paketleri yüklü olup olmadığı bilgisiyle kullanıcıya sunar.
 
-- 1.12.2. Paket Arşivi
+![Package List](images/package-list.png)
 
-Bir Ahenk makine için çalışan bu görev, ‘Paket Adı’ bölümüne girilen paket ismini
+Kulanıcı buradan istenen durum bilgisini değiştirerek her bir paket için yükleme ve kaldırma işlemi yapabilmektedir.
 
-- içeren paketlerin yüklenme, güncellenme, kurulum zamanı bilgilerini kullanıcıya sunar.
+![Package Uninstall](images/package-uninstall-1.png)
 
-- Kullanıcının önceki bir sürümü seçmesi ve ‘Sürüme Dön’ butonuna tıklaması halinde Ahenk
+İstenen durum bilgisini değiştirmek için ilgili kolun tıklanılmalı ve açılan menüden **"Yükle"** veya **"Kaldır"** seçeneklerinden biri seçilmelidir. Aynı anda birden çok paket işlemi yapılabilmektedir. Paket sorgulandığında kaldırıldığı görülebilir.
 
-- makine ilgili paketin seçilen versiyonuna geri döner.
+![Package Uninstall-2](images/package-uninstall-2.png)
 
-![Im178](images/Im178)
+## Uygulama Çalıştırma İstatistikleri
 
-- 1.12.3. Paket Depoları
+Birçok Ahenk makinede aynı anda çalışabilen bu görev, belirli bir kullanıcı ya da komut için kac kere işletildiği bilgisi, işletim tarihleri, işletim süreleri gibi bilgileri tabloda sunan ve aynı zamanda ileride raporunu alabilmek adına bu bilgileri, eş zamanlı olarak, veri tabanına kaydeden görevdir. Sadece komut ve kullanıcı alanları dolu iken seçilen kullanıcı veya komut bilgileri tabloya gelirken **"Yalnız bu kullanıcı için işlem yap"** butonu tıklandığında sadece girilen kullanıcı ismiyle giriş yapan ve girilen komutu çalıştıran kullanıcıların verileri getirilir.
 
-Bir Ahenk makine için çalışan bu görev, makinede bulunan tüm depoların
+![Package Uninstall-2](images/package-istatistik.png)
 
-- listelenmesini sağlamaktadır.
+## Paket ve Depo Yönetimi
 
-![Im183](images/Im183)
+Birçok Ahenk makinede aynı anda çalışabilen bu görev, belirtilen bir ya da daha fazla deponun içeriğindeki paketleri listeler.
 
-Kullanıcı buradan seçtiği depoyu çıkarabilmekte ve ‘Ekle’ butonuna tıklayarak açılan- pencereye yeni bir depo URL’i girebilmektedir. ‘Çalıştır’ butonuna tıklandığı takdirde yeni
+![Paket ve Depo Yonetimi](images/paket-ve-depo-yonetimi.png)
 
-- eklenen depolar Ahenk makineye eklenecek; çıkarılan depolar ise Ahenk makineden
+Listelenen bu paketler arasından bir ya da daha çok paket şeçilip yükleme/kaldırma işlemleri yapılabilir.
 
-- çıkarılacaktır.
-
-- 1.12.4. Paket Kur/Kaldır
-
-Bir Ahenk makine için çalışan bu görev, makinedeki tüm paketleri yüklü olup olmadığı![Im184](images/Im184)
-
-- bilgisiyle kullanıcıya sunar. Kulanıcı buradan istenen durum bilgisini değiştirerek her bir paket
-
-- için yükleme ve kaldırma işlemi yapabilmektedir. İstenen durum bilgisini değiştirmek için ilgili
-
-- kolun tıklanılmalı ve açılan menüden ‘Yükle’ veya ‘Kaldır’ seçeneklerinden biri seçilmelidir.
-
-- Aynı anda birden çok paket işlemi yapılabilmektedir.
-
-![Im190](images/Im190)
-
-- 1.12.5. Uygulama Çalıştırma İstatistikleri
-
-Birçok Ahenk makinede aynı anda çalışabilen bu görev, belirli bir kullanıcı ya da
-
-- komut için kac kere işletildiği bilgisi, işletim tarihleri, işletim süreleri gibi bilgileri tabloda sunan
-
-- ve aynı zamanda ileride raporunu alabilmek adına bu bilgileri, eş zamanlı olarak, veri
-
-- tabanına kaydeden görevdir. Sadece komut ve kullanıcı alanları dolu iken seçilen kullanıcı
-
-- VEYA komut bilgileri tabloya gelirken ‘Yalnız bu kullanıcı için işlem yap’ butonu tıklandığında
-
-- sadece girilen kullanıcı ismiyle giriş yapan ve girilen komutu çalıştıran kullanıcıların verileri
-
-- getirilir.
-
-- 1.12.6. Paket ve Depo Yönetimi
-
-Birçok Ahenk makinede aynı anda çalışabilen bu görev, belirtilen bir ya da daha- fazla deponun içeriğindeki paketleri listeler. Listelenen bu paketler arasından bir ya da
-
-- daha çok paket şeçilip yükleme/kaldırma işlemleri yapılabilir.
-
-![Im195](images/Im195)
-
-![Im202](images/Im202)
+![Paket ve Depo Yonetimi Yukle](images/paket-ve-depo-yonetimi-yukle.png)

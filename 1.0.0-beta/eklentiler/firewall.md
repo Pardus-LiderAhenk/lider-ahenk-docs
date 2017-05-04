@@ -1,39 +1,29 @@
 # Güvenlik Duvarı Eklentisi
 
-Varolan güvenlik duvarı kurallarını getirmeyi ve yeni güvenlik duvarı kuralları
+Varolan güvenlik duvarı kurallarını getirmeyi ve yeni güvenlik duvarı kuralları tanımlamayı sağlayan bir eklentidir. Eklenti, hem görev hem de politika özelliğine sahiptir.
 
-- tanımlamayı sağlayan bir eklentidir.
+Görev tarafında, eklenti ekranının açılmasıyla birlikte ilgili Ahenk makinesindeki güvenlik duvarı kuralları getirilir. Bu ekran üzerinde herhangi bir düzenleme yapılamaz. Yeni güvenlik duvarı kuralı eklemek için eklentinin politika tarafını kullanmak gereklidir.
 
-Eklenti, hem görev hem de politika özelliğine sahiptir.
+![Firewall Eklenti](images/firewall-eklenti.png)
 
-![Im107](images/Im107)
+Eklentinin politika tarafında uygulanmak istenen güvenlik duvarı kuralı/kuralları COMMIT ifadesinden önce belirtilir. Bir örnekle açıklamak gerekirse;
 
-- Görev tarafında, eklenti ekranının açılmasıyla birlikte ilgili Ahenk makinesindeki güvenlik
 
-- duvarı kuralları getirilir. Bu ekran üzerinde herhangi bir düzenleme yapılamaz. Yeni güvenlik
+****filter**
 
-- duvarı kuralı eklemek için eklentinin politika tarafını kullanmak gereklidir.
+**:INPUT ACCEPT [9:927]**
 
-![Im114](images/Im114)
+**:FORWARD ACCEPT [0:0]**
 
-- Eklentinin politika tarafında uygulanmak istenen güvenlik duvarı kuralı/kuralları COMMIT
+**:OUTPUT ACCEPT [3:378]**
 
-- ifadesinden önce belirtilir. Bir örnekle açıklamak gerekirse,
+**uygulanmak_istenen_firewall_kuralı**
 
-- *filter
+**COMMIT**
 
-- :INPUT ACCEPT [9:927]
 
-- :FORWARD ACCEPT [0:0]
+ifadesi güvenlik duvarı kuralını uygulamak için yeterli olacaktır.
 
-- :OUTPUT ACCEPT [3:378]
+![Firewall Politika](images/firewall-politika.png)
 
-- uygulanmak_istenen_firewall_kuralı
-
-- COMMIT
-
-- ifadesi güvenlik duvarı kuralını uygulamak için yeterli olacaktır. :INPUT, :FORWARD ve
-
-- :OUTPUT ifadeleriyle başlayan kısımlar görev esnasında getirilen güvenlik duvarı
-
-- kurallarının :INPUT, :FORWARD ve :OUTPUT ifadeleriyle başlayan kısımlarının aynısıdır.
+**:INPUT, :FORWARD** ve **:OUTPUT** ifadeleriyle başlayan kısımlar görev esnasında getirilen güvenlik duvarı kurallarının **:INPUT, :FORWARD** ve **:OUTPUT** ifadeleriyle başlayan kısımlarının aynısıdır.
