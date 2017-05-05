@@ -1,7 +1,7 @@
-# Lider Ahenk Kurulum Rehberi
-## Başlarken
+#Lider Ahenk Kurulum Rehberi
+##Başlarken
 
-### 1. Kurulum Uygulamasının ve Lider Console'un İndirilmesi
+###1. Kurulum Uygulamasının ve Lider Console'un İndirilmesi
 
 Kurulum uygulamasını ve Lider Console yönetim arayüzünü [www.liderahenk.org/indir](www.liderahenk.org/indir) adresinden indirebilirsiniz.
 
