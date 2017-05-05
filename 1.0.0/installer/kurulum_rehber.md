@@ -165,7 +165,7 @@ OpenLDAP kurulum durumunu gösteren aşağıdaki gibi bir ekran gelecektir.
 
 Eğer kurulumda herhangi bir hata alırsanız aşağıdaki linkte anlatılanları yaptıktan sonra kurulumu tekrar başlatınız.
 
-[https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshooting]https://github.com/Pardus-Kurumsal/lider-ahenk-installer/wiki/05.-Troubleshooting
+https://github.com/Pardus-Kurumsal/lider-ahenk-installer/wiki/05.-Troubleshooting
 
 OpenLDAP kurulumu başarılı bir şekilde sonlandığında ekran aşağıdaki gibi olacaktır.
 
@@ -199,25 +199,28 @@ Ejabberd kurulumu başarılı bir şekilde sonlandığında ekran aşağıdaki g
 
 Eğer kurulumda herhangi bir hata alırsanız aşağıdaki linkte anlatılanları yaptıktan sonra kurulumu tekrar başlatınız.
 
-[https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshooting]https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshooting
+https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshooting
 
 Ejabberd kurulumu bittikten sonra kurulum uygulaması dışında yapmanız gereken önemli bir adım aşağıda anlatılmıştır. Lütfen bu adımı atlamayınız.
 
 > NOT:Uygulamada Ejabberd kurulumu sırasında, paket kurulumu tamamlandıktan sonra iki adet kullanıcı Ejabberd'a kaydedilmektedir. Ejabberd dağıtımındaki bir bug nedeniyle, bazen bu kullanıcılar kaydedilemese bile, Ejabberd'dan kaydedilmiş gibi sonuç gelmektedir. Bu nedenle kurulum uygulamasında Ejabberd kurulumu başarılı bir şekilde bittikten sonra Ejabberd'ın kurulu olduğu makinede aşağıdaki komutları çalıştırmanız gerekmektedir:
 
 >Komut yapıları şu şekildedir:
+>
 `sudo /opt/ejabberd-16.02/bin/ejabberdctl register admin {ejabberd_servis_adı} {kaydedilecek_admin_icin_sifre}`
 `sudo /opt/ejabberd-16.02/bin/ejabberdctl register {lider_sunucusu_kullanıcısı_adı} {ejabberd_servis_adı} {kaydedilecek_kullanıcı_icin_sifre}`
-Bu rehberdeki örnek için komutlar şu şekildedir:
+
+>Bu rehberdeki örnek için komutlar şu şekildedir:
 `sudo /opt/ejabberd-16.02/bin/ejabberdctl register admin im.liderahenk.org secret`
 `sudo /opt/ejabberd-16.02/bin/ejabberdctl register lider_sunucu im.liderahenk.org secret`
-Bu komutları çalıştırdıktan sonra **"user already registered"** veya **"user successfully registered"** gibi sonuçlar almanız gerekmektedir.
+
+>Bu komutları çalıştırdıktan sonra **"user already registered"** veya **"user successfully registered"** gibi sonuçlar almanız gerekmektedir.
 Kullanıcıların oluşup oluşmadığını, tarayıcıdan **"http://EJABBERD_IP:5280/admin"** adresinden Ejabberd web arayüzüne girip kontrol edebilirsiniz.
 Tam adres bu rehberdeki örnek için **"172.16.202.32:5280/admin"**, giriş bilgileri ise kullanıcı adı ve şifre olarak **"admin@im.liderahenk.org"** ve **"secret"**'dır.
 
 - - -
 
- Yukarıdaki notta anlatılanları yaptıktan sonra **"İleri"**' tuşuna basarak Lider sunucu kurulumuna geçiyoruz.
+Yukarıdaki notta anlatılanları yaptıktan sonra **"İleri"**' tuşuna basarak Lider sunucu kurulumuna geçiyoruz.
 
 #### 4.1.4 Lider Sunucu Kurulumu
 
@@ -248,7 +251,7 @@ YUkarıdaki ekranlarda gösterilen tüm alanlar daha önceki bileşenlerin kurul
 
 Eğer kurulumda herhangi bir hata alırsanız aşağıdaki linkte anlatılanları yaptıktan sonra kurulumu tekrar başlatınız.
 
-[https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshooting]https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshooting
+https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshooting
 
 Lider sunucu kurulumu başarılı bir şekilde sonlandığında ekran aşağıdaki gibi olacaktır.
 
