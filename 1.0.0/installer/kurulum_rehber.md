@@ -239,7 +239,7 @@ Devam ettiğimizde Lider sunucu için aşağıdaki gibi bir konfigurasyon ekran�
 
 ![installer_lider_conf_1](images/installer_lider_conf.png)
 
-YUkarıdaki ekranlarda gösterilen tüm alanlar daha önceki bileşenlerin kurulumlarında girilen parametrelere göre otomatik olarak getirilmiştir. 
+Yukarıdaki ekranlarda gösterilen tüm alanlar daha önceki bileşenlerin kurulumlarında girilen parametrelere göre otomatik olarak getirilmiştir. 
 
 >NOT:Dosya sunucu kurulumu için herhangi bir debian dağıtımı kullanılabilir. Dosya sunucu üzerinde `sshpass` ve `rsync` paketlerinin kurulu olması ve yukarıdaki ekranda belirlenen **"Dosya Sunucusu Kullanıcı Adı"** ve **"Dosya Sunucusu Parolası"** alanlarına girilen kullanıcı-parola ile erşime açık olmalıdır. Bu değerler daha sonra **"/opt/lider-distro-1.0.0-SNAPSHOT/etc/tr.org.liderahenk.cfg"** konfigürasyon dosyasından değiştirilebilir.
 
