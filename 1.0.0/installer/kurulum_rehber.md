@@ -129,7 +129,7 @@ https://github.com/Pardus-LiderAhenk/lider-ahenk-installer/wiki/05.-Troubleshoot
 
 Linkte anlatılanlar yapıldıktan sonra kurulum uygulamasına geri dönüp, hatanın alındığı ekrandan **"Geri"** butonuyla geri gidip sonra **"İleri"** tuşuna basarak tekrar kurulum sayfasına gelindiğinde kurulum tekrar başlar.
 
-**"İleri"**'e basarak devam ediyoruz ve LDAP kurulumuna geçiyoruz.
+**"İleri"**'ye basarak devam ediyoruz ve LDAP kurulumuna geçiyoruz.
 
 #### 4.1.2 OpenLDAP Kurulumu
 
@@ -137,15 +137,15 @@ OpenLDAP kurulumuna başlarken karşımıza erişim bilgilerini gireceğimiz say
 
 ![installer_ldap_erisim](images/installer_ldap_erisim.png)
 
-Bir önceki adım olan MariaDB kurulumunda yaptığımız gibi gerekli alanları dolduruyoruz ve **"İleri"**'e basıyoruz.
+Bir önceki adım olan MariaDB kurulumunda yaptığımız gibi gerekli alanları dolduruyoruz ve **"İleri"**'ye basıyoruz.
 Karşımıza çıkan ekranda iki seçenek var. İlki sıfırdan yeni bir OpenLDAP kurmak, diğeri ise varolan bir LDAP'ı Lider Ahenk için konfigure etmek.
-Bu rehberde tüm bileşenler sıfırdan kurulacağı için **"Yeni bir LDAP kur"** seçeneğiyle **"İleri"**'e basarak devam ediyoruz.
+Bu rehberde tüm bileşenler sıfırdan kurulacağı için **"Yeni bir LDAP kur"** seçeneğiyle **"İleri"**'ye basarak devam ediyoruz.
 
 ![installer_ldap_kur_konf](images/installer_ldap_kur_konf.png)
 
 Karşımıza kurulum yöntemini seçeceğimiz sayfa çıkıyor. Bu sayfada MariaDB kurulumunda yaptığımız gibi kurulum uygulaması içinde hazır olarak gelen paketi değiştirmeden (özel bir paket kurmak istemiyorsak) sadece aşağıdaki **"LDAP root parolası"** bölümünü dolduruyoruz.
 **"LDAP root parolası"** bölümünde girilen değer, LDAP kurulurken oluşturulan veritabanındaki root kullanıcısının şifresi olacaktır.
-Rehberde tüm şifreleri **"secret"** verdiğimiz için bu alana da **"secret"** giriyoruz ve **"İleri"**'e basıyoruz.
+Rehberde tüm şifreleri **"secret"** verdiğimiz için bu alana da **"secret"** giriyoruz ve **"İleri"**'ye basıyoruz.
 
 ![installer_ldap_kur_yontem_completed](images/installer_ldap_kur_yontem_completed.png)
 
@@ -154,8 +154,8 @@ Karşımıza aşağıdaki gibi bir konfigurasyon sayfası çıkıyor.
 ![installer_ldap_conf](images/installer_ldap_conf.png)
 
 Bu sayfadaki konfigurasyon değerleri kurulumun başında girdiğiniz **"Organizasyon CN"** değerine göre hazır olarak getirilmiştir. Değiştirmek istediğiniz alanları tabii ki değiştirebilirsiniz. Şifre alanlarını değiştirmeniz önerilir.
-Bu kurulum rehberinde tüm şifreleri **"secret"** yapacağımız için sadece **"Lider Console User Password"** alanını değiştirip **"İleri"**'e basıyoruz.
-Karşımıza aşağıdaki gibi kurulum hakkında özet bilgi veren bir sayfa geliyor. Değiştirmek istediğimiz bir parametre yoksa **"İleri"**'e basıp onay vererek kurulumu başlatıyoruz.
+Bu kurulum rehberinde tüm şifreleri **"secret"** yapacağımız için sadece **"Lider Console User Password"** alanını değiştirip **"İleri"**'ye basıyoruz.
+Karşımıza aşağıdaki gibi kurulum hakkında özet bilgi veren bir sayfa geliyor. Değiştirmek istediğimiz bir parametre yoksa **"İleri"**'ye basıp onay vererek kurulumu başlatıyoruz.
 
 ![installer_ldap_onay](images/installer_ldap_onay.png)
 
@@ -171,25 +171,25 @@ OpenLDAP kurulumu başarılı bir şekilde sonlandığında ekran aşağıdaki g
 
 ![installer_ldap_status_completed](images/installer_ldap_status_completed.png)
 
-OpenLDAP kurulumu bittikten sonra **"İleri"**'e basarak bir sonraki bileşen olan Ejabberd kurulumuna geçiyoruz.
+OpenLDAP kurulumu bittikten sonra **"İleri"**'ye basarak bir sonraki bileşen olan Ejabberd kurulumuna geçiyoruz.
 
 #### 4.1.3 Ejabberd Kurulumu
 Ejabberd kurulumuna başlarken karşımıza erişim bilgilerini gireceğimiz sayfa çıkıyor.
 
 ![installer_xmpp_erisim](images/installer_xmpp_erisim.png)
 
-Daha önceki bileşenlerin kurulumunda olduğu gibi gerekli alanları doldurup **"İleri"**'e basıyoruz.
+Daha önceki bileşenlerin kurulumunda olduğu gibi gerekli alanları doldurup **"İleri"**'ye basıyoruz.
 Karşımıza Ejabberd'ın kurulum yöntemini seçeceğimiz sayfa çıkıyor.
 
 ![installer_xmpp_kur_yontem](images/installer_xmpp_kur_yontem.png)
 
-Bu rehberde hazır gelen paketlerle kurulum yaptığımız için herhangi bir şey yapmaya gerek kalmaksızın **"İleri"**'e tıklayıp bir sonraki sayfaya geçiyoruz.
+Bu rehberde hazır gelen paketlerle kurulum yaptığımız için herhangi bir şey yapmaya gerek kalmaksızın **"İleri"**'ye tıklayıp bir sonraki sayfaya geçiyoruz.
 Karşımıza Ejabberd'ın konfigurasyon parametrelerini gireceğimiz sayfa çıkıyor.
 
 ![installer_xmpp_conf](images/installer_xmpp_conf.png)
 
 Bu sayfada başlangıçta girdiğimiz **"Organizasyon CN"** değeri ve LDAP kurulumundaki parametrelere göre uygun Ejabberd konfigurasyon parametreleri hazır olarak getirilmiştir.
- Herhangi birşey değiştirmeden (özel bir isteğimiz yoksa) aşağıdaki gibi sadece boş şifre alanlarını doldurup **"İleri"**'e basıyoruz.
+ Herhangi birşey değiştirmeden (özel bir isteğimiz yoksa) aşağıdaki gibi sadece boş şifre alanlarını doldurup **"İleri"**'ye basıyoruz.
 
 ![installer_xmpp_conf_completed](images/installer_xmpp_conf_completed.png)
 
@@ -225,11 +225,11 @@ Lider sunucu kurulumuna başlarken karşımıza erişim bilgilerini gireceğimiz
 
 ![installer_lider_erisim](images/installer_lider_erisim.png)
 
-Gerekli bilgileri girip **"İleri"**'e basarak devam ediyoruz. Karşımıza aşağıdaki gibi kurulum yöntemini seçeceğimiz bir sayfa geliyor.
+Gerekli bilgileri girip **"İleri"**'ye basarak devam ediyoruz. Karşımıza aşağıdaki gibi kurulum yöntemini seçeceğimiz bir sayfa geliyor.
 
 ![installer_lider_kur_yontem](images/installer_lider_kur_yontem.png)
 
-Lider sunucu, üzerine gerekli Lider feature'ları yüklenmiş bir Apache Karaf instance'ı olduğu için, dağıtımı TAR.GZ şeklinde olmaktadır. Lider dağıtımı kurulum uygulamasının içine gömülü olarak hazır gelmektedir. **"İleri"**'e basıp devam ediyoruz.
+Lider sunucu, üzerine gerekli Lider feature'ları yüklenmiş bir Apache Karaf instance'ı olduğu için, dağıtımı TAR.GZ şeklinde olmaktadır. Lider dağıtımı kurulum uygulamasının içine gömülü olarak hazır gelmektedir. **"İleri"**'ye basıp devam ediyoruz.
 Devam ettiğimizde Lider sunucu için aşağıdaki gibi bir konfigurasyon ekranıyla karşılaşıyoruz.
 
 ![installer_lider_conf_1](images/installer_lider_conf_1.png)
@@ -244,7 +244,7 @@ YUkarıdaki ekranlarda gösterilen tüm alanlar daha önceki bileşenlerin kurul
 
 ![installer_lider_onay](images/installer_lider_onay.png)
 
-**"İleri"**'e basarak onaylıyoruz ve kurulumu başlatıyoruz.
+**"İleri"**'ye basarak onaylıyoruz ve kurulumu başlatıyoruz.
 
 Eğer kurulumda herhangi bir hata alırsanız aşağıdaki linkte anlatılanları yaptıktan sonra kurulumu tekrar başlatınız.
 
