@@ -79,6 +79,12 @@ komutları ile başlatılmalıdır.
 
 ## Ahenk Kurulumu
 
+> Not: Ahenk kurulacak bilgisayarda **"openssh-server"** paketinin kurulu olması gerekmektedir. Bu işlem için;
+```sh
+sudo apt-get install openssh-server -y
+```
+> komutunu konsolda çalıştırılması yeterlidir.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masaüstündeki **lider-ahenk-installer** dizini altında  **lider-ahenk-installer** simgesine tıklayarak kuruluma başlayabilirsiniz.
 
 ![Ahenk Kurulum-1](virtual-ova-images/ahenk-kur.png)
