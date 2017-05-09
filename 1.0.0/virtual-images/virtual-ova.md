@@ -85,11 +85,11 @@ komutları ile başlatılmalıdır.
 
 ![Ahenk Kurulum-7](virtual-ova-images/ahenk-kur-versiyon-kontrol.png)
 
-![Ahenk Kurulum-2](virtual-ova-images/ahenk-kur-bilgiler.png)
-
 ![Ahenk Kurulum-3](virtual-ova-images/ahenk-kur-ip.png)
 
 ![Ahenk Kurulum-4](virtual-ova-images/ahenk-kur-kullanici-adi.png)
+
+![Ahenk Kurulum-2](virtual-ova-images/ahenk-kur-bilgiler.png)
 
 ![Ahenk Kurulum-5](virtual-ova-images/ahenk-kur-secim.png)
 
