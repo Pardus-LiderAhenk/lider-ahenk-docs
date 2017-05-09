@@ -83,7 +83,7 @@ komutları ile başlatılmalıdır.
 ```sh
 sudo apt-get install openssh-server -y
 ```
-> komutunu konsolda çalıştırılması yeterlidir.
+> komutunun konsolda çalıştırılması yeterlidir.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masaüstündeki **lider-ahenk-installer** dizini altında  **lider-ahenk-installer** simgesine tıklayarak kuruluma başlayabilirsiniz.
 
