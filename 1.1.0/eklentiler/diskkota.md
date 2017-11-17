@@ -4,9 +4,13 @@ Herhangi bir kullanıcıya ait soft kota ve hard kota sınırlarının belirlenm
 
 ## Disk Kota Profil
 
-Herhangi bir kulllanıcı ya da kullanıcılara ait soft kota ve hard kota tanımlaması yapılmaktadır.
+Herhangi bir kulllanıcı ya da kullanıcılara ait soft kota, hard kota ve varsayılan kota tanımlaması yapılmaktadır.
+
+Politika uygulanırken başlangıç ve bitiş tarihi verildiği taktirde verilen bitiş tarihinden sonra kullanıcının kotası varsayılan kota değerine alınmaktadır.
 
 ![Im48](images/kota-profil.png)
+
+**E-posta Gönder** onayı verilerek mail ayarlarına tanımlanan adreslere bilgi gönderimi yapılabilir veya onay işareti kaldırılarak gönderim iptal edilebilir.
 
 ## Disk Kota Görev
 
@@ -14,4 +18,4 @@ Eklentinin görev tarafında ilgili Ahenk makinesinin bütün kullanıcıların�
 
 ![Im60](images/mevcut-kota-bilgisi.png)
 
-Eklentinin profil tarafında ise bir kullanıcının soft kota ve hard kota sınırları belirlenmektedir.
+Eklentinin profil tarafında ise bir kullanıcının soft kota, hard kota ve varsayılan kota sınırları belirlenmektedir.
