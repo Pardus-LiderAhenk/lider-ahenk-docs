@@ -1,14 +1,14 @@
 # Servis Eklentisi
 
-Servis eklentisi bir görev eklentisidir. Kullanıcının Ahenk makinesinde var olan servisleri yönetmesini sağlamaktadır. Eklenti iki görevden oluşmaktadır. Servis eklentisi görevleri menüde aşağıdaki şekilde yer almaktadır.
-
-![Im214](images/service-menu.png)
+Bir görev eklentisidir, kullanıcının Ahenk istemci/sunucu makinesinde var olan servisleri yönetmesini sağlamaktadır.
 
 ## Servis Yönetimi
 
-Bir Ahenk için çalıştırılan bu görevde, kullanıcı servis adını belirler. Servis durumu- seçilerek servis başlatılabilir ya da kapatılabilir. Makine açıldığında otomatik başlat seçeneği ile servisin makine açıldığında otomatik olarak başlatılması da sağlanabilmektedir.
+Bu görevde, kullanıcı servis ad(lar)ını belirler. **Çalıştır** butonuna tıklandığında izelenen servislerin sonuçları ekranda listelenmeye başlar. **Servis İzleme Durumu** servisin izlenilebilirliğini gösterir. İlgili ahenk üzerinde servisin olup-olmaması veya servisin izlenmesine engel teşkil edecek bir sorun olması gibi durumlar bu ekrandan takip edilebilir.
 
 ![Im213](images/service-manager.png)
+
+**Servis Durumu** alanına anlık olarak servisin aktif-pasif bilgisi düşer. Bir servis için **Servisi Durdur/Başlat** alanına tıklanarak yeni servis durumu belirlenebilir. Ekranda listelenen tüm servislerin veya arama çubuğundan süzülen servislerin durumlarını değiştirmek için ise yukarıdaki **Tümünü Durdur**,**Tümünü Başlat** ve **"-"** butonları kullanılabilir. 
 
 ## Servis Listesi
 
