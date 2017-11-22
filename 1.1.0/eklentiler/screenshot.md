@@ -16,8 +16,6 @@ Kullanıcı onay verdiğinde ekran görüntüsü sunucuya alınır.
 
 **Not:** *Kullanıcıdan izin alma arzu edildiği taktirde kaldırılabilir. Sistem yöneticisi herhangi bir onay almadan da ekran görüntüsü alınabilmektedir.*
 
-<img style="float: left; height: 50px; margin: 10px;" src="asdasdf">
-
 Ekran görüntüsü alma işlemi gerçekleştirildikten sonra alınan ekran görüntüsü **"Lider-Console"** kullanıcısının karşısına getirilir. **"Dosyayı indir"** seçeneğiyle bu ekran görüntüsü,bilgisayar üzerinde kullanıcının belirlediği herhangi bir lokasyona kaydedilir.
 
 ![Screenshot Sonuc](images/screenshot-sonuc.png)
