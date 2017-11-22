@@ -1,18 +1,14 @@
 
-# USB Eklentisi
+# USB-LTSP Eklentisi
 
-USB modülleri ve aygıtları üzerindeki izinleri düzenler. Eklenti, hem görev hem de politika özelliğine sahiptir.
+Kullanıcıların USB disk kullanma yetkilerini yöneten görev eklentisidir. Ahenk seçilerek bu eklenti kullanılmak istendiğinde o ahenk üzerinde oturum açmış kullanıcıları listeler.
 
-![USB Yonetimi](images/usb-yonetimi-ahenk.png)
+![USB-LTSP Yonetimi](images/usb-ltsp.png)
 
-İlgili Ahenk makinesi üzerinde web kamerası, yazıcı, USB bellek ve fare-klavye izinlerini düzenler. İzin verme seçeneğinin seçilmesi sonucunda kullanıcı izin verilmeyen usb modülünü kullanamaz. İzin ver ya da verme seçeneklerinden hiçbirinin seçilmemesi durumunda ilgili usb elemanına izin verilmeyecektir. Bu nedenle izin için mutlaka **"İzin ver"** seçeneğinin seçilmiş olması gereklidir.
+Yetki verilmek istenen kullanıcılar seçilerek yetki ver-kaldır görevi çalıştırılır. Yetkinin bitiş tarihi **Verilen yetki şu tarihte bitsin** alanına giriş yapılarak belirlenir.
 
-![USB Eklentisi Politika ](images/usb-eklentisi.png)
+Bu eklentinin bir diğer kullanım yolu ise kullanıcı üzerinden yetki verilebilmesidir. Yani kullanıcının hangi ahenk üzerinde oturum açtığı bilinmediği için kullanıcı üzerine tıklandığında otomatik olarak oturum açtığı ahenk sistem tarafından bulunur ve sadece o kullanıcı ekranda görüntülenir.
 
-Eklentinin politika tarafında ise ek olarak beyazliste ve karaliste bulunmaktadır. Beyazlisteye eklenen USB aygıtlarına her koşulda izin verilirken karalisteye eklenen aygıtlara ise hiçbir şekilde izin verilmemektedir.
+![USB-LTSP Ahenk](images/usb-ltsp-ahenk.png)
 
-![USB Eklentisi Politika ](images/usb-kara-liste.png)
-
-Bunu sağlamak için istenen listeye istenilen aygıtın retici firması, modeli ve seri numarası girilir. Herhangi bir aygıt seçilip **"Düzenle"** butonuna basılmasıyla aygıt üzerinde düzenleme yapılır. Yine aynı şekilde **"Sil"** butonuna basılmasıyla seçilen kayıt silinir.
-
-![USB Eklentisi Politika ](images/usb-kara-liste-son.png)
+O kullanıcıya yetki verildikten sonra ahenk üzerindeki diğer kullanıcılar görülmek istenirse **USB YETKİSİ VER/KALDIR** ekranında **Tüm Kullanıcılar** butonuna tıklanmalıdır. Böylelikle kullanıcıdan ahenk'e gidilebilir, ahenk üzerindeki diğer kullanıcıları tekrar tekrar aramadan hızlı bir şekilde yetki verilebilir.
