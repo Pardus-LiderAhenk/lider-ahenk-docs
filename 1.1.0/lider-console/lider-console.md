@@ -1,110 +1,109 @@
-# 5. Lider Console
+# 5. Lider Arayüz Kullanımı
 
-Lider Konsol; yönetim sisteminin sistem yöneticileri tarafından kullanılan arayüz uygulamasıdır.
+Lider Arayüz (Lider Konsol ); merkezi yönetim sisteminin sistem yöneticileri tarafından kullanılan arayüz uygulamasıdır.
 
 Sistem yöneticileri kullanıcı ve sistemler üzerindeki görev ve politikaları bu uygulama aracılığı ile gerçekleştirirler. Bu uygulama bir Eclipse RCP uygulaması olarak geliştirilmiştir. 
 
-Lider Konsol, Apache  LDAP  Directory  ağacı  üzerinden  sistemlere  ve  kullanıcılara  erişir.  Lider  Konsol uygulaması yönetimsel tüm iletişimi HTTP(s) protokolü ile REST servisler aracılığı ile  Lider üzerinden gerçekleştirmektedir.
 
-Lider Konsol uygulaması da diğer LiderAhenk uygulamaları gibi bir çok modülden oluşan bir çekirdek ve her geliştirilen eklenti için bileşenlerden (bundle) oluşur.
+## Lider Arayüz Giriş
+Lider Arayüz, Apache  LDAP  Directory  ağacı  üzerinden  sistemlere  ve  kullanıcılara  erişir. Ekranın sol alt köşesindeki bağlantılar penceresi ile yeni bağlantı oluşturulur.
 
-Lider  Konsol  uygulaması  XMPP sunucudan hangi  sistemlerin  çevrimiçi  (online)  olduğu bilgisini kontrol etmek için bağlanmaktadır. Ayrıca; LDAP ağacı üzerinden işlem yaptığın LDAP istemcisidir. LDAP işlemleri Apache Directory üzerinden gerçekleştirilir. Lider ile temel iletişimi JSON  nesneler  yardımıyla  REST  servisler  üzerinden gerçekleştirilir. Ancak,  Lider  sisteminin kullandığı Veritabanı sistemine doğrudan bir iletişimi kesinlikle yoktur. Lider veritabanı sadece ve  sadece  Lider  Sunucusu  (Apache  Karaf)  tarafından  sorgulanabilir  ve  erişilebilir  olması yeterlidir.
+![Lider Arayüz Yeni Bağlantı](images/la.png)
 
-Lider Konsol uygulaması üzerinden kullanıcı ve sistemlere görevler gönderilip,  bu görevlere ilişkin  sonuçlar  toplanabilir.  Bu  sonuçlar  merkezi  veritabanında  saklanır,  istenildiğinde gruplama,  raporlama  amaçları  ile  sorgulanabilirler.  
+**Bağlantı adı**, **Sunucu Adı** ve **Port** bilgileri girilerek **Ağ Parametresini Kontrol Et** butonuna tıklanır. Bu işlem sonucunda eğer girilen veriler doğru ise **Bağlantı baraşıyla kuruldu.** sonucu alınır. Sonuç olumsuz ise ldap sunucu ip ve portlara erişim kontrol edilerek tekrar denenmelidir.
 
-Sistemde  yapılan  tüm  işlemlerin  bir  izi muhakkak  veritabanı  üzerinde  tutulmaktadır.  Bazı  eklentiler    tasarımları  gereği  kendilerine özgü  verileri  de  veritabanında  ayrıca  tutmasına  olanak  sağlanmıştır.  Lider  Konsol  aralığı  ile sadece  görevler  değil  kullanıcı  yönetimine  ilişkin  politikalar  da  yönetilir.  Örneğin;  kullanıcı gruplarının  masaüstü  mesajları  ve  ekran  koruyucu  ayarları  yapılabilir,  tarayıcı  ev  sayfaları değiştirilebilir. Tüm kullanıcı profilleri ve profil tanımları, hangi kullanıcılara uygulandıkları da veritabanı üzerinde saklanır.
+![Lider Arayüz Yeni Bağlantı](images/la-1.png)
 
-Bu  saklanan  veriler  üzeriden  dinamik  raporlama  bileşeni  ile  farklı  gereksinimlere  ilişkin raporlamalar tasarlanıp, sisteme eklenir  ve  çalıştırılır. Lider Ahenk sisteminin geneline ilişkin raporlar tasarlanabileceği gibi kimi eklentilere özgü raporlar da tasarlanabilir. Lider sistemi ilk kurulum  ile  temel  raporlama  ihtiyaçlarına  yönelik  kimi  rapor  tanımlarını  kullanıcı  için  hazır şekilde sunar. Her eklenti kendi ihtiyaçları çerçevesinde yeni rapor şablonlarını otomatik olarak sisteme ekleyebilir.
+Daha sonra Lider Arayüzü yönetecek ldap üzerinde tanımlı ve gerekli yetkilere(Görev ve Politika oluşturma yetkileri) sahip kullanıcı bilgileri girilir.
 
-## Task ve Policy İçin GUI Oluşturma Adımları
+**Kimlik Doğrula** butonu ile gililen bilgilerin doğruluğu kontrol edilebilir.
 
-lider-console-EKLENTI_ISMI, lider-Eclipse RCP IDE’sini açınız. Menüden File -> Import -> Maven -> Existing Maven Projects seçeneklerini  takip  ederek  açılan  pencerede  kendi  eklentinizin  bulunduğu  dizini  seçin  ve Finish  butonuna  tıklayın. Artık  Lider,  Lider-Console  ve Ahenk  eklentiniz  Eclipse’e  eklenmiş durumdadır.
+![Lider Arayüz Yeni Bağlantı-1](images/la-2.png)
 
-**Eklenti  geliştirme  üç  aşamadan  oluşmaktadır:**
+**Kök DSE'den DN leri Getir** onayı kaldırılarak **Kök DN leri Getir** butonuna tıklanır. Kök Dn geldikten sonra **Finish** butonuna tıklanır.
 
-EKLENTI_ISMI ve ahenk-EKLENTI_ISMI lider-console-EKLENTI_ISMI:  Burada  eklentinizin  Lider-Console  tarafındaki  bileşenlerini diyaloglar ve diğer SWT bileşenleri yardımıyla düzenleyebilir, kullanıcıdan gerekli inputları bu bileşenler yardımıyla alabilirsiniz. Bunun için src/ klasörü altında bulunan, tr.org.liderahenk.EKLENTI_ISMI.constants  paketinin  altına  eklentide  kullanılan  sabitlerin bulunduğu  sınıflar  tanımlanmalıdır.  (Archetype  ile  hali  hazırda  örnek  bir  constant  sınıfı  bu paketin altında gelmektedir.)
+![Lider Arayüz Yeni Bağlantı-2](images/la-3.png)
 
-tr.org.liderahenk.EKLENTI_ISMI.dialogs  paketinin  altına  eklentide  kullanılan  ekranların betimlendiği sınıflar tanımlanmalıdır. Eğer eklenti bir politika eklentisi ise açılacak olan profil ekranı üzerindeki değişiklikler eklentiye ait  ProfileDialog sınıfı üzerinden yapılır. Eğer eklenti bir görev eklentisi ise TaskDialog sınıfı kullanılır.
+Bu işlemlerden sonra ekranın sol alt köşesinde yeni bir bağlantı oluşur.
 
-ProfileDialog sınıfında bulunan metodlarda aşağıdaki işlemler gerçekleştirilir.
+![Lider Arayüz Yeni Bağlantı-3](images/la-4.png)
 
-**init:** Başlangıçta yapılacak işlemler burada tanımlanır.
+Bağlantı üzerine çitf tıklayarak giriş yapabilirsiniz.
 
-**createDialogArea:** Profil ekranının bütün SWT bileşenleriyle oluşturulduğu metodburasıdır.
+## Lider Ahenk LDAP Ağacı
 
-**getProfileData:**  Ekran  üzerindeki  verilerin  bir  Map’e  eklendiği  yerdir.  Bu  metodsayesinde veriler Ahenk’e kadar ulaştırılacaktır.
+Kullanıcılar Ldap yöneticisi tarafından eklendikten sonra, ahenkler ise sisteme kayıt olduktan sonra ldap ağacında görüntülenir.
 
-**validateBeforeSave:**  Profil  kaydedilmeden  önceki  son  kontroller  bu  metodüzerinden  yapılmaktadır.  Örneğin  doldurulması  zorunlu  bir Text  varsa Text’in  boşolma durumundaki ValidationException buradan fırlatılır.
+![Lider Arayüz Ldap Ağacı](images/lider-ldap-agaci.png)
 
-TaskDialog sınıfında bulunan metodlarda ise aşağıdaki işlemler gerçekleştirilir.
+### Kullanıcılar
 
-**createTitle:** Dialog ekranının başlığı burada belirtilir.
+Kullanıcılar Ldap üzerindeki grupları(varsa) ile birlikte listelenirler. Üzerine tıklayarak kullanıcılar üzerinde yürütülen görevler-politikalar uygulanabilir.
 
-**createTaskDialogArea:** Görev ekranının bütün  SWT bileşenleriyle oluşturulduğumetod burasıdır.
+### Ahenkler
 
-**validateBeforeExecution:** Görev çalıştırılmadan önceki son kontroller bu metodüzerinden  yapılmaktadır.  Örneğin  doldurulması  zorunlu  bir Text  varsa Text’in  boşolma durumundaki ValidationException buradan fırlatılır.
+Ahenkler kullanıcılardan bağımsız bir grup yapısında olabilir. Yine grup bilgileri ldap üzerinden alınır. Ağaç üzerindeki yerini sistem yöneticisi belirler.
 
-**getParameterMap:** Ekran üzerindeki verilerin bir Map’e eklendiği yerdir. Bu metodsayesinde veriler Ahenk’e kadar ulaştırılacaktır.
+Aktif ahenkler yeşil, pasifler kırmızı ile renklendirilmektedir. 
 
-**getCommandId:** Çalıştırılacak göreve ait id bilgisi bu metod üzerinden döndürülür.getPluginName: Çalıştırılacak görevin ismi bu metod üzerinden döndürülür.
+### Arama
 
-**getPluginVersion:**  Çalıştırılacak  görevin  versiyonu  bu  metod  üzerindendöndürülür. tr.org.liderahenk.EKLENTI_ISMI.handlers  paketinin  altında  dialog  paketi  altındaki  dialog sınıflarını ele alan ve bu dialog ekranlarını açan sınıflar bulunmaktadır. Buradaki ProfileHandler eklentinin profil ekranını ele alırken TaskHandler ise eklentinin görev ekranını ele alır. tr.org.liderahenk.EKLENTI_ISMI.i18n paketi altında ise halihazırda bir sınıf ve iki tane metin belgesi  bulunmaktadır.  Bu  metin  belgelerinden  messages_tr.properties  belgesine  eklentide kullanılan string ifadelerin Türkçe karşılıkları yazılırken messages.properties belgesine ise bu ifadelerin İngilizce karşılıkları yazılmaktadır.
+Kullanıcı veya Ahenk aranmak istendiğinde ldap düğümü üzerine tıklanarak cn,dn,uid.... bilgilerinden biri girilerek arama yapılabilir. Sonuçlar **Arama Sonuçları** başlığında listelenir.
 
-## Task ve Policy için Lider-Console Süreci
+![Lider Arayüz Ldap Arama](images/ldap-arama.png)
 
-Eklentiler  Lider-Console  tarafından  bağımsız  olarak  oluşturulmaktadır.  Bu  nedenle  sadece Lider  sunucusuna  istekte  bulunurken  ve  görev  bildirimlerinin  dinlenmesinde  bazı  sınıflardan faydalanılır.  Lider  sunucusuna  görev,  profil  ve  politika  için  istekte  bulunulabilir.  Bu  amaçla kullanılan  sınıflar:  TaskRestUtils,  PolicyRestUtils  ve ProfileRestUtils’dir.  Görev  bildirimlerinin dinlenmesinde ileTaskStatusNotificationListener’dır.
+Ayrıca bulunan kullanıcı veya ahenk'in ldap hiyerarşisi ekranın altında listelenir.
 
-**TaskRestUtils:** Lider sunucusuna görevle ilgili istek gönderen utility sınıfıdır.
+## Kullanım Öncesi
 
-**PolicyRestUtils:** Lider sunucusuna politika ile ilgili istek gönderen utility sınıfıdır.
+Kullanım öncesi mail ayarları ve kullanım sonrasında kullanılabilecek raporlamalar, sonuç izleme ekranları gibi özellikler **Lider** menüsünden yapılmaktadır.
 
-**ProfileRestUtils:** Lider sunucusuna profil ile ilgili istek gönderen utility sınıfıdır.
+### Lider Menü
 
-**TaskNotificationListener:**  Görev  gönderimindeki  bildirimleri  dinler.  Bir  bildirim  alındığında görevle ilgili bir bildirim gösterilir ve eklentileri uyarmak için bir event fırlatılır.
+Bu menüdeki seçenekler;
 
-**TaskStatusNotificationListener:** Ahenk’ten  cevap  olarak  dönen  görev  durum  bildirimlerini dinler. Bir bildirim alındığında görev durumuyla ilgili bir bildirim gösterilir ve eklentileri uyarmak için bir event fırlatılır. 
+![Lider Menü](images/lider-menu.png)
 
+**Politika Tanımları:** Sistemin genelinde kullanılacak politikalar buradan tanımlanır. **Lider Yönetim Paneli**'nde bu ekrana hızlı erişim bulunmaktadır.
 
-## Lider-Console Servis Sınıfları
+**Ahenk Bilgisi:**Sistemdeki ahenkler ip, mac adresi vb bilgiler ile listelenir. İncelenmek istenen ahenk'e tıklandığında o ahenk'in öznitelikleri  ve o ahenk üzerinden oturum açan kullanıcıların bilgilerini görüntülenir. Ahenk üzerinde kullanıcıların ne zaman oturum açıp ne zaman sonlandırdığına buradan bakılabilir.
 
-**RestClient:** Lider sunucusuna request göndermek ve cevapları ele alabilmek için utility metodlarını kullanıma sunar.
+**E-Posta Ayarları:**Herbir eklenti için sistem yöneticilerine, kullanıcılara veya e-posta guruplarına işlem ve sonucu hakkında e-posta bildirimi yapılabilir.
 
-**PolicyExecutionRequest:** Politika uygulandığı sırada kullanılan politikanın nereye uygulanacağını söyleyen sınıftır.
+![Lider E-Posta Ayarları](images/eposta-ayarlari.png)
 
-**PolicyRequest:** Politika CRUD işlemlerinde kullanılan sınıftır.
+Bunu için eklenti seçilerek e-posta adresleri **Mail Gurubu Tanımla** alanına girilerek eklenir. E-posta gönderimi ** Zamanlanmış Gönder** veya **Hemen Gönder** olarak ayarlanabilir.
 
-**ProfileRequest:** Profil CRUD işlemlerinde kullanılan sınıftır.
+Bütün bu ayarlardan sonra **Mail Konfigurasyonunu Kaydet** butonuna **MUTLAKA** tıklanmalıdır.
 
-**ReportGenerationRequest:** Rapor üretildiği sırada kullanılan sınıftır.
+**Çalıştırılan Görevler:**Sistem üzerinde çalışan ve tamamlanmış tüm görevler bu ekranda listelenir.
 
-**ReportTemplateRequest:** Geliştirici tarafından tanımlanan rapor sorgusu, rapor parametreleri vb içerir. Lider'de servis olarak tanımlanıp kullanılır.
+![Lider Çalıştırılan Görevler](images/calistirilan-gorevler.png)
 
-**ReportViewRequest:**  Rapor tanımına ait CRUD işlemlerinde kullanılan sınıftır.
+Süreci devam eden görevler iptal edilebilir. İleri tarihli veya zamanlı çalıştırılan görevler ayrı ayrı takip edilebilir.
 
-**TaskRequest:** Görev CRUD işlemlerinde kullanılan sınıftır.
+**Uygulanan Politikalar:**Görevlerde olduğu gibi sistemde uygulanan politikalar bu ekranda listelenir.
 
-**RestResponse:** Rest servisinden dönen cevap için kullanılan sınıftır.
+![Lider Uygulanan Politikalar](images/uygulanan-politikalar.png)
 
-**AgentRestUtils:** Lider sunucusuna ajan ile ilgili istek gönderen utility sınıfıdır.
+**Ldap Arama:** Arama kapsamı ve arama kriteri girilerek ahenk veya kullanıcı araması yapılabilir.
 
-**PluginRestUtils:** Lider sunucusuna eklenti ile ilgili istek gönderen utility sınıfıdır.
+![Lider Ldap Arama](images/ldap-genel-arama.png)
 
-**PolicyRestUtils:** Lider sunucusuna politika ile ilgili istek gönderen utility sınıfıdır.
+Birden fazla arama kriteri için "+" butonuna tıklanarak ilgili alanlar girilmelidir.
 
-**ProfileRestUtils:** Lider sunucusuna profil ile ilgili istek gönderen utility sınıfıdır.
+**Lider'e Yüklenen Eklentiler:**
 
-**ReportRestUtils:** Lider sunucusuna rapor ile ilgili istek gönderen utility sınıfıdır.
+**Raporlama:** 
 
-**SearchGroupRestUtils:** Lider sunucusuna arama grubu ile ilgili istek gönderen utility sınıfıdır.
+**USB Yetkilerini Listele:**
 
-**TaskRestUtils:** Lider sunucusuna görevle ilgili istek gönderen utility sınıfıdır.
+## Görev Uygulama
 
-**XMPPClient:** Online/Offline bilgisini okumak ve görev sonucunu almak için kullanılır.
+## Politika Uygulama
 
-**TaskNotificationListener:** Görev gönderimindeki bildirimleri dinler. Bir bildirim alındığında görevle ilgili bir bildirim gösterilir ve eklentileri uyarmak için bir event fırlatılır.
+## Raporlama
 
-**TaskStatusNotificationListener:** Ahenk’ten cevap olarak dönen görev durum bildirimlerini dinler. Bir bildirim alındığında görev durumuyla ilgili bir bildirim gösterilir ve eklentileri uyarmak için bir event fırlatılır.
+### Rapor Şablonları
 
-**TaskNotification:** Görev bildirimi CRUD işlemlerinde kullanılan sınıftır.
-
-**TaskStatusNotification:** Görev durum bildirimi işlemlerinde kullanılan CRUD sınıfıdır.
+### Rapor Tanımları
