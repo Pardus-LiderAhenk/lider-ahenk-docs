@@ -24,206 +24,118 @@ Ahenk sistemleri değişik özellikteki sistemlerde sistem karmaşasını artır
 
 Ahenk çekirdeği ve eklentiler sistemlere ayrı ayrı paketler olarak kurulabilmektedir. Ahenk, kendisine iletilen bir göreve veya politikaya ilişkin eklenti kurulu değil ise “Dosya  Sunucu” üzerinden ilgili eklenti paketini otomatik kurabilmektedir.
 
-### Süreçler ve Servisler
 
-Ahenk; Lider'den gelen görevleri/politikaları bulunduğu bilgisayar üzerinde çalıştırıp sonuçlarını yine Lider'e  döndüren  bir  servistir.  Yetenekleri  eklentilerle  genişletilebilir.  Sistem  üzerindeki  olaylardan veya Liderden gelen mesajlar ile iç süreçleri tetiklenir. Bu süreçleri şöyle listeleyebiliriz:
-
-#### Ahenk Servisinin Çalışmaya Başlaması
-
-Ahenk  base  scripti  olan  ahenkd.py,  python  Daemon  olarak  çalışmaya  başlar.  İlk  olarak  bir  scope
-
-oluşturur. Scope, oluşturulacak servislerin tutulduğu global bir sepet olarak düşünülebilir. Ardından
-
-Ahenk/ Ahenk  eklentilerinin  kullanabileceği  ve  Scope’a  atılacak  servisler  oluşturulur.  Bu  servisler
-
-şunlardır:
-
-**Config Manager**: Yapılandırma dosyasının okunması, değiştirilmesi, yazılmasını sağlar.
-
-**Logger**:  Farklı  seviyelerde  log  dosyasına  kayıt  düşmek  için  kullanılır.  Kaydedilen  loglar **/var/ahenk/log/ahenk.log**  dosyasına  kaydedilir.  Ahenk’in  baştan  başlatılması  ile  kayıtlar  silinmez.
-
-Genel kayıt mesajı standardı şöyledir:  logger.debug(‘[ExecutionManager]  Politika  işlemeyebaşlandı’), logger.error(‘[PLUGINA-INIT]  A  işlemi  gerçekleştirilirken  hata  ile  karşılaşıldı.  Hata Mesajı: {0}’.format(str(e)))
-
-**Event  Manager**: Event-Function eşleştirilmesini sağlar. Böylece uygulamanın herhangi bir yerinden fırlatılan  event  ile  önceden  tanımlanmış  event-actionlar  sayesinde  fonksiyon  tetiklenir. Ahenk  Db
-
-**Service**: Ahenk’in kullandığı sqlite için temel veritabanı işlemlerini gerçekleştirmek için kullanılır.
-
-**Message Manager**: Temel işleyişleri gerçekleştirmek için kullanılan json mesajlarını oluşturmak için
-
-kullanılır. Örneğin message = scope.getMessageManager().policy_request_msg(‘user_name’)
-
-**Plugin Manager**:  Eklentilerin Ahenk  sistemine  yüklenip  kendi  threadlerinin  başlatılmasını  sağlar. Böylece  eklentiye  gelen  bir  görev  ya  da  profil  bu  thread  içinde  işlevini  gerçekleştirebilir.  Ayrıca eklentiyi Ahenk’ten kaldırıp,  yeniden yüklemeye de izin verir. Eklentiler  yüklendikten  sonra yüklü eklentilerin init.py betikleri çalıştırılır.
-
-**Scheduler**:  Zamanlı  görevlerin  kontrolünü  ve  çalıştırılmasını  sağlar.  Kendi  custom  cron mekanizmasını barındırır.
-
-**Task  Manager**:  Görev  ve  politikalar  üzerinde  kaydetmek,  eklemek,  silmek  gibi  temel  işlemleri gerçekleştirir. Görevi  kaydettikten sonra çalıştırılmasını sağlar.
-
-**Registration**: Ahenk uygulaması çalışmaya başladığında lider tarafından sağlar.  Doğrulanmamışsa  ya  da  ilk  defa  çalıştırılıyorsa  kendisini  doğrulaması  için  lider  ile  gerekli protokolü başlatır.
-
-**ExecutionManager**:  Ahenk  ve  Lider  çekirdeği  arasında  belirlenen  protokolleri  ve  iletişim şablonlarını  tanımlar  ve  EventManager  kullanarak  bu  mesaj  şablonlarının  doğrulanmasını gerçekleştirir.
-
-**Messager**: İletişim yöntemlerini tanımlar ve gerçekleştirir. XMPP bağlantısı açıp kapatılabilir. Bir çeşit XMPP Client’ıdır. Gelen mesajın tipinden Event Manager üzerinden  Event’i tetikler.
-
-#### Ahenk Servisinin İlk Defa Çalışmaya Başlaması
-
-Ahenk'in  çalışmasından  farklı  olarak  ilk  defa  çalışmada  registration  işlemi  gerçekleştirilir.  Ahenk kendisini  kaydetmesi  için,  Lider'e  içinde  üzerinde  çalıştığı  makinenin  bilgileri  ile  birlikte  bir  bilgi mesajını Anonim  olarak  gönderir  ve  kayıt  işleminin  gerçekleştirildiğine  dair  bir  cevap  bekler.  Bu işlemler  ilk  olarak  registration  servisindeki  generate_uuid  metodunda  mac  adresine  göre  uuid yaratılmasıyla  başlar. Ardından  register  metodu  üzerinden  registration parametreleri  oluşturulur. **registration_request**  metodunda istekte  bulunulur.  Son  olarakanonymous_messenger  betiği içeriğindeki AnonymousMessenger  sınıfı  üzerinden  XMPPReceiver  parametleri oluşturulur,  uzantılar  eklenir  ve  sunucuya  bağlanılır.  Beklenen  cevap yapılandırılma dosyasında belirlenmiş bekleme süresi içinde gelmezse Ahenk servisi kendini kapatır.
-
-Eğer olumlu bir cevap dönerse Anonim bağlantı kapatılıp Lider tarafından onaylanan kalıcı hesap üzerinden iletişime devam eder. Kayıt için olumlu cevap dönmezse, makinenin sahip olduğu network adresinin  3  katı  kadar  daha  farklı  jid  bilgileriyle  registration  denemesi  yapılır.  Bunların  hiçbirinde başarılı olunmazsa Ahenk servisi kapatılır. 
-
-#### Kullanıcının İlk Defa Ahenk Çalıştıran Bilgisayarda Oturum Açması
-
-Ahenk  çalıştıran  bilgisayarda  bir  kullanıcı  ilk  defa  oturum  açtığında  kullanıcı  sözleşmesini  kabul etmesi beklenir. Yapılandırma dosyasında tanımlanmış bekleme süresinde olumlu cevap verilmezse kullanıcı oturumu kapatılır. Kullanıcı sözleşmeyi kabul edene kadar bu süreç devam eder. Eğer Lider yapılandırmasında  herhangi  bir  sözleşme  tanımlanmadıysa  varsayılan  Ahenk  Sözleşmesi  metni kullanıcıya  gösteirilir.  Sözleşme  metinleri  her Ahenk  servisi  başlatıldığında  Lider'den  istenilir.  Bir öncekinden farklı bir sözleşme Lider'den gönderildiğinde, kullanıcı eski sözleşmeyi kabul etmiş olsa bile yeni sözleme bir sonraki oturum açma sırasında tekrar sorulur.
-
-#### Görev Gönderilmesi
-
-Görev tipinde bir mesaj messenger servisine geldiğinde, recv_direct_message metodu üzerinden event manager servisi kullanılarak execution servisinde tanımlı execution manager kısmına mesaj parametresi  ile  gönderilir.  Burada  execute_task  metodu  üzerinden  task  manager  servisine gönderilen nesneye dönüştürülmüş json görevi saveTask metodu yardımıyla veritabanına kaydedilir.
-
-Bu  sırada  görevi  çalıştıracak  eklentinin  yüklü  olup  olmadığı  plugin  manager  servisindeki process_task  metodu  üzerinden  kontrol  edilir.  Eğer  yüklü  değil  ise  Lider'e  ilgili  eklentinin  eksik olduğuna dair bir mesaj gönderilir ve eklenti kurulana kadar görev saklanır. Eklenti ile ilgili kurulum bilgileri  geldiğinde  eklenti  paketi  uzaktan  alınıp  kurulur  (execution  manager  servisi  üzerindeki install_plugin  metoduyla)    ve Ahenk  servisine  yüklenir.  Saklanan  görev  aktif  hale  getirilir.  Bu  bir zamanlı  görev  ise  scheduler  servisine  gönderilir,  değilse  plugin manager  servisine  gönderilerek çalıştırılır.
-
-#### Kullanıcının Oturum Açması ve Politika Çalıştırılması
-
-Kullanıcı oturum açtığında command runner servisinde, belirtilen kullanıcı adıyla birlikte oturum açıldığı bilgisi run_command_from_fifo metoduna gelir.  Kullanıcının son güncel sözleşmeyi kabul edip etmediğinin kontrolü Agreement sınıfındaki check_agreement metoduyla yapılır.
-
-Ardından Lider'den bu kullanıcı ve çalışan makineye ait politika istenir. Eklentilerin safe ve login scriptleri varsa, plugin manager servisinden safe modu aktif hale getirilerek (process_mode) çalıştırılır (find_module). (Bu scriptlere hangi kullanıcının oturum açtığı bilgisi gönderilir)
-
-Yapılandırma dosyasında belirtilen sürede Lider politika bilgilerini Ahenk'e göndermezse Ahenk veritabanından bu kullanıcı ve makine için çalıştırılmış en güncel politikayı çeker ve çalıştırır.
-
-Politikaların çalıştırılması görevin çalıştırılması ile aynı mekaniği izlemektedir. Ancak bazı profil tabanlı eklentiler hem kullanıcı hem makine üzerine uygulanmış olabilir. Aynı eklentinin çalıştırabileceği 2 profile geldi ise (hem kullanıcı üzerine atanmış profil hem makine üzerine atanmış profil), makine üzerine atanmış profilin ezilebilir olup olmadığı kontrol edilir. Makine profili ezilebilir ise sadece kullanıcının profili, değilse sadece makine profili çalıştırılır.
-
-#### Sonuçların döndürülmesi
-
-Bir görev ya da profil çalıştırıldığında işlemin başarılı ya da başarısız olduğuna dair varsa ek bilgileri ile sonuç dönmesi beklenir. Bu sonuç, plugin servisindeki run metodu içindeki Response nesnesidir. Eklentinin döndürdüğü response nesnesi, belirlenmiş json formatına dönüştürülür.
-
-Varsa data ve content type bilgilerine bakılır. Eğer content type, json değilse ve data da oluşturulmuş bir dosyanın md5 bilgisini barındırıyorsa bu dosya Lider'in gösterdiği uzak makinedeki dizine gönderilir ve sonuç mesajı Lider'e iletilir. Policy Status ile Task Status mesajlarının farkı Task
-
-Status'te taskId bulunması, Policy Status'te commandExecutionId ve policyVersion bulunmasıdır.
-
-#### Kullanıcının Oturum Kapatması
-
-Kullanıcı oturum kapattığında command runner servisinde, belirtilen kullanıcı adıyla birlikte oturum kapatıldığı  bilgisi  run_command_from_fifo  metoduna  gelir.  Eklentilerin  safe  ve  logout  scriptleri varsa,  plugin  manager  servisinden  safe  ve  logout  modu  aktif  hale  getirilerek  (process_mode) çalıştırılır (find_module). Lider'e hangi kullanıcının oturumu kapattığına dair mesaj atılır.
-
-#### Ahenk Servisinin Kapanması (Bilgisayarın Kapanması)
-
-Ahenk  servisi  kapatılırken  eklentilerin  shutdown.py  betikleri  çalıştırılır.  Eğer  herhangi  bir  eklenti çalışmaya devam ediyorsa işlemini bitirmesi beklenir.
-
-### Yapılandırma Dosyası
-
-**[BASE]**
-
+#####Ahenk Yapılandırma Dosyası
+```
+[BASE]
 logconfigurationfilepath = /etc/ahenk/log.conf
-
 dbpath = /etc/ahenk/ahenk.db
 
-**[PLUGIN]**
-
+[PLUGIN]
 pluginfolderpath = /opt/ahenk/plugins/
-
 mainmodulename = main
 
-**[CONNECTION]**
-
-uid = 1111111-2222-33333-4444-555555
-
-35/82password = aaaaa-bbbbb-ccccc-ddd-eeeeeeee
-
-host = XXX.XXX.XXX.XXX
-
+[CONNECTION]
+uid = 
+password = 
+host = 
 port = 5222
-
 use_tls = false
-
-receiverjid = lider_sunucu
-
-receiverresource = Smack
-
-servicename = im.liderahenk.org
-
+receiverjid = 
+receiverresource =
+servicename = 
 receivefileparam = /tmp/
 
-**[SESSION]**
-
+[SESSION]
 agreement_timeout = 30
-
 registration_timeout = 30
-
 get_policy_timeout = 30
 
-**[MACHINE]**
-
+[MACHINE]
 type = default
+agreement = 1 
+```
+###BASE
 
-**[MAIL]**
+**logconfigurationfilepath:**  log yapılandırma ayarlarını barındıran dosyanın yoludur. Varsayılan değer `/etc/ahenk/log.conf`'tur.
+**dbpath:** Ahenk çekirdeğinin operasyonlarında kullandığı veritabanının yoludur. Varsayılan değer `/etc/ahenk/ahenk.db`'dir.
 
-smtp_host = smtp.mail_server_name.com
+###PLUGIN
 
-smtp_port = 587
+**pluginfolderpath:** Ahenk eklentilerinin bulunduğu dizin yoludur. Varsayılan değer `/opt/ahenk/plugins/`'dir.
+**mainmodulname:** Eklentiler Ahenk' e yüklenmesinde kullanılan temel py dosyasının adıdır. Varsayılan değer `main` 'dir
 
-from_username = username_mail
+###CONNECTION
 
-from_password = password_mail
+**uid:**Ahenk'in kendisini kaydetmek ve XMPP Sunucusuna bağlanmak için kullandığı biricik id numarasıdır. Bu alan Ahenk tarafından doldurulacaktır.
 
-to_address = target_mail_address@mail_server.com
+**password:** XMPP Sunucusuna bağlanırken kullanmak üzere oluşturulan şifredir. Bu alan Ahenk tarafından doldurulacaktır.
 
-36/82ayarlarını  barındıran  dosyanın  yoludur.BASE
+**host:** XMPP sunucusu ip adresidir.Aktif XMPP sunucusunun geçerli ve erişilebilir bir ip adresi girilmelidir.
 
-logconfigurationfilepath: log yapılandırma
+**port:** XMPP sunucusuna erişim için kullanılacak port numarasıdır. Port numarası varsayılan değer olarak **5222**'dir. 5222 genelde TLS'i destekleyen yapılandırmalar için  kullanılır. Bu değerin yanısıra standartlaşmış diğer port numaraları da bulunmaktadır. Bu numaraları kullanırken XMPP Sunucunuzun yapılandırma ayarlarına dikkat etmeniz gerekmektedir. Ejabberd XMPP Sunucusu için  ilgili detaya [link üzerinden](https://docs.ejabberd.im/admin/guide/security/) erişebilirsiniz.
 
-Varsayılan değer  /etc/ahenk/log.conf ‘tur.
+**use_tls:** XMPP sunucusu tls bağlantıları destekliyorsa bu alan *true* olarak doldurulmalı, aksi takdirde *false* olmalı.
 
-dbpath:  Ahenk  çekirdeğinin  operasyonlarında  kullandığı  veritabanının  yoludur.  Varsayılan değer  **/etc/ahenk/ahenk.db** ‘dir.
+**receiverjid:** Lider uygulamasına XMPP Sunucu üzerinden erişmek için gerekli olan kullanıcı adıdır.
 
-### PLUGIN
+**receiverresource:** Lider uygulamasına XMPP Sunucu üzerinden erişmek için gerekli olan [kaynak](https://wiki.xmpp.org/web/Jabber_Resources) adıdır. Eğer cluster yapıda bir Lider kullnıyorsanız bu alanı boş bırakınız.
 
-pluginfolderpath:  Ahenk  eklentilerinin  bulunduğu  dizin  yoludur.  Varsayılan  değer
+**servicename:** XMPP Sunucusunun sağladığı sanal servis adıdır. Ahenk ve Lider hesapları bu servis üzerinde tanımlı olmalıdır. Aktif XMPP sunucusunun geçerli ve erişilebilir servis adı girilmelidir.
 
-`/opt/ahenk/plugins/`'dir.
+**receivefileparam:** Ahenk'e gelen dosyaların kaydedileceği dizin yoludur.
 
-Mainmodulname:  Eklentiler Ahenk'  e  yüklenmesinde  kullanılan  temel  py dosyasının  adıdır.
+###SESSION
 
-Varsayılan değer `main` 'dir
+**agreement_timeout:** Kullanıcı sözleşmesinin kabulu için süre kısıtının saniye türünden değeri 
 
-### CONNECTION
+**registration_timeout:** Ahenk'in Lider'e kayıt işlemi için beklenecek azami süre değeri (saniye türünden)
 
-**uid**: Ahenk'in kendisini kaydetmek ve XMPP Sunucusuna bağlanmak için kullandığı biricik id numarasıdır. Bu alan Ahenk tarafından doldurulacaktır.
+**get_policy_timeout:** Kullanıcı oturum açtıktan sonra, Ahenk'in Lider'den güncel politikaları almak için beklediği azami süre (saniye türünden)
 
-**password**:  XMPP  Sunucusuna  bağlanırken  kullanmak  üzere  oluşturulan  şifredir.  Bu  alan Ahenk tarafından doldurulacaktır.
+###MACHINE
+**type:** Yaygın olmayan makine tiplerini saklamak ya da özel durumlarda kullanmak üzere makinelere verilebilecek değiştirilebilir alan
+**agreement:**  Kullanıcı sözleşmesinin sorulup sorulmadığı ile ilgili değer. Varsayılan olaran bu değer 1 olarak gelmektedir. Ahenk kurulduktan sonra agreement değerinin 1 olması kullanıcı sözleşmesinin onaya sunuculacağı anlamına gelmektedir. Bu değerin örneğin 2 olması kullanıcı sözleşmesinin onaya sunulmayacağı anlamına gelmektedir.
 
-**host**: XMPP sunucusu ip adresidir.Aktif XMPP sunucusunun geçerli ve erişilebilir bir ip adresi girilmelidir.
+### Ahenk Kayıt
+https://github.com/Pardus-LiderAhenk/ahenk/releases/download/v1.0.0/ahenk_1.0_amd64.deb adresşnden indirilen ahenk base paketi kurulumu yapıldıktan sonra yapılandırma dosyasından;
+* host = 
+* receiverjid = 
+* receiverresource = 
+* servicename =
 
-**port**: XMPP sunucusuna erişim için kullanılacak port numarasıdır. Port numarası varsayılan değer  olarak  5222'dir.  5222  genelde  TLS'i  destekleyen  yapılandırmalar  için    kullanılır.  Bu değerin  yanısıra  standartlaşmış  diğer  port  numaraları  da  bulunmaktadır.  Bu  numaraları kullanırken  XMPP  Sunucunuzun  yapılandırma  ayarlarına  dikkat  etmeniz  gerekmektedir.
+alanları girilerek yapılandırma dosyası kaydedilerek çıkılır. Örneğin ahenk yapılandırma dosyası **sudo nano /etc/ahenk/ahenk.conf  ** ile açılarak şu şekilde düzenlenirse;
 
-Ejabberd XMPP Sunucusu için  ilgili detaya link üzerinden erişebilirsiniz.
 
-**use_tls**: XMPP sunucusu tls bağlantıları destekliyorsa bu alan true olarak doldurulmalı, aksi takdirde false olmalı.
+```
+[BASE]
+logconfigurationfilepath = /etc/ahenk/log.conf
+dbpath = /etc/ahenk/ahenk.db
 
-**receiverjid**: Lider uygulamasına XMPP Sunucu üzerinden erişmek için gerekli olan kullanıcı adıdır.
+[PLUGIN]
+pluginfolderpath = /opt/ahenk/plugins/
+mainmodulename = main
 
-**receiverresource**:  Lider  uygulamasına  XMPP  Sunucu  üzerinden  erişmek  için  gerekli  olan kaynak adıdır. Eğer cluster yapıda bir Lider kullnıyorsanız bu alanı boş bırakınız.
+[CONNECTION]
+uid = 
+password = 
+host =  192.168.56.1
+port = 5222
+use_tls = false
+receiverjid = lider_sunucu
+receiverresource = Smack
+servicename = im.liderahenk.org
+receivefileparam = /tmp/
 
-**servicename**: XMPP Sunucusunun sağladığı sanal servis adıdır. Ahenk ve Lider hesapları bu servis  üzerinde  tanımlı  olmalıdır.Aktif  XMPP  sunucusunun  geçerli  ve  erişilebilir  servis  adı girilmelidir.
+[SESSION]
+agreement_timeout = 30
+registration_timeout = 30
+get_policy_timeout = 30
 
-**receivefileparam**: Ahenk'e gelen dosyaların kaydedileceği dizin yoludur.
+[MACHINE]
+type = default
+agreement = 1 
+```
+Düzenleme işlemi tamamlandıktan sonra **sudo systemctl restart ahenk.service** komutu ahenk servisi tekrar başlatılarak, ahenk'in kayıt olması sağlanır.
 
-### SESSION
 
-**agreement_timeout**: Kullanıcı sözleşmesinin kabulu için süre kısıtının saniye türünden değeri
-
-**registration_timeout**: Ahenk'in Lider'e kayıt işlemi için beklenecek azami süre değeri (saniye türünden)
-
-**get_policy_timeout**:  Kullanıcı  oturum  açtıktan  sonra, Ahenk'in  Lider'den  güncel  politikaları almak için beklediği azami süre (saniye türünden)
-
-### MACHINE
-
-**type**:  Yaygın  olmayan  makine  tiplerini  saklamak  ya  da  özel  durumlarda  kullanmak  üzere makinelere verilebilecek değiştirilebilir alandır.
-
-### MAIL
-
-**smtp_host**: Mail servisin adresi (SMTP)
-
-**smtp_port**: Mail servis kullanılabilir portu
-
-**from_username** : Belirtilmiş mail sunucusunda tanımlı mail adresi
-
-**from_password**: Yukardaki mail adresinin şifresi
-
-**to_address**: Mailin gönderileceği hedef mail adresi
