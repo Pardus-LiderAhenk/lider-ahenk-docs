@@ -66,13 +66,13 @@ Bu menüdeki seçenekler;
 
 **Politika Tanımları:** Sistemin genelinde kullanılacak politikalar buradan tanımlanır. **Lider Yönetim Paneli**'nde bu ekrana hızlı erişim bulunmaktadır.
 
-**Ahenk Bilgisi:**Sistemdeki ahenkler ip, mac adresi vb bilgiler ile listelenir. İncelenmek istenen ahenk'e tıklandığında o ahenk'in öznitelikleri  ve o ahenk üzerinden oturum açan kullanıcıların bilgilerini görüntülenir. Ahenk üzerinde kullanıcıların ne zaman oturum açıp ne zaman sonlandırdığına buradan bakılabilir.
+**Ahenk Bilgisi:** Sistemdeki ahenkler ip, mac adresi vb bilgiler ile listelenir. İncelenmek istenen ahenk'e tıklandığında o ahenk'in öznitelikleri  ve o ahenk üzerinden oturum açan kullanıcıların bilgilerini görüntülenir. Ahenk üzerinde kullanıcıların ne zaman oturum açıp ne zaman sonlandırdığına buradan bakılabilir.
 
 **E-Posta Ayarları:** Herbir eklenti için sistem yöneticilerine, kullanıcılara veya e-posta guruplarına işlem ve sonucu hakkında e-posta bildirimi yapılabilir.
 
 ![Lider E-Posta Ayarları](images/eposta-ayarlari.png)
 
-Bunu için eklenti seçilerek e-posta adresleri **Mail Gurubu Tanımla** alanına girilerek eklenir. E-posta gönderimi ** Zamanlanmış Gönder** veya **Hemen Gönder** olarak ayarlanabilir.
+Bunu için eklenti seçilerek e-posta adresleri **Mail Gurubu Tanımla** alanına girilerek eklenir. E-posta gönderimi **  Zamanlanmış Gönder ** veya **Hemen Gönder** olarak ayarlanabilir.
 
 Bütün bu ayarlardan sonra **Mail Konfigurasyonunu Kaydet** butonuna **MUTLAKA** tıklanmalıdır.
 
@@ -92,22 +92,26 @@ Süreci devam eden görevler iptal edilebilir. İleri tarihli veya zamanlı çal
 
 Birden fazla arama kriteri için "+" butonuna tıklanarak ilgili alanlar girilmelidir.
 
-**Lider'e Yüklenen Eklentiler:**
+**Lider'e Yüklenen Eklentiler:** Lider üzerinde yüklü olan eklentiler bu ekrandan incelenebilir.
 
 ![Lider Ldap Arama](images/yuklu-gelen-eklentiler.png)
 
-**Raporlama:**
+Eklentiler için versiyon kontrolu, kullanıcı-makine odaklı ve politika-görev özellikleri bu ekrandan takip edebilirsiniz.
 
-İleride Raporlama başlığında detaylı bir şekilde değinilmiştir.
+**Raporlama:** İleride [Raporlama](#Raporlama) başlığında detaylı bir şekilde değinilmiştir.
 
 
-**USB Yetkilerini Listele:**
+**USB Yetkilerini Listele:** *USB Yetkisi Ver/Kaldır* eklentisi ile verilen yetki ver/kaldır görevlerinin sonuçları bu ekrandan izlenir.
 
 ![Lider USB Yetkileri](images/usb-yetkileri.png)
 
-**Servis İzleme Listesi:**
+Yetki verilenler veya yetkisi alınan kullanıcılar ayrı ayrı süzülebilir. Kullanıcın yetkisini değiştirmek için *USB Yetkisi Ver/Kaldır* eklentisi kullanılmalıdır, bu ekranda sadece görüntüleme yapılır.
+
+**Servis İzleme Listesi:** *Servis İzle ve Yönet* eklentisi çalıştırıldıktan sonra oluşan geri bildirimler bu ekranda istelenir. Yani ahenk(için) bir veya birden fazla servisin durumu izlenmek veye yönetilmek istendiğinde çalıştırılan görev 
 
 ![Lider Servis İzleme Listesi](images/servis-izleme-listesi.png)
+
+Herhangi bir görevin üzerine çift tıklandığında gö
 
 **Servis Raporu:**
 
