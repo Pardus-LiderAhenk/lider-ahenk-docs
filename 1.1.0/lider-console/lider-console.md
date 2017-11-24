@@ -107,35 +107,53 @@ Eklentiler için versiyon kontrolu, kullanıcı-makine odaklı ve politika-göre
 
 Yetki verilenler veya yetkisi alınan kullanıcılar ayrı ayrı süzülebilir. Kullanıcın yetkisini değiştirmek için *USB Yetkisi Ver/Kaldır* eklentisi kullanılmalıdır, bu ekranda sadece görüntüleme yapılır.
 
-**Servis İzleme Listesi:** *Servis İzle ve Yönet* eklentisi çalıştırıldıktan sonra oluşan geri bildirimler bu ekranda istelenir. Yani ahenk(için) bir veya birden fazla servisin durumu izlenmek veye yönetilmek istendiğinde çalıştırılan görev 
+**Servis İzleme Listesi:** *Servis İzle ve Yönet* eklentisi çalıştırıldıktan sonra oluşan geri bildirimler bu ekranda istelenir.
 
 ![Lider Servis İzleme Listesi](images/servis-izleme-listesi.png)
 
-Herhangi bir görevin üzerine çift tıklandığında gö
+Herhangi bir izeleme görevin üzerine çift tıklandığında görevin sonuçları görüntülenir.
 
-**Servis Raporu:**
+**Servis Raporu:** Servis genel raporlama ekranıdır. Arama kriterleri girilmediği taktirde tüm ahenkler üzerinde çalışan servisleri aktif-pasif durumları ile birlikte getirir.
 
 ![Lider Servis Raporu](images/servis-raporu.png)
 
-**Betik Tanımları:**
+Örneğin servis durumu "Stopped" olan servisler süzülebilir. Veya ssh, cups, cron vs servisin hangi ahenkler üzerinde durduğu bilgisine buradan ulaşılabilir.
 
-![Lider Ldap Arama](images/betik-tanimlari.png)
+![Lider Servis Raporu Stop](images/servis-raporu-stop.png)
 
-**Paket Yöneticisi Görevler Ekranı:**
+Tüm ahenkler üzerinde çalışan bir servisin durumu hakkında bilgi alınabilir.
 
-![Lider Ldap Arama](images/paket-yonetici-gorev-ekrani.png)
+**Betik Tanımları:** Sistem genelinde kullanılan betikleri bu ekrandan tanımlanır. **Bash, Python, Perl, Ruby** betikleri yazılabilir.
 
-**Disk Kota Politikası Ekranı:**
+![Lider Ldap Betik Tanımları](images/betik-tanimlari.png)
 
-![Lider Ldap Arama](images/disk-kota-politikasi-ekrani.png)
+Burada yazılan betikler görev eklentisi olarak uygulanmaktadır.
 
-**Yedekleme Görevleri Ekranı:**
+**Paket Yöneticisi Görevler Ekranı:** Paket Kur/Kaldır görevi sonuçları bu ekranda listelenir.
 
-![Lider Ldap Arama](images/yedekleme-gorevleri-ekrani.png)
+![Lider Ldap Paket Yöneticisi](images/paket-yonetici-gorev-ekrani.png)
 
-**Yedekleme Sunucu Konfigurasyonu:**
+Görevin çalıştırıldığı ahenkler ve başarı durumu, gönderilen görevin üzerine çift tıklayarak veya **İncele** butonuna tıklayarak görülebilir.
+
+**Disk Kota Politikası Ekranı:** Kullanıcı, grup veya birimin tamamı veya birkaç karakteri girilerek arama yapılır. Bulunan kullanıcı/gurup/birim üzerine tıklandığında o kullanıcıya uygulanan politika listelenir.
+
+![Lider Disk Kota](images/disk-kota-politikasi-ekrani.png)
+
+Listelenen politikaların üzerine çift tıklanılarak ceya **İncele** butonuna tıklanılarak uygulanan DN'ler ve hata/başarı oranları görülebilir.
+
+**Yedekleme Görevleri Ekranı:** Yedekleme görevleri çalıştırıldıktan sonra (yedekleme uzun sürebilir) bu ekrandan takip edilebilir.
+
+![Lider Yedekleme Görevleri](images/yedekleme-gorevleri-ekrani.png)
+
+Uygulanan ahenklere ait yedekleme sonuçları, anlık olarak izlenebilir. Tamamlanan veya devam edenlerin tamamlanma oranları, transfer edilen dosya boyutu, ulaşmayan ahenkler bu ekrandan görülebilir.
+
+![Lider ](images/yedekeme-sonuc.png)
+
+**Yedekleme Sunucu Konfigurasyonu:** *Dizin Yedekle* görevi uygulanırken girilen yedekleme ayarları bu ekrandan da düzenlenebilir.
 
 ![Lider Ldap Arama](images/yedekleme-sunucusu-konfiugrasyonu.png)
+
+Değiştirilen ayarlar sistemin genelinde aktif olur.
 
 ## Görev Uygulama
 
