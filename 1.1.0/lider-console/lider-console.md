@@ -10,7 +10,7 @@ Lider Arayüz, Apache  LDAP  Directory  ağacı  üzerinden  sistemlere  ve  kul
 
 ![Lider Arayüz Yeni Bağlantı](images/la.png)
 
-**Bağlantı adı**, **Sunucu Adı** ve **Port** bilgileri girilerek **Ağ Parametresini Kontrol Et** butonuna tıklanır. Bu işlem sonucunda eğer girilen veriler doğru ise **Bağlantı baraşıyla kuruldu.** sonucu alınır. Sonuç olumsuz ise ldap sunucu ip ve portlara erişim kontrol edilerek tekrar denenmelidir.
+**Bağlantı adı**, **Sunucu Adı** ve **Port** bilgileri girilerek **Ağ Parametresini Kontrol Et** butonuna tıklanır. Bu işlem sonucunda eğer girilen veriler doğru ise ""**Bağlantı baraşıyla kuruldu**"" sonucu alınır. Sonuç olumsuz ise ldap sunucu ip ve portlara erişim kontrol edilerek tekrar denenmelidir.
 
 ![Lider Arayüz Yeni Bağlantı](images/la-1.png)
 
@@ -68,7 +68,7 @@ Bu menüdeki seçenekler;
 
 **Ahenk Bilgisi:**Sistemdeki ahenkler ip, mac adresi vb bilgiler ile listelenir. İncelenmek istenen ahenk'e tıklandığında o ahenk'in öznitelikleri  ve o ahenk üzerinden oturum açan kullanıcıların bilgilerini görüntülenir. Ahenk üzerinde kullanıcıların ne zaman oturum açıp ne zaman sonlandırdığına buradan bakılabilir.
 
-**E-Posta Ayarları:**Herbir eklenti için sistem yöneticilerine, kullanıcılara veya e-posta guruplarına işlem ve sonucu hakkında e-posta bildirimi yapılabilir.
+**E-Posta Ayarları:** Herbir eklenti için sistem yöneticilerine, kullanıcılara veya e-posta guruplarına işlem ve sonucu hakkında e-posta bildirimi yapılabilir.
 
 ![Lider E-Posta Ayarları](images/eposta-ayarlari.png)
 
@@ -76,13 +76,13 @@ Bunu için eklenti seçilerek e-posta adresleri **Mail Gurubu Tanımla** alanın
 
 Bütün bu ayarlardan sonra **Mail Konfigurasyonunu Kaydet** butonuna **MUTLAKA** tıklanmalıdır.
 
-**Çalıştırılan Görevler:**Sistem üzerinde çalışan ve tamamlanmış tüm görevler bu ekranda listelenir.
+**Çalıştırılan Görevler:** Sistem üzerinde çalışan ve tamamlanmış tüm görevler bu ekranda listelenir.
 
 ![Lider Çalıştırılan Görevler](images/calistirilan-gorevler.png)
 
 Süreci devam eden görevler iptal edilebilir. İleri tarihli veya zamanlı çalıştırılan görevler ayrı ayrı takip edilebilir.
 
-**Uygulanan Politikalar:**Görevlerde olduğu gibi sistemde uygulanan politikalar bu ekranda listelenir.
+**Uygulanan Politikalar:** Görevlerde olduğu gibi sistemde uygulanan politikalar bu ekranda listelenir.
 
 ![Lider Uygulanan Politikalar](images/uygulanan-politikalar.png)
 
@@ -94,9 +94,44 @@ Birden fazla arama kriteri için "+" butonuna tıklanarak ilgili alanlar girilme
 
 **Lider'e Yüklenen Eklentiler:**
 
-**Raporlama:** 
+![Lider Ldap Arama](images/yuklu-gelen-eklentiler.png)
+
+**Raporlama:**
+
+İleride Raporlama başlığında detaylı bir şekilde değinilmiştir.
+
 
 **USB Yetkilerini Listele:**
+
+![Lider USB Yetkileri](images/usb-yetkileri.png)
+
+**Servis İzleme Listesi:**
+
+![Lider Servis İzleme Listesi](images/servis-izleme-listesi.png)
+
+**Servis Raporu:**
+
+![Lider Servis Raporu](images/servis-raporu.png)
+
+**Betik Tanımları:**
+
+![Lider Ldap Arama](images/betik-tanimlari.png)
+
+**Paket Yöneticisi Görevler Ekranı:**
+
+![Lider Ldap Arama](images/paket-yonetici-gorev-ekrani.png)
+
+**Disk Kota Politikası Ekranı:**
+
+![Lider Ldap Arama](images/disk-kota-politikasi-ekrani.png)
+
+**Yedekleme Görevleri Ekranı:**
+
+![Lider Ldap Arama](images/yedekleme-gorevleri-ekrani.png)
+
+**Yedekleme Sunucu Konfigurasyonu:**
+
+![Lider Ldap Arama](images/yedekleme-sunucusu-konfiugrasyonu.png)
 
 ## Görev Uygulama
 
