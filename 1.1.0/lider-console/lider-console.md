@@ -175,11 +175,11 @@ Herbir eklentinin uygulanış biçimi farklı olabilir. Bu nedenle **Lider Ahenk
 
 Herbir politika en az bir profilden oluşmaktadır. Profiller topluluğu ise politikaları oluşturur.
 
-![Lider Ldap Arama](images/politika.png)
+![Lider Politika Ekranı](images/politika.png)
 
 *+* simgesi ile yeni bir politika oluşturulur. Kalem butonu ile seçili politika üzerinde profil tanımlama ekranı açılır.
 
-![Lider Ldap Arama](images/profil.png)
+![Lider Profil Ekranı](images/profil.png)
 
 Profiller için **Lider Ahenk Dokümanlar** adresinden [Eklentiler](http://docs.liderahenk.org/) başlığı altından kullanılmak istenen eklenti incelenebilir. Bu ekranda gelen eklentiler sistemde yüklü olan ve profil olarak oluşturulup, politika şeklinde uygulanabilen eklentilerdir.
 
@@ -189,9 +189,50 @@ Daha sonra kullanılmak üzere tanımlanan,  henüz kullanımı düşünülmeyen
 
 Tanımlanmış profiller açılır menüden değiştirilebilir, eklenebilir, düzenlenebilir ve silinebilir durumdadır. Aktif-Pasif edilebilme tüm profiller için geçerlidir.
 
-
 ## Raporlama
+
+Raporlama 2 adımdan oluşmaktadır. Önce rapor için şablon oluşturulur. Daha sonra bu şablon üzerinden rapor tanımları yapılır. Herbir şablon için birden fazla rapor tanımı yapılabilir. Gösterilecek değerler, ekranda listelenedek veriler değişiklik göstereceği  için rapor tanımları ve şablonlar esnek yapıdadır.
 
 ### Rapor Şablonları
 
+Bu ekranda karşınıza gelen raporlar sistem yöneticisinin sık kullanacağı düşünülerek hazırlanmış raporlardır.
+
+![Lider Raporlama Rapor Şablonları](images/rapor-sablonlari.png)
+
+Üzerine çift tıklayarak silebilir, düzenleyebilir veya *Ekle* butonuna tıklayarak ekleyebilirsiniz.
+
+![Lider Raporlama Rapor Ekle](images/rapor-ekle-bos.png)
+
+Ekleme işleminde en önemli adım sql sorgusunun hazılanmasıdır. Sorgu hazırlandıktan sonra buraya eklenir, çalışabilirliğinin testi **Sorguyu Doğrula** butonu ile yapılabilir.
+
+![Lider Raporlama Rapor Ekle-1](images/rapor-ekle-dolu.png)
+
+Sorguda verilen parametreler ve sorgu sonucu oluşması beklenen sütünlar tanımlanır.
+
 ### Rapor Tanımları
+
+Rapor tanımları şablonlardan alınan verinin hangisinin, nerede gösterileceği ve çıktısının ne olacağının belirlendiği ekrandır.
+
+![Lider Raporlama Rapor Tanımları](images/rapor-tanimlari.png)
+
+Daha önce hazırlanan raporun çıktısı alınmak istendiğinde **Rapor Üret** butonuna tıklanmalıdır. Yeni bir rapor tanımlamak için **Ekle** buotnuna tıklanır.
+
+![Lider Raporlama Ornek Rapor](images/rapor-ornek.png)
+
+Kullanılacak şablon seçilir, rapor türü (Tablo,Sütun Gratik, Çizgi Grafik) belirlenir. Rapor parametreleri ve sütünları şablonda belirlenen alanlar otomatik olarak gelir.
+
+![Lider Raporlama Rapor Sorgu Parametreleri](images/rapor-sorgu-parametreleri.png)
+
+![Lider Raporlama Rapor Sütunları](images/rapor-sutunlari.png)
+
+Hangi parametreler ile raporda hangi sütunların hangi sıra ile gösterileceği belirlenerek **Tamam** butonuna tıklanır.
+
+Bu işlemlerden sonra **Rapor Tanımları** ekranında ilgili rapor seçilerek **Rapor Üret** butonuna tıklanır. Çıktı sadece ekranda gösterilmek isteniyorsa **Burada göster** butonuna tıklanır.
+
+![Lider Raporlama Rapor Göster](images/rapor-goster.png)
+
+Çıktı pdf olarak alınmak istendiğinde pdf sayfasında olması istenilen rapor tasarımı ile alakalı Tarih, Sayfa numarası veya rapor üreten tarafından belirlenen bir metin rapor tasarımına eklenebilir.
+
+![Lider Raporlama Rapor Göster PDF](images/rapor-goster-pdf.png)
+
+Bu işlemler sonucunda **Rapor Üret** butonuna tıklanır, oluşturulan pdf dosyasının adı ve nereye kaydedileceği bilgisi alınarak rapor oluşturma işlemi tamamlanmış olur.
