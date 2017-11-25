@@ -72,7 +72,7 @@ Bu menüdeki seçenekler;
 
 ![Lider E-Posta Ayarları](images/eposta-ayarlari.png)
 
-Bunu için eklenti seçilerek e-posta adresleri **Mail Gurubu Tanımla** alanına girilerek eklenir. E-posta gönderimi **  Zamanlanmış Gönder ** veya **Hemen Gönder** olarak ayarlanabilir.
+Bunu için eklenti seçilerek e-posta adresleri **Mail Gurubu Tanımla** alanına girilerek eklenir. E-posta gönderimi **Zamanlanmış Gönder** veya **Hemen Gönder** olarak ayarlanabilir.
 
 Bütün bu ayarlardan sonra **Mail Konfigurasyonunu Kaydet** butonuna **MUTLAKA** tıklanmalıdır.
 
@@ -151,13 +151,44 @@ Uygulanan ahenklere ait yedekleme sonuçları, anlık olarak izlenebilir. Tamaml
 
 **Yedekleme Sunucu Konfigurasyonu:** *Dizin Yedekle* görevi uygulanırken girilen yedekleme ayarları bu ekrandan da düzenlenebilir.
 
-![Lider Ldap Arama](images/yedekleme-sunucusu-konfiugrasyonu.png)
+![Lider Yedekelem Sunucusu](images/yedekleme-sunucusu-konfiugrasyonu.png)
 
 Değiştirilen ayarlar sistemin genelinde aktif olur.
 
 ## Görev Uygulama
 
+*Lider Ahenk LDAP Ağacı* üzerindeki kullanıcı, grup ve ahenkler üzerine anlık olarak gönderilmek istenen işlemler **görev** olarak adlandırılır.
+
+Kullanıcı ve kullanıcı grupları üzerine uygulanacak görevler ile ahenkler üzerine uygulanan görevler farklılık göstermektedir. Lider Arayüz bu farklılıkları kullanıcıya hissettirmeden yapmakta, kullanıcıya uygulanacak eklenti ahenkler üzerinde aktif olmamaktadır.
+
+Fakat bazı eklentiler hem görev hemde politika olarak uygulanabilmektedir.
+
+Görev uygulama adımları;
+
+ * *Lider Ahenk LDAP Ağacı* üzerinden kullanıcı/grup seçimi yapılır
+ * *Lider Yönetim Paneli*  üzerinden uygulanmak istenen görev eklentisi butonuna basılır
+ * Eklenti türüne göre gerekli adımlar takip edilir.
+
+Herbir eklentinin uygulanış biçimi farklı olabilir. Bu nedenle **Lider Ahenk Dokümanlar** adresinden [Eklentiler](http://docs.liderahenk.org/) başlığı altından kullanılmak istenen eklenti incelenebilir.
+
 ## Politika Uygulama
+
+Herbir politika en az bir profilden oluşmaktadır. Profiller topluluğu ise politikaları oluşturur.
+
+![Lider Ldap Arama](images/politika.png)
+
+*+* simgesi ile yeni bir politika oluşturulur. Kalem butonu ile seçili politika üzerinde profil tanımlama ekranı açılır.
+
+![Lider Ldap Arama](images/profil.png)
+
+Profiller için **Lider Ahenk Dokümanlar** adresinden [Eklentiler](http://docs.liderahenk.org/) başlığı altından kullanılmak istenen eklenti incelenebilir. Bu ekranda gelen eklentiler sistemde yüklü olan ve profil olarak oluşturulup, politika şeklinde uygulanabilen eklentilerdir.
+
+Örneğin **Masaüstü Arkaplan** eklentisi bir görev olarak uygulanabildiği gibi kullanıcı nerede oturum açarsa açsın karşısına çıkacak bir profil olarak da buradan tanımlanbilir. **Profiller uygulandıktan sonra kullanıcı oturumlarının kapatılıp açılması gereklidir.**
+
+Daha sonra kullanılmak üzere tanımlanan,  henüz kullanımı düşünülmeyen veya geçici olarak iptal edilmek istenen politikalar **Aktif** onayı kaldırılarak pasif edilebilir.
+
+Tanımlanmış profiller açılır menüden değiştirilebilir, eklenebilir, düzenlenebilir ve silinebilir durumdadır. Aktif-Pasif edilebilme tüm profiller için geçerlidir.
+
 
 ## Raporlama
 
