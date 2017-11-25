@@ -28,7 +28,11 @@ Bu işlemlerden sonra ekranın sol alt köşesinde yeni bir bağlantı oluşur.
 
 ![Lider Arayüz Yeni Bağlantı-3](images/la-4.png)
 
-Bağlantı üzerine çitf tıklayarak giriş yapabilirsiniz.
+Bağlantı üzerine çitf tıklayarak giriş yapabilirsiniz. 
+
+<img align="left" style="float: left ;margin-right: 10px;margin-top: 0px;" src="images/sistem-guncesi.png">Giriş işleminden sonra oluşacak sistem günceleri ekranın sağ tarafında gösterilmektedir.
+
+Görevler, sonucunda oluşan geri bildirimler, eksik girilen veriler vs tüm bilgiler bu ekran izlenebilir. Ekranda verillen bilgilere göre gerekli düzenlemeler yapılmalıdır.
 
 ## Lider Ahenk LDAP Ağacı
 
@@ -63,6 +67,7 @@ Kullanım öncesi mail ayarları ve kullanım sonrasında kullanılabilecek rapo
 Bu menüdeki seçenekler;
 
 ![Lider Menü](images/lider-menu.png)
+
 
 **Politika Tanımları:** Sistemin genelinde kullanılacak politikalar buradan tanımlanır. **Lider Yönetim Paneli**'nde bu ekrana hızlı erişim bulunmaktadır.
 
