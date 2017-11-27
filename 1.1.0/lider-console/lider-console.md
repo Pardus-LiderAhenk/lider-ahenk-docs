@@ -220,7 +220,7 @@ Rapor tanımları şablonlardan alınan verinin hangisinin, nerede gösterilece�
 
 ![Lider Raporlama Rapor Tanımları](images/rapor-tanimlari.png)
 
-Daha önce hazırlanan raporun çıktısı alınmak istendiğinde **Rapor Üret** butonuna tıklanmalıdır. Yeni bir rapor tanımlamak için **Ekle** buotnuna tıklanır.
+Daha önce hazırlanan raporun çıktısı alınmak istendiğinde **Rapor Üret** butonuna tıklanmalıdır. Yeni bir rapor tanımlamak için **Ekle** butonuna tıklanır.
 
 ![Lider Raporlama Ornek Rapor](images/rapor-ornek.png)
 
@@ -232,7 +232,7 @@ Kullanılacak şablon seçilir, rapor türü (Tablo,Sütun Gratik, Çizgi Grafik
 
 Hangi parametreler ile raporda hangi sütunların hangi sıra ile gösterileceği belirlenerek **Tamam** butonuna tıklanır.
 
-Bu işlemlerden sonra **Rapor Tanımları** ekranında ilgili rapor seçilerek **Rapor Üret** butonuna tıklanır. Çıktı sadece ekranda gösterilmek isteniyorsa **Burada göster** butonuna tıklanır.
+Bu işlemlerden sonra **Rapor Tanımları** ekranında ilgili rapor seçilerek **Rapor Üret** butonuna tıklanır. Çıktı sadece ekranda gösterilmek isteniyorsa **Burada göster** seçeneğine tıklanır.
 
 ![Lider Raporlama Rapor Göster](images/rapor-goster.png)
 
