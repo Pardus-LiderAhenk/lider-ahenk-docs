@@ -4,7 +4,6 @@ Lider Arayüz (Lider Konsol ); merkezi yönetim sisteminin sistem yöneticileri 
 
 Sistem yöneticileri kullanıcı ve sistemler üzerindeki görev ve politikaları bu uygulama aracılığı ile gerçekleştirirler. Bu uygulama bir Eclipse RCP uygulaması olarak geliştirilmiştir. 
 
-
 ## Lider Arayüz Giriş
 Lider Arayüz, Apache  LDAP  Directory  ağacı  üzerinden  sistemlere  ve  kullanıcılara  erişir. Ekranın sol alt köşesindeki bağlantılar penceresi ile yeni bağlantı oluşturulur.
 
@@ -30,9 +29,43 @@ Bu işlemlerden sonra ekranın sol alt köşesinde yeni bir bağlantı oluşur.
 
 Bağlantı üzerine çitf tıklayarak giriş yapabilirsiniz. 
 
-<img align="left" style="float: left ;margin-right: 10px;margin-top: 0px;" src="images/sistem-guncesi.png">Giriş işleminden sonra oluşacak sistem günceleri ekranın sağ tarafında gösterilmektedir.
+Giriş işleminden sonra oluşacak sistem günceleri ekranın sağ tarafında gösterilmektedir.
+
+![Lider Arayüz Yeni Bağlantı-3](images/sistem-guncesi.png)
 
 Görevler, sonucunda oluşan geri bildirimler, eksik girilen veriler vs tüm bilgiler bu ekran izlenebilir. Ekranda verillen bilgilere göre gerekli düzenlemeler yapılmalıdır.
+
+## Lider Arayüz Yetkilendirme
+Lider Arayüz kullanımına geçmeden önce arayüz yetkilendirmeden bahsedilmek gerekir. Lider Arayüz üzerindeki eklentiler ve görevlerin kullanımı kullanıcı bazlı yetkilendirilebilir. 
+
+Örneğin USB yetkilendirme, yedekleme vs ayrı birer kullanıcıya atanabilir, böylelikle herbir yetki ayrı kişilerce yönetilebilir durumdadır.
+
+Bunun için Lider Arayüz üzerinde LDAP'ta okuma-yazma yetkisine sahip bir kullanıcı ile oturum açılmalıdır.
+
+![Lider Arayüz Ldap Browser](images/ldap-browser.png)
+
+Ekranın sağındali ldap ağacından yetki verilmek istenen kullanıcı seçilir. Ekranın sol tarafındaki **liderPrivilge** karşısındaki değere çift tıklanır.
+
+ * **Rapor Ayrıcalıkları**
+Seçili kullanıcının raporlar ile ilgili ayrıcalıkları işaretlenir.
+
+![Lider Arayüz Rapor Ayrıcalıkları](images/yetkilendirme-rapor-ayricaliklari.png)
+
+ * **Görev Ayrıcalıkları**
+Kullanıcının uygulayabileceği görevler işaretlenir. Bir eklentinin tamamı  veya sadace o eklentiye ait bir görev seçilebilir.
+
+![Lider Arayüz Görev Ayrıcalıkları](images/yetkilendirme-gorev-ayricaliklari.png)
+
+Örneğin USB ile yetkiler işaretlenir.
+
+![Lider Arayüz Görev Ayrıcalıkları](images/yetkilendirme-usb-gorev-ayricaliklari.png)
+
+Bu işlemler sonrasında **Tamam** butonuna tıklanır. Verilen yetkiye göre **liderPrivilege** satırının güncellendiği görülebilir.
+
+Yetkilendirilen kullanıcı Lider Arayüz ile oturum açtığında yetkisi olmayan bir göreve tıkladığında ekranın sağındaki **Sistem Güncesi** 'inde yetkisi olmadığına dair bie uyarı ile karşılaşır.
+
+Kullanım esnasında bu şekilde bir uyarı ile karşılaşıldığında Ldap'ta okuma yazma yetkisine sahip kullanıcı ile giriş yapılarak istenilen görevlere yukarıdaki şekilde yetki tanımlanabilir.
+
 
 ## Lider Ahenk LDAP Ağacı
 
@@ -67,7 +100,6 @@ Kullanım öncesi mail ayarları ve kullanım sonrasında kullanılabilecek rapo
 Bu menüdeki seçenekler;
 
 ![Lider Menü](images/lider-menu.png)
-
 
 **Politika Tanımları:** Sistemin genelinde kullanılacak politikalar buradan tanımlanır. **Lider Yönetim Paneli**'nde bu ekrana hızlı erişim bulunmaktadır.
 
@@ -104,7 +136,6 @@ Birden fazla arama kriteri için "+" butonuna tıklanarak ilgili alanlar girilme
 Eklentiler için versiyon kontrolu, kullanıcı-makine odaklı ve politika-görev özellikleri bu ekrandan takip edebilirsiniz.
 
 **Raporlama:** İleride [Raporlama](#Raporlama) başlığında detaylı bir şekilde değinilmiştir.
-
 
 **USB Yetkilerini Listele:** *USB Yetkisi Ver/Kaldır* eklentisi ile verilen yetki ver/kaldır görevlerinin sonuçları bu ekrandan izlenir.
 

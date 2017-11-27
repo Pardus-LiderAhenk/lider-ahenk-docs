@@ -2,7 +2,7 @@
 
 Dizinlerin yedeklenmesini sağlayan eklentidir. Eklenti, hem görev hem de politika özelliğine sahiptir.
 
-Politika tarafında, **"Kullanıcı Adı, Parola, Hedef IP, Hedef Kapı**" ve **"Hedef Dizin"** alanları doldurulur. SSH- anahtarı kullanılacaksa **"SSH Anahtarını Kullan"** seçeneği, LVM Gölgeleme kullanılacaksa **"LVM Gölgeleme Kullan"** seçeneği seçilir.
+**Politika tarafında,** *"Kullanıcı Adı, Parola, Hedef IP, Hedef Kapı*" ve **"Hedef Dizin"** alanları doldurulur. SSH- anahtarı kullanılacaksa *"SSH Anahtarını Kullan"* seçeneği, LVM Gölgeleme kullanılacaksa *"LVM Gölgeleme Kullan"* seçeneği seçilir.
 
 ![backup-plugin](images/backup-plugin.png)
 
@@ -14,7 +14,7 @@ Bu ekranda yedeklenmesi istenilen dizinin yolu yazıldığı gibi eğer harici t
 
 ![backup-plugin-son](images/backup-plugin-son.png)
 
-Görev tarafı; Seçilen ahenkle ekranda listelenir. **Yedeklenecek Dizin** bilgisi girilir.
+**Görev tarafı;** Seçilen ahenkle ekranda listelenir. **Yedeklenecek Dizin** bilgisi girilir.
 
 ![backup-plugin-gorev](images/yedekleme-ekrani.png)
 
