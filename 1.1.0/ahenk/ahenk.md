@@ -26,35 +26,35 @@ Ahenk çekirdeği ve eklentiler sistemlere ayrı ayrı paketler olarak kurulabil
 
 
 #####Ahenk Yapılandırma Dosyası
-```
-[BASE]
-logconfigurationfilepath = /etc/ahenk/log.conf
-dbpath = /etc/ahenk/ahenk.db
+    
+    [BASE]
+    logconfigurationfilepath = /etc/ahenk/log.conf
+    dbpath = /etc/ahenk/ahenk.db
 
-[PLUGIN]
-pluginfolderpath = /opt/ahenk/plugins/
-mainmodulename = main
+    [PLUGIN]
+    pluginfolderpath = /usr/share/ahenk/plugins/
+    mainmodulename = main
 
-[CONNECTION]
-uid = 
-password = 
-host = 
-port = 5222
-use_tls = false
-receiverjid = 
-receiverresource =
-servicename = 
-receivefileparam = /tmp/
+    [CONNECTION]
+    uid = 
+    password = 
+    host = 
+    port = 5222
+    use_tls = false
+    receiverjid = 
+    receiverresource =
+    servicename = 
+    receivefileparam = /tmp/
 
-[SESSION]
-agreement_timeout = 30
-registration_timeout = 30
-get_policy_timeout = 30
+    [SESSION]
+    agreement_timeout = 30
+    registration_timeout = 30
+    get_policy_timeout = 30
 
-[MACHINE]
-type = default
-agreement = 1 
-```
+    [MACHINE]
+    type = default
+    agreement = 1 
+    
 ###BASE
 
 **logconfigurationfilepath:**  log yapılandırma ayarlarını barındıran dosyanın yoludur. Varsayılan değer `/etc/ahenk/log.conf`'tur.
@@ -98,44 +98,64 @@ agreement = 1
 **agreement:**  Kullanıcı sözleşmesinin sorulup sorulmadığı ile ilgili değer. Varsayılan olaran bu değer 1 olarak gelmektedir. Ahenk kurulduktan sonra agreement değerinin 1 olması kullanıcı sözleşmesinin onaya sunuculacağı anlamına gelmektedir. Bu değerin örneğin 2 olması kullanıcı sözleşmesinin onaya sunulmayacağı anlamına gelmektedir.
 
 ### Ahenk Kayıt
-https://github.com/Pardus-LiderAhenk/ahenk/releases/download/v1.0.0/ahenk_1.0_amd64.deb adresşnden indirilen ahenk base paketi kurulumu yapıldıktan sonra yapılandırma dosyasından;
-* host = 
-* receiverjid = 
-* receiverresource = 
-* servicename =
+
+Ahenk paketi "repo.liderahenk.org" adresinde sunulmaktadır. Pardus bilgisayarlarda bu adres tanımlanarak ahenk paketi depodan yüklenebilmektedir. Bu deponun sisteminize tanımlanması için uçbirim(konsol)da;
+
+	sudo wget http://repo.liderahenk.org/liderahenk-archive-keyring.asc && sudo apt-key add liderahenk-archive-keyring.asc &&  rm liderahenk-archive-keyring.asc
+
+komutları ile "liderahenk-archive-keyring.asc" key dosyası indirilerek sisteme yüklenmelidir. Ardından;
+
+	sudo add-apt-repository 'deb [arch=amd64] http://repo.liderahenk.org stable main'
+
+komutu ile depo adresi "/etc/apt/sources.list" dosyasına eklenir. Bu adımı uçbirimde bir metin editörü(vi,nano,pico) yardımı ile ;
+
+	deb [arch=amd64] http://repo.liderahenk.org stable main
+
+satırını "/etc/apt/sources.list" dosyasına elinizle de tanımlayabilirsiniz. Daha sonra;
+
+	sudo apt update
+
+komutu ile güncel paket listesini alınmalıdır.
+
+	sudo apt install ahenk
+
+komutu ile güncel ahenk paketi kurulumu yapıldıktan sonra yapılandırma dosyasından;
+
+    host = 
+    receiverjid = 
+    receiverresource = 
+    servicename =
 
 alanları girilerek yapılandırma dosyası kaydedilerek çıkılır. Örneğin ahenk yapılandırma dosyası **sudo nano /etc/ahenk/ahenk.conf  ** ile açılarak şu şekilde düzenlenirse;
 
+    [BASE]
+    logconfigurationfilepath = /etc/ahenk/log.conf
+    dbpath = /etc/ahenk/ahenk.db
 
-```
-[BASE]
-logconfigurationfilepath = /etc/ahenk/log.conf
-dbpath = /etc/ahenk/ahenk.db
+    [PLUGIN]
+    pluginfolderpath = /usr/share/ahenk/plugins/
+    mainmodulename = main
 
-[PLUGIN]
-pluginfolderpath = /opt/ahenk/plugins/
-mainmodulename = main
+    [CONNECTION]
+    uid = 
+    password = 
+    host =  192.168.56.1
+    port = 5222
+    use_tls = false
+    receiverjid = lider_sunucu
+    receiverresource = Smack
+    servicename = im.liderahenk.org
+    receivefileparam = /tmp/
 
-[CONNECTION]
-uid = 
-password = 
-host =  192.168.56.1
-port = 5222
-use_tls = false
-receiverjid = lider_sunucu
-receiverresource = Smack
-servicename = im.liderahenk.org
-receivefileparam = /tmp/
+    [SESSION]
+    agreement_timeout = 30
+    registration_timeout = 30
+    get_policy_timeout = 30
 
-[SESSION]
-agreement_timeout = 30
-registration_timeout = 30
-get_policy_timeout = 30
-
-[MACHINE]
-type = default
-agreement = 1 
-```
+    [MACHINE]
+    type = default
+    agreement = 1 
+    
 Düzenleme işlemi tamamlandıktan sonra **sudo systemctl restart ahenk.service** komutu ahenk servisi tekrar başlatılarak, ahenk'in kayıt olması sağlanır.
 
 
