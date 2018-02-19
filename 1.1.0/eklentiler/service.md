@@ -4,7 +4,7 @@ Bir görev eklentisidir, kullanıcının Ahenk istemci/sunucu makinesinde var ol
 
 ## Servis Yönetimi
 
-Bu görevde, kullanıcı servis ad(lar)ını belirler. **Çalıştır** butonuna tıklandığında izelenen servislerin sonuçları ekranda listelenmeye başlar. **Servis İzleme Durumu** servisin izlenilebilirliğini gösterir. İlgili ahenk üzerinde servisin olup-olmaması veya servisin izlenmesine engel teşkil edecek bir sorun olması gibi durumlar bu ekrandan takip edilebilir.
+Bu görevde, kullanıcı servis ad(lar)ını belirler. **Çalıştır** butonuna tıklandığında izlenen servislerin sonuçları ekranda listelenmeye başlar. **Servis İzleme Durumu** servisin izlenilebilirliğini gösterir. İlgili ahenk üzerinde servisin olup-olmaması veya servisin izlenmesine engel teşkil edecek bir sorun olması gibi durumlar bu ekrandan takip edilebilir.
 
 ![Im213](images/service-manager.png)
 

@@ -3,7 +3,7 @@
 
 ### 1. Kurulum Uygulamasının ve Lider Console'un İndirilmesi
 
-Kurulum uygulamasını ve Lider Console yönetim arayüzünü [www.liderahenk.org/indir](www.liderahenk.org/indir) adresinden indirebilirsiniz.
+Kurulum uygulamasını ve Lider Arayüz yönetim aracını http://www.liderahenk.org/indir adresinden indirebilirsiniz.
 
 > NOT: Bu uygulamalar sıkça iyileştirildiği ve yenilendiği için, elinizde bu uygulamalar olsa bile, lütfen kurulumlara başlamadan önce belirtilen adresten tekrar en güncel versiyonu indiriniz.
 
