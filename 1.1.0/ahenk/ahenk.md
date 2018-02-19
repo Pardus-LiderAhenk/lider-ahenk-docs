@@ -62,7 +62,7 @@ Ahenk çekirdeği ve eklentiler sistemlere ayrı ayrı paketler olarak kurulabil
 
 ###PLUGIN
 
-**pluginfolderpath:** Ahenk eklentilerinin bulunduğu dizin yoludur. Varsayılan değer `/opt/ahenk/plugins/`'dir.
+**pluginfolderpath:** Ahenk eklentilerinin bulunduğu dizin yoludur. Varsayılan değer `/usr/share/ahenk/plugins/`'dir.
 **mainmodulname:** Eklentiler Ahenk' e yüklenmesinde kullanılan temel py dosyasının adıdır. Varsayılan değer `main` 'dir
 
 ###CONNECTION
