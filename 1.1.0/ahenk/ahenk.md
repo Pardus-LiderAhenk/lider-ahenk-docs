@@ -126,7 +126,11 @@ komutu ile güncel ahenk paketi kurulumu yapıldıktan sonra yapılandırma dosy
     receiverresource = 
     servicename =
 
-alanları girilerek yapılandırma dosyası kaydedilerek çıkılır. Örneğin ahenk yapılandırma dosyası **sudo nano /etc/ahenk/ahenk.conf  ** ile açılarak şu şekilde düzenlenirse;
+alanları girilerek yapılandırma dosyası kaydedilerek çıkılır. Örneğin ahenk yapılandırma dosyası;
+
+	sudo nano /etc/ahenk/ahenk.conf
+
+ile açılarak şu şekilde düzenlenirse;
 
     [BASE]
     logconfigurationfilepath = /etc/ahenk/log.conf
@@ -156,6 +160,10 @@ alanları girilerek yapılandırma dosyası kaydedilerek çıkılır. Örneğin 
     type = default
     agreement = 1 
     
-Düzenleme işlemi tamamlandıktan sonra **sudo systemctl restart ahenk.service** komutu ahenk servisi tekrar başlatılarak, ahenk'in kayıt olması sağlanır.
+Düzenleme işlemi tamamlandıktan sonra;
+
+	sudo systemctl restart ahenk.service
+
+komutu ahenk servisi tekrar başlatılarak, ahenk'in kayıt olması sağlanır.
 
 
