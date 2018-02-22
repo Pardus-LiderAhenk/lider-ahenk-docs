@@ -6,6 +6,7 @@
 Kurulum uygulamasını ve Lider Arayüz yönetim aracını http://www.liderahenk.org/indir adresinden indirebilirsiniz.
 
 > NOT: Bu uygulamalar sıkça iyileştirildiği ve yenilendiği için, elinizde bu uygulamalar olsa bile, lütfen kurulumlara başlamadan önce belirtilen adresten tekrar en güncel versiyonu indiriniz.
+> Kurulum esnasında paketler Pardus 17 (depo.pardus.org.tr) depolarından alınmaktadır. Kurulumu yapmak istediğiniz dağıtımın, Pardus deposundan paket kurduğunda sorun teşkil etmemesine dikkat ediniz.
 
 - - -
 
@@ -18,17 +19,17 @@ Kurulum uygulamasının çalıştığı makine ile kurulumun yapılacağı makin
 #### 2.2 SSH Bağlantısı Root İzni
 - Kolay kurulum uygulamasının genel çalışma mantığı SSH protokolü ile işlem yapılacak makineye bağlanıp gerekli komutları çalıştırmaktır.
 - Linux işletim sistemlerinde paket kurma, kaldırma, konfigurasyon gibi işlemler çoğunlukla **"root"** izni ile yapılabilmektedir. Bu nedenle uygulamanın çalıştığı makineden işlem yapılacak makineye **"root"** olarak SSH bağlantısı kurulmaktadır.
-- Fakat Debian tabanlı işletim sistemlerinin çoğunda varsayılan ayar olarak, **"root"** kullanıcısı ile SSH bağlantısı engellenmiştir. Bu sorunu aşmak için ilgili makinelerde SSH konfigurasyonunda PermitRootLogin satırında değişiklik yapılmalıdır. SSH'ı **"root"a açmak için:
+- Fakat Debian tabanlı işletim sistemlerinin çoğunda varsayılan ayar olarak, **"root"** kullanıcısı ile SSH bağlantısı engellenmiştir. Bu sorunu aşmak için ilgili makinelerde SSH konfigurasyonunda PermitRootLogin satırında değişiklik yapılmalıdır. SSH'ı **"root"**a açmak için:
 - SSH konfigurasyon dosyası açılır:
-`sudo nano /etc/ssh/sshd_config`
-- Açılan dosyada **"Authentication"** başlığı altında
-`PermitRootLogin without-password`
-ifadesinin olduğu satır
-`PermitRootLogin yes`
-olarak değiştirilir.
+
+		sudo nano /etc/ssh/sshd_config
+
+- - Açılan dosyada **"Authentication"** başlığı altında `PermitRootLogin without-password` ifadesinin olduğu satır `PermitRootLogin yes` olarak değiştirilir.
 -  Kaydedip çıktıktan sonra SSH servisi baştan başlatılır:
-`sudo service ssh restart`
--  Daha sonra `ssh root@<IP_ADRESI>` komutuyla yapılan değişiklikler test edilebilir.
+
+		sudo service ssh restart
+
+-  -  Daha sonra `ssh root@<IP_ADRESI>` komutuyla yapılan değişiklikler test edilebilir.
 
 - - -
 
@@ -41,10 +42,9 @@ olarak değiştirilir.
 - - -
 
 ## 4. Kurulum Süreci
-Bu rehberde Lider Ahenk'in sıfırdan kurulum süreci baştan sona kadar anlatılacaktır.
-Rehber ekran görüntüleriyle desteklenerek hazırlanmıştır.
+Bu rehberde Lider Ahenk'in sıfırdan kurulum süreci baştan sona kadar anlatılacaktır. Rehber ekran görüntüleriyle desteklenerek hazırlanmıştır.
 
-> LÜTFEN SADECE EKRAN GÖRÜNTÜLERİNE BAĞLI KALMAYIP YAZILANLARI MUTLAKA OKUYUNUZ
+> **LÜTFEN SADECE EKRAN GÖRÜNTÜLERİNE BAĞLI KALMAYIP YAZILANLARI MUTLAKA OKUYUNUZ!**
 
 Kurulum uygulaması çalıştırıldıktan sonra açılan ana ekranda **"LİDER KUR"**'a tıklayarak Lider bileşenlerinin kurulumuna başlıyoruz.
 
@@ -104,7 +104,7 @@ Bu örnekte kullanıcı adı ve parola kullanılacaktır. Sayfayı aşağıdaki 
 
 > Not: Eğer testing sonunda başarısız olursa, kuruluma devam edilmesine izin verilmeyecektir. Böyle bir durumda girdiğiniz şifreyi, bağlanmaya çalıştığınız makinede SSH kurulu olup olmadığını ve SSH ayarlarında root kullanıcısına bağlantı izni verilip verilmediğini kontrol edin.
 
-Test başarılı olursa yukarıdaki gibi bir ekran çıkacaktır. **"Ok"**'a basıp devam ediyoruz.
+Test başarılı olursa yukarıdaki gibi bir ekran çıkacaktır. **"Tamam"**'a basıp devam ediyoruz.
 
 MariaDB için kurulum yöntemini seçeceğimiz aşağıdaki  ekran karşımıza çıkacaktır.
 
@@ -207,12 +207,13 @@ Ejabberd kurulumu bittikten sonra kurulum uygulaması dışında yapmanız gerek
 
 >Komut yapıları şu şekildedir:
 >
-`sudo /opt/ejabberd-16.02/bin/ejabberdctl register admin {ejabberd_servis_adı} {kaydedilecek_admin_icin_sifre}`
-`sudo /opt/ejabberd-16.02/bin/ejabberdctl register {lider_sunucusu_kullanıcısı_adı} {ejabberd_servis_adı} {kaydedilecek_kullanıcı_icin_sifre}`
+	sudo /opt/ejabberd-16.02/bin/ejabberdctl register admin {ejabberd_servis_adı} {kaydedilecek_admin_icin_sifre}
+	sudo /opt/ejabberd-16.02/bin/ejabberdctl register {lider_sunucusu_kullanıcısı_adı} {ejabberd_servis_adı} {kaydedilecek_kullanıcı_icin_sifre}
 
 >Bu rehberdeki örnek için komutlar şu şekildedir:
-`sudo /opt/ejabberd-16.02/bin/ejabberdctl register admin im.liderahenk.org secret`
-`sudo /opt/ejabberd-16.02/bin/ejabberdctl register lider_sunucu im.liderahenk.org secret`
+>
+	sudo /opt/ejabberd-16.02/bin/ejabberdctl register admin im.liderahenk.org secret
+	sudo /opt/ejabberd-16.02/bin/ejabberdctl register lider_sunucu im.liderahenk.org secret
 
 >Bu komutları çalıştırdıktan sonra **"user already registered"** veya **"user successfully registered"** gibi sonuçlar almanız gerekmektedir.
 Kullanıcıların oluşup oluşmadığını, tarayıcıdan **"http://EJABBERD_IP:5280/admin"** adresinden Ejabberd web arayüzüne girip kontrol edebilirsiniz.
@@ -241,7 +242,7 @@ Devam ettiğimizde Lider sunucu için aşağıdaki gibi bir konfigurasyon ekran�
 
 Yukarıdaki ekranlarda gösterilen tüm alanlar daha önceki bileşenlerin kurulumlarında girilen parametrelere göre otomatik olarak getirilmiştir. 
 
->NOT:Dosya sunucu kurulumu için herhangi bir debian dağıtımı kullanılabilir. Dosya sunucu üzerinde `sshpass` ve `rsync` paketlerinin kurulu olması ve yukarıdaki ekranda belirlenen **"Dosya Sunucusu Kullanıcı Adı"** ve **"Dosya Sunucusu Parolası"** alanlarına girilen kullanıcı-parola ile erşime açık olmalıdır. Bu değerler daha sonra **"/opt/lider-distro-1.0.0-SNAPSHOT/etc/tr.org.liderahenk.cfg"** konfigürasyon dosyasından değiştirilebilir.
+>NOT:Dosya sunucu kurulumu için herhangi bir debian dağıtımı kullanılabilir. Dosya sunucu üzerinde `sshpass` ve `rsync` paketlerinin kurulu olması ve yukarıdaki ekranda belirlenen **"Dosya Sunucusu Kullanıcı Adı"** ve **"Dosya Sunucusu Parolası"** alanlarına girilen kullanıcı-parola ile erşime açık olmalıdır. Bu değerler daha sonra **"/opt/lider-distro-1.1/etc/tr.org.liderahenk.cfg"** konfigürasyon dosyasından değiştirilebilir.
 
 Özel bir değişiklik yapmak istemiyorsanız, bu konfigurasyon ekranında değiştirmeniz gereken bir yer yoktur. **"İleri"**'ye basıp devam ediyoruz, karşımıza aşağıdaki gibi onay ekranı geliyor.
 
@@ -263,11 +264,8 @@ Dosya sunucu kurulumu için herhangi bir debian dağıtımı kullanılabilir. Do
 `/home/pardus/plugins`
 > Not: **"plugins"** dizini altına https://github.com/Pardus-LiderAhenk adresinden eklentiler indirilerek kopyalanmalıdır.
 
-`/home/pardus/agent-files/{0}`
-dizinleri ve;
-`/home/pardus/sample-agreement.txt`
-dosyası elle oluşturulmalıdır.
+`/home/pardus/agent-files/{0}` dizinleri ve; `/home/pardus/sample-agreement.txt` dosyası elle oluşturulmalıdır.
 
-Bu değerler **"/opt/lider-distro-1.0.0-SNAPSHOT/etc/tr.org.liderahenk.cfg"** konfigürasyon dosyasından değiştirilebilir.
+Bu değerler **"/opt/lider-distro-1.1/etc/tr.org.liderahenk.cfg"** konfigürasyon dosyasından değiştirilebilir.
 
 Dosya sunucu ayarları da tamamlandıktan sonra, bileşenlerin hepsinin kurulumu tamamlanmıştır. Ahenk kurulumuna geçmeden önce yapılması gereken, bileşenlerin aktif ve çalışır durumda olup olmadığını kontrol edilmelidir. Yukarıda kurulmuş olan beş bileşeni kontrol ettikten sonra Ahenk kurulumuna başlayabilirsiniz.
