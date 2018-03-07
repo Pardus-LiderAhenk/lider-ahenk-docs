@@ -306,7 +306,7 @@ Ahenkler düğümü için gelen menüde “organizationalUnit”  nesne sınıf�
 
 ![Ahenkler - Kullanıcılar Gurubu-2](images/ahenkler-kullanicilar-2.png)
 
-**“RDN”**: alanı  **“ou”** olarak belirlenir ve  **“Ahenkler”**  yazılarak  grup oluşturulur. Ahenkler grubu seçili iken sağ tıklanır, gelen menüde "New Attribute" seçillerek "Attribute Type" alanına "description" yazılır ve "Finish"'e tıklanır. Daha sonra bu alana "pardusDeviceGroup" yazılır. Bu adım "Ahenkler" grubu gibi oluşturulan tüm ahenk gruplarına uygulanmalıdır.
+**“RDN”**: alanı  **“ou”** olarak belirlenir ve  **“Ahenkler”**  yazılarak  grup oluşturulur. Ahenkler grubu seçili iken sağ tıklanır, gelen menüde **"New Attribute"** seçillerek **"Attribute Type"** alanına **"description"** yazılır ve **"Finish"**'e tıklanır. Daha sonra bu alana "pardusDeviceGroup" yazılır. Bu adım "Ahenkler" grubu gibi oluşturulan tüm ahenk gruplarına uygulanmalıdır.
 
 Aynı adımlar takip edilerek **"Kullanıcılar"** gurubu oluşturulur(Description tanımlaması sadece ahenk gruplarına uygulanır, kullanılarda bu adıma gerek yoktur).
 
