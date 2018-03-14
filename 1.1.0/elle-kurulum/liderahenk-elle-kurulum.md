@@ -9,15 +9,31 @@ Kurulum adımları;
 
 bileşenlerinden oluşmaktadır.
 
+##LiderAhenk Depo##
+
+LiderAhenk kurulumu için gerekli paketler "repo.liderahenk.org" deposunda bulunmaktadır. Deponun sisteminize tanımlanması için uçbirim(konsol)da;
+
+	sudo wget http://repo.liderahenk.org/liderahenk-archive-keyring.asc && sudo apt-key add liderahenk-archive-keyring.asc &&  rm liderahenk-archive-keyring.asc
+
+komutları ile "liderahenk-archive-keyring.asc" key dosyası indirilerek sisteme yüklenmelidir. Ardından;
+
+	sudo add-apt-repository 'deb [arch=amd64] http://repo.liderahenk.org stable main'
+
+komutu ile depo adresi "/etc/apt/sources.list" dosyasına eklenir. Bu adımı uçbirimde bir metin editörü(vi,nano,pico) yardımı ile ;
+
+	deb [arch=amd64] http://repo.liderahenk.org stable main
+
+satırını "/etc/apt/sources.list" dosyasına elinizle de tanımlayabilirsiniz. Daha sonra;
+
+	sudo apt update
+
+komutu ile güncel paket listesi alınarak kurulumlara başlanmalıdır.
+
 ##Veritabanı Sunucusu##
 
 Veritabanı olarak  MariaDB kullanılmaktadır. Veritabanları birbirleriyle ilişkili bilgilerin depolandığı alanlardır. Lider Sunucu veritabanıdır. Bir kez kurulur.
 
-	sudo apt install software-properties-common dirmngr
-	sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xF1656F24C74CD1D8
-	sudo add-apt-repository 'deb [arch=amd64] ftp://ftp.ulak.net.tr/pub/MariaDB/repo/10.2/debian stretch main'
-	sudo apt update
-	sudo apt install mariadb-server
+	sudo apt install mariadb-server -y
 
 Kurulum işlemleri aşamasında mariadb-server root şifresi ekrana gelir.
 
@@ -318,8 +334,7 @@ Son durumda ldap ağacı üzerinde son durum;
 
 ##XMPP Sunucu##
 
-Xmpp (Ejabberd)  "Genişletilebilir Mesajlaşma ve Varlık Protokolü" olarak adlandırılır.
-Komut satırında;
+Xmpp (Ejabberd)  "Genişletilebilir Mesajlaşma ve Varlık Protokolü" olarak adlandırılır. Komut satırında;
 
     wget https://www.process-one.net/downloads/ejabberd/16.06/ejabberd_16.06-0_amd64.deb
 
@@ -514,7 +529,7 @@ Karaf uygulaması çalıştığında konsol uygulama ekranına düşer, karaf mo
 bin/karaf
 Servis dosyalarının oluşturulması için aşağıdaki komut karaf konsolda çalıştırılır.
 
-	features:install wrapper
+	feature:install wrapper
 
 sonra;
 
