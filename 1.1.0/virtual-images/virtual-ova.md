@@ -41,9 +41,20 @@ Ova ağ ayarları **"Köprü Bağdaştırıcısı"** şeklinde ayarlanmıştır.
 | Kullanıcı| Şifre |
 | ------ | ------ |
 | admin | ssifre |
-| lider_console | lcsifre |
+| lider_console | elcsifre |
 | config | csifre |
 
+## Ejabberd Sunucu Ayarları
+
+Ova dosyasını içe aktarma işlemi tamamlandıktan ve sanal sunucu başlatıldıktan sonra;
+
+	systemctl status ejabberd.service
+    
+komutu ile ejabberd servisinin **active** olduğunu kontrol ediniz, şayet servis aktif değilse;
+
+	systemctl start ejabberd.service
+
+komutu ile servisi aktif hale getiriniz. Daha sonra lider sunucu ayarlarına geçiniz.
 
 ## Lider Sunucu Ayarları
  Lider Sunucu için belirlediğiniz sanal makinanın ip adresini satıların başındaki # işaretini kaldırarak;
@@ -76,6 +87,7 @@ cd /opt/lider-distro-1.1/bin/
 
 komutları ile başlatılmalıdır.
 
+
 ## Ahenk Kurulumu
 
 Ahenk kurulumu için http://docs.liderahenk.org/lider-ahenk-docs/1.1.0/ahenk/ahenk/#ahenk-kayt adresini ziyaret edebilirsiniz. Kurulum için;
@@ -88,6 +100,12 @@ Ahenk kurulumu için http://docs.liderahenk.org/lider-ahenk-docs/1.1.0/ahenk/ahe
 ahenk makinesinde yukarıdaki bilgileri **/etc/ahenk/ahenk.conf** dosyasına tanımlanmalıdır.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu işlemlerden sonra ahenk bilgisayarda kullanıcı  oturumu kapatılarak yeniden giriş yapılır. **LiderAhenk Kullanıcı Sözleşmesi** onaylanarak devam edilir.
+
+Not: **/etc/ahenk/ahenk.conf** dosyasında;
+
+	agreement = 2
+    
+şeklinde düzenleme yapıldığı taktirde kullanıcıya yukarıdaki sözleşmenin gele**me**mesi sağlanabilir.
 
 ## Lider Console Örnek Bağlantı
 
