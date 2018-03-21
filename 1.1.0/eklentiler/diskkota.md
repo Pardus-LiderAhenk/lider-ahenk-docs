@@ -1,5 +1,18 @@
 # Disk Kotası Eklentisi
 
+```
+Not: Bu eklentinin çalıştırıldığı ahenkte "/etc/fstab" dosyasında(Örneğin);
+
+	/dev/sda8	/home	ext4	defaults	0	2
+
+şeklinde olan "/home" satırı;
+
+	/dev/sda8	/home	ext4	defaults,usrquota	0	2
+
+şeklinde "usrquota" eklenerek düzenlenip ve ahenk yeniden başlatılamalıdır.
+
+```
+
 Herhangi bir kullanıcıya ait soft kota ve hard kota sınırlarının belirlenmesiyle bir makine üzerindeki bütün kullanıcıların kota durumlarının görülmesini sağlar. Eklenti, hem görev hem de politika özelliğine sahiptir.
 
 ## Disk Kota Profil
