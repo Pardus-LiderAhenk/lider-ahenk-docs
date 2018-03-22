@@ -228,7 +228,7 @@ nesne sınıflarını oluşturmayı sağlar.
 
 Daha sonra liderahenk.ldif dosyası konsolda 
 
-	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/lider-installer/conf/liderahenk.ldif && sudo cp liderahenk.ldif /tmp
+	sudo wget https://github.com/Pardus-LiderAhenk/lider-ahenk-installer-console/blob/master/lider-installer/conf/liderahenk.ldif && sudo cp liderahenk.ldif /tmp
 
 adresinden indirilerek **/tmp** klasörü altına kopyalanır. Lider ahenk şemaları varolan ldap'a yüklenmelidir. Bunun için ;
 
@@ -336,19 +336,15 @@ Son durumda ldap ağacı üzerinde son durum;
 
 Xmpp (Ejabberd)  "Genişletilebilir Mesajlaşma ve Varlık Protokolü" olarak adlandırılır. Komut satırında;
 
-    wget https://www.process-one.net/downloads/ejabberd/16.06/ejabberd_16.06-0_amd64.deb
+    sudo apt install ejabberd=16.06-0 -y
 
-komutu ile adresinden indirilir;
+komutu ile kurulur.
 
-Bütün ahenklerin bağlandığı bileşendir. Lider Sunucu ve ahenkler bu bu bileşen üzerinden haberleşirler. Bir kez kurulur. İndirilen dosya konsolda;
+Bütün ahenklerin bağlandığı bileşendir. Lider Sunucu ve ahenkler bu bu bileşen üzerinden haberleşirler. Bir kez kurulur. 
 
-	sudo dpkg -i ejabberd_16.06-0_amd64.deb
+Kurulum sonrası konfigurasyon için konsolda;
 
-komutu ile  kurma işlemine başlar.
-
-Kurulum için konsolda;
-
-	wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/lider-installer/conf/ejabberd.yml
+	wget https://github.com/Pardus-LiderAhenk/lider-ahenk-installer-console/blob/master/lider-installer/conf/ejabberd.yml
 
 adresinde  bulunan  ***ejabberd.yml***  dosyasını;
 
