@@ -9,7 +9,7 @@ Kurulum adımları;
 
 bileşenlerinden oluşmaktadır.
 
-##LiderAhenk Depo##
+##LiderAhenk Depo
 
 LiderAhenk kurulumu için gerekli paketler "repo.liderahenk.org" deposunda bulunmaktadır. Deponun sisteminize tanımlanması için uçbirim(konsol)da;
 
