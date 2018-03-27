@@ -228,7 +228,7 @@ nesne sınıflarını oluşturmayı sağlar.
 
 Daha sonra liderahenk.ldif dosyası konsolda 
 
-	sudo wget https://github.com/Pardus-LiderAhenk/lider-ahenk-installer-console/blob/master/lider-installer/conf/liderahenk.ldif && sudo cp liderahenk.ldif /tmp
+	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer-console/master/lider-installer/conf/liderahenk.ldif && sudo cp liderahenk.ldif /tmp
 
 adresinden indirilerek **/tmp** klasörü altına kopyalanır. Lider ahenk şemaları varolan ldap'a yüklenmelidir. Bunun için ;
 
@@ -344,7 +344,7 @@ Bütün ahenklerin bağlandığı bileşendir. Lider Sunucu ve ahenkler bu bu bi
 
 Kurulum sonrası konfigurasyon için konsolda;
 
-	wget https://github.com/Pardus-LiderAhenk/lider-ahenk-installer-console/blob/master/lider-installer/conf/ejabberd.yml
+	wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer-console/master/lider-installer/conf/ejabberd.yml
 
 adresinde  bulunan  ***ejabberd.yml***  dosyasını;
 
