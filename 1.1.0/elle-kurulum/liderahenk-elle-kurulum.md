@@ -250,7 +250,9 @@ Bu dosya herhangi bir ldap arayüzü ile ldap'a bağlanarakta sisteme yüklenebi
 
 	sudo systemctl restart slapd.service
 
+```
 NOT : Ldap yeniden başlatılmaz ise lider nesne sınıfları ldap düğümleri oluşturulurken görüntülenmeyecektir.
+```
 
 Apache Directory ile Ldap üzerinde;
 
@@ -259,7 +261,13 @@ Apache Directory ile Ldap üzerinde;
 	* Ahenkler, Kullanıcılar Gurubu
 
 
-düğümleri oluşturulur. Temel DN (bu örnekte dc=liderahenk,dc=org) üzerine;
+düğümleri oluşturulur. 
+
+```
+Not:Bu adım için ldap'a **admin** kullanıcısı ile (cn=admin,dc=liderahenk,dc=org) giriş yapılmalıdır. 
+```
+
+Temel DN (bu örnekte dc=liderahenk,dc=org) üzerine;
 
 ![ADS New Entry](images/ads-new-entry.png)
 
@@ -398,7 +406,9 @@ Açılan dosyada aşağıdaki satırlara gerekli bilgiler tanımlanır.
 
 ***host_config*** (Örn: "im.liderahenk.org": )satırları yukarıdaki şekilde olmalıdır. 
 
+```
 Not: Ejabberd.yml dosyası çok hassas bir dosyadır, herhangi boşluk veya karakter hatasında çalışmayabilir. Bu nedenle konfigurasyon dosyasında mümkün olduğu kadar varolan ayaların üzerinde değişiklik yapılarak gidilmelidir. Yeni satır eklemek veya başka bir yerden veri kopyalamak hataya neden olabilmektedir.
+```
 
 ***Ejabberd.yml*** konfigürasyon dosyası düzenlendikten sonra ejabberd sunucusu aşağıdaki komutlar yardımı ile yeniden başlatılır.
 
@@ -437,7 +447,9 @@ Admin kullanıcsıından sonra birde KARAF tarafından kullanılacak lider_sunuc
 
 Bu şifreler daha sonra yapılandırma ayarlarında kullanılacak olduğu için unutulmamalıdır.
 
+```
 NOT: Ejabberd sunucusu lider ve diğer sunuculardan bağımsız ayrı bir sunucu üzerinde çalıştırılacak ise, yukarıdaki konfigürasyon örneğinde yer alan portların dışarıdan ulaşılabilir olması için gerekli firewall ayarlarının yapılması gerekmektedir.
+```
 
 Xmpp sunucusunun son durumda hatasız kurulduğunun testlerinin yapılması için; 
 
