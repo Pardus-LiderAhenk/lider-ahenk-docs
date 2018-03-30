@@ -9,11 +9,16 @@ komutları ile "**liderahenk-archive-keyring.asc**" key dosyası indirilerek sis
 
 	sudo add-apt-repository 'deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main'
 
-komutu ile depo adresi "**/etc/apt/sources.list**" dosyasına eklenir. Bu adımı uçbirimde bir metin editörü(vi,nano,pico) kullanarak ;
+komutu ile depo adresi "**/etc/apt/sources.list**" dosyasına eklenir. 
+
+```
+Not: Yukarıdaki adımı uçbirimde bir metin editörü(vi,nano,pico) kullanarak ;
 
 	deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main
 
-satırını "**/etc/apt/sources.list**" dosyasına elinizle de tanımlayarak yapabilirsiniz. Daha sonra;
+satırını "**/etc/apt/sources.list**" dosyasına elinizle de tanımlayarak yapabilirsiniz. 
+```
+Daha sonra;
 
 	sudo apt update
     
