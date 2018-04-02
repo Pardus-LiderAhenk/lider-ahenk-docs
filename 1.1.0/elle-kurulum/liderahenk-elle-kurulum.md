@@ -378,7 +378,7 @@ Açılan dosyada aşağıdaki satırlara gerekli bilgiler tanımlanır.
 		 #	- "localhost"
  		- "#SERVICE_NAME"
 
-***localhost*** satırı kapatılır, altına kullanılacak ***#SERVICE_NAME** (Örn: liderahenk.org) tanımlaması yapılır.
+***localhost*** satırı kapatılır, altına kullanılacak ***#SERVICE_NAME** (Örn: im.liderahenk.org) tanımlaması yapılır.
 
 	ldap_servers:
    		- "#LDAP_SERVER"
