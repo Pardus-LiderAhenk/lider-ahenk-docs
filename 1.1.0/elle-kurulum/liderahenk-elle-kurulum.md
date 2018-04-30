@@ -55,19 +55,48 @@ Kurulum başarı ile sonlandıktan sonra LiderAhenk sistemi için utf8 karakter 
 
 	mysql -uroot -pSIFRE -e "CREATE DATABASE liderdb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci"
 
-Not: Eğer mariadb-server kurulu sunucu lider kurulumu yapılacak sunucudan bağımsız bir sunucu olacak ise, mariadb konfigürasyon dosyasında (/etc/mysql/my.cnf ) yer alan bind-address parametresi satırının önüne **#** simgesi yazılarak yorum şekline getirilmelidir. Bu sayede servis başka sunucuların erişimine açılmış olacaktır. 
+```
+Not: Eğer mariadb-server kurulu sunucu, lider kurulumu yapılacak sunucudan bağımsız bir sunucu olacak ise, mariadb konfigürasyon dosyasında (/etc/mysql/my.cnf ) yer alan bind-address parametresi satırının önüne **#** simgesi yazılarak;
 
 	#bind-address	 = 127.0.0.1
 
-şeklinde bu satır kapatılabilir veya lider-sunucu ip adresi yazılabilir. Lider sunucunun veritabanı sunucusundaki veritabanına ulaşması için liderdb database grant yetkilerinin verilmesi gerekir. Bunun için;
+şeklinde bu satır kapatılabilir(yorum haline getirilir, bu konfigurason sonucunda veritabanına sadece o makineden erişim sağlanabilir) veya;
+
+	bind-address	 = 0.0.0.0
+
+şeklinde yazılabilir(Bu sayede servis başka sunucuların erişimine açılmış olacaktır) veya;
+
+	bind-address	 = lider-sunucu-ip
+
+lider-sunucu-ip adresi yazılabilir(Bu sayede servis sadece lider sunucunun erişimine açılmış olacaktır). 
+
+Bu ayarı nasıl bir yapı kurulacaksa ona göre şekillendirilmelidir. Tek bir sunucuda tüm lider bileşenleri olacaksa bu alana lider-sunucu-ip adresi yazılarak ilerlenebilir.
+```
+Lider sunucunun veritabanı sunucusundaki veritabanına ulaşması için liderdb database grant yetkilerinin verilmesi gerekir. Bunun için;
 
 	mysql -uroot -pSIFRE
 
 ile giriş yapılır,
 
+	show databases;
+
+komutu ile veritabanlarının listesi;
+
+    MariaDB [(none)]> show databases;
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | information_schema |
+    | liderdb            |
+    | mysql              |
+    | performance_schema |
+    +--------------------+
+
+şeklinde görüntülenir.
+
 	use liderdb;
 
-ile veritabanı seçilir, daha sonra;
+ile **liderdb** veritabanı seçilir, daha sonra;
 
 	select password('SIFRE'); 
 
@@ -85,16 +114,6 @@ komutu ile mariadb'den  çıkılır.
 	sudo systemctl restart mysql.service
 
 Yapılan düzenlemerin geçerli olması için yukarıdaki komut çalıştırılarak  mariadb servisi yeniden başlatılır.
-
-Veritabanın doğru şekilde kurulduğunu kontrol etmek için, veritabanının kurulu olduğu makinenin komut satırına gelerek;
-
-	mysql -uroot -pSIFRE
-
-yazılarak (burada sifre mariadb-server kurulum adımında belirlenen root şifresidir.) mariadb monitor ekranına giriş yapılır.
-
-	show databases;
-
-komutu ile veritabanlarının listesini alabiliriz. **liderdb** veritabanları listesi altında olduğu görülüyor ise veritabanı başarılı şekilde oluşturulmuştur.
 
 ##LDAP Sunucu##
 
@@ -324,7 +343,7 @@ sağ tıklanarak gelen menüde  “Yeni Öznitelik (New Attribute)” seçeneği
 
 ![Lider Privilege All](images/lider-privilege-all.png)
 
-[TASK:dc=liderahenk,dc=org:ALL:true] şeklinde belirlenir. Aynı şekilde yeni bir öznitelik ekleyerek [REPORT:ALL] verilir.
+[TASK:dc=liderahenk,dc=org:ALL] şeklinde belirlenir. Aynı şekilde yeni bir öznitelik ekleyerek [REPORT:ALL] verilir.
 
 Burada dc=liderahenk,dc=org yerine ilgili veritabanı temel ismi yazılır. Bu temel isim ilgili kullanıcının yönetmesini istediğimiz düğüm anlamına gelmektedir. Bu kullanıcıya veratabanı temel ismini vererek bütün ldap ağacını  yönetebilir demiş oluyoruz. ALL bütün eklentileri yönetebilir anlamına gelmektedir. True ise aktif durumda olduğunu gösterir.
 
@@ -477,11 +496,15 @@ Eklentilerin üzerinde tutulacağı ve mesajlaşma ile yapılamayacak boyuttaki 
 
 	sudo apt install sshpass rsync -y
 
-komutu ile kurulum tamamlanır.
+komutu ile kurulum tamamlanır. Kurulan bu dosya sunucu bilgileri **Lider Sunucu** konfigurasyonunda gereklidir.
 
 ##Lider Sunucu##
 
 Lider Sunucu, liderahenk uygulamasının merkezinde yer alır.  Xmpp ile bütün ahenklerin yönetimi bu sunucu üzerinden yapılır. Bunun yanında üzerindeki rest servisler ile Lider-Console  ( LiderAhenk arayüz uygulaması ) ile ilteşim sağlayarak arayüzden yönetime olanak sağlar. Bir kez kurulur.
+
+###Lider Sunucu Java Ayarları###
+```
+Pardus 17 üzerinde java kurulu olarak geldiği için bu adıma gerek yoktur. Lider Sunucu Pardus Sunucu sürümü üzerine kurulacaksa aşağıdaki adımlar uygulanmalıdır.
 
 JAVA_HOME çevresel değişkeni sisteme tanımlanmalıdır. Bunun için;
 
@@ -515,6 +538,7 @@ Bu işlemin testi için;
     echo $JAVA_HOME
 
 ekrana oracle sdk ev dizini yolunu ekrana çıktı olarak veriyorsa işlem doğru yapılmış demektir.
+```
 
 **Lider Sunucu**'yu;
 
@@ -539,8 +563,8 @@ ve bu klasör içerisindeyken, uygulamayı başlatmak için uygulama dosyası a�
 
 	sudo ./karaf
 
-Karaf uygulaması çalıştığında konsol uygulama ekranına düşer, karaf modülleri ayağa kalktıkması beklenir. Ayağa kaltığını anlamak için konsola list yazılır ve uygulama durumları karaf üzerinde listelenir. Liste içerinde uygulama durumunda failure durumu varsa, sorun giderme başlığında lider sunucu adımında kurulum kontrolleri yapılarak kuruluma devam edilir.
-bin/karaf
+Karaf uygulaması çalıştığında konsol uygulama ekranına düşer, karaf modülleri ayağa kalkması beklenir. Bu esnada **tr.org.liderahenk** ile başlayan konfigurasyon dosyaları oluşur. Ayağa kaltığını anlamak için konsola list yazılır ve uygulama durumları karaf üzerinde listelenir. Liste içerinde uygulama durumunda **failure** durumu varsa, sorun giderme başlığında lider sunucu adımında kurulum kontrolleri yapılarak kuruluma devam edilir.
+
 Servis dosyalarının oluşturulması için aşağıdaki komut karaf konsolda çalıştırılır.
 
 	feature:install wrapper
@@ -572,22 +596,22 @@ Lider-sunucu yapılandırma dosyasının düzenlenmesi
 
 Bu dosya düzenlenmek için açılır;
 
-    ldap.server = localhost
+    ldap.server = ip_adresi
     ldap.port = 389
     ldap.username = cn=admin,dc=liderahenk,dc=org
     ldap.password = SIFRE!
     ldap.root.dn = dc=liderahenk,dc=org
 
-Tüm sunucular aynı ip'de ise **localhost** değeri kalabilir, farklı ipler bu alanlara tanımlanmalıdır. Ldap **admin** şifresi vd dn bilgileri tanımlanır.
+**ip_adresi** bu alana tanımlanmalıdır. Ldap **admin** şifresi ve dn bilgileri tanımlanır.
 
-    xmpp.host = localhost
+    xmpp.host = ip_adresi
     xmpp.port = 5222
     xmpp.username = lider_sunucu
     xmpp.password = SIFRE
     xmpp.resource = Smack
     xmpp.service.name = im.liderahenk.org
 
-Tüm sunucular aynı ip'de ise **localhost** değeri kalabilir, farklı ipler bu alanlara tanımlanmalıdır. Ejabberd da oluşturulan lider_sunucu ve host bilgileri yukarıdaki şekilde tanımlanır.
+**ip_adresi** bu alana tanımlanmalıdır. Ejabberd da oluşturulan lider_sunucu ve host bilgileri yukarıdaki şekilde tanımlanır.
 
 Ahenklerin hangi ou altında görüleceği bilgisi aşağıdaki gibi tanımlanır. Bu bilgi daha önce Ldap kurulumunda oluşturulan Ahenkler gurubudur.
 
@@ -597,10 +621,10 @@ Ldap base dn bilgisi tanımlanır.
 
     user.ldap.base.dn = dc=liderahenk,dc=org
 
-Dosya sunucu kullanıcı adı, şifre bilgieri tanımlanır. Lider sunucudan farklı bir makine dosya sunucu olarak kullanılacaksa **localhost** değeri yerine ip bilgisi tanımlanmalı ve o makinede ssh portu açık, kullanıcının erişm bilgileri doğru tanımlanmalıdır.
+Dosya sunucu kullanıcı adı, şifre bilgieri tanımlanır. Lider sunucudan farklı bir makine dosya sunucu olarak kullanılacaksa **ip_adresi** değeri yerine ip bilgisi tanımlanmalı ve o makinede ssh portu açık, kullanıcının erişm bilgileri doğru tanımlanmalıdır.
 
     file.server.protocol = ssh
-    file.server.host = localhost
+    file.server.host = ip_adresi
     file.server.port = 22
     file.server.username = lider
     file.server.password = PP123456
