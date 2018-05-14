@@ -1,7 +1,7 @@
 #LiderArayüz - Eklenti Ekleme#
 **LiderArayüz Github Sayfası**‘ında tüm eklentileri içeren bir sürüm (**Lider.Console.Core- linux.gtk.x86_64_all-1.1.tar.gz**) ve eklentisiz bir sürüm(**Lider.Console.Core-linux.gtk.x86_64_1.1.tar.gz**) yayınlanmaktadır. Boş bir **LiderArayüz**’e eklenti ekleme adımları anlatılacaktır.
 
-LiderAhenk Github Sayfası [LiderArayüz](http://https://github.com/Pardus-LiderAhenk/lider-console/releases/download/v1.1/Lider.Console.Core-linux.gtk.x86_64_1.1.tar.gz) adresinden uygulamanın boş halini indirerek sağ tıklanır ve arşivden çıkartılır.
+LiderAhenk Github Sayfası [LiderArayüz](https://github.com/Pardus-LiderAhenk/lider-console/releases/download/v1.1/Lider.Console.Core-linux.gtk.x86_64_1.1.tar.gz) adresinden uygulamanın boş halini indirerek sağ tıklanır ve arşivden çıkartılır.
 
 [Eklentiler](https://github.com/Pardus-LiderAhenk?utf8=%E2%9C%93&q=plugin&type=&language=) LiderAhenk **Github** sayfasında sunulmaktadır. Eklenmek istenen eklenti için **releases**'a tıklanır ve **.zip** dosyası indirilir. Sağ tıklanarak arşivden çıkarılır.
 
