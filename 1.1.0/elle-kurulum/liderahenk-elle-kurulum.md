@@ -371,7 +371,19 @@ Xmpp (Ejabberd)  "Genişletilebilir Mesajlaşma ve Varlık Protokolü" olarak ad
 
     sudo apt install ejabberd=16.06-0 -y
 
-komutu ile kurulur.
+komutu ile kurulur. 
+
+```
+Uyarı: Ejabberd konfigürasyonlarının tutulduğu ejabberd.yml dosyası çok hassas bir yapıya sahip olduğundan ayarlarının bozulmaması için;
+
+	sudo apt-mark hold ejabberd
+    
+ile paketinin güncellenmesi engellenmelidir. Güncellenebilmesi için;
+	
+    sudo apt-mark unhold ejabberd
+    
+komutu yeterlidir.
+```
 
 Bütün ahenklerin bağlandığı bileşendir. Lider Sunucu ve ahenkler bu bu bileşen üzerinden haberleşirler. Bir kez kurulur. 
 
@@ -496,11 +508,17 @@ Eklentilerin üzerinde tutulacağı ve mesajlaşma ile yapılamayacak boyuttaki 
 
 	sudo apt install sshpass rsync -y
 
-komutu ile kurulum tamamlanır. Kurulan bu dosya sunucu bilgileri **Lider Sunucu** konfigurasyonunda gereklidir.
+komutu ile kurulum tamamlanır. Kurulan bu dosya sunucu bilgileri **Lider Sunucu** konfigurasyonunda gereklidir. Dosya sunucu lider sunucudan farklı bir makine olacaksa;
+
+	mkdir /home/kullanici_adi/plugins && touch /home/kullanici_adi/sample-agreement.txt
+
+	mkdir -p /home/kullanici_adi/agent-files/{0}
+    
+komutları ile lider sunucu adımlarında kullanılacak dosya-dizinler oluşturulur. Bu dosya sunucunun ip adresi ve kullanıcı adı ve yukarıda oluşturulan dosya-dizin yolları lider sunucu konfigürasyonunda kullanılacaktır.
 
 ##Lider Sunucu##
 
-Lider Sunucu, liderahenk uygulamasının merkezinde yer alır.  Xmpp ile bütün ahenklerin yönetimi bu sunucu üzerinden yapılır. Bunun yanında üzerindeki rest servisler ile Lider-Console  ( LiderAhenk arayüz uygulaması ) ile ilteşim sağlayarak arayüzden yönetime olanak sağlar. Bir kez kurulur.
+Lider Sunucu, liderahenk uygulamasının merkezinde yer alır.  Xmpp ile bütün ahenklerin yönetimi bu sunucu üzerinden yapılır. Bunun yanında üzerindeki rest servisler ile Lider-Console  ( LiderAhenk arayüz uygulaması ) ile iletişim sağlayarak arayüzden yönetime olanak sağlar. Bir kez kurulur.
 
 ###Lider Sunucu Java Ayarları###
 ```
@@ -511,7 +529,6 @@ JAVA_HOME çevresel değişkeni sisteme tanımlanmalıdır. Bunun için;
 	update-alternatives --config java
 
 komutu ile sistemde kurulu java sürümü ve yolu görüntülenir. eğerbir java sürümü yoksa;
-
 
 	sudo apt install openjdk-8-jre
 
@@ -540,61 +557,15 @@ Bu işlemin testi için;
 ekrana oracle sdk ev dizini yolunu ekrana çıktı olarak veriyorsa işlem doğru yapılmış demektir.
 ```
 
-**Lider Sunucu**'yu;
+**Lider Sunucu**;
 
-	sudo wget https://github.com/Pardus-LiderAhenk/lider/releases/download/v1.1/lider-distro-all_1.1.tar.gz
+	sudo apt install lider-server
 
-adresinden indirerek;
+komutu ile depodan kurulumu sağlanır. Lider-sunucu yapılandırma dosyasının düzenlenmesi için;
 
-    sudo cp lider-distro-all_1.1.tar.gz /opt && cd /opt
+	sudo pico /usr/share/lider-server/etc/tr.org.liderahenk.cfg
 
-komutu ile /opt dizini altına atınız;
-
-	sudo tar -xvf lider-distro-all_1.1.tar.gz
-
-komutu ile açınız.
-
-Lider-sunucu (karaf) uygulamasının bir servis olarak ayarlanması için öncelikle uygulama manuel olarak başlatılır. Bunun için lider-sunucu dosyalarının bulunduğu klasöre aşağıdaki komut ile gidilir.
-
-	cd /opt/lider-distro-1.1/bin
-
-
-ve bu klasör içerisindeyken, uygulamayı başlatmak için uygulama dosyası aşağıdaki gibi çalıştırılır.
-
-	sudo ./karaf
-
-Karaf uygulaması çalıştığında konsol uygulama ekranına düşer, karaf modülleri ayağa kalkması beklenir. Bu esnada **tr.org.liderahenk** ile başlayan konfigurasyon dosyaları oluşur. Ayağa kaltığını anlamak için konsola list yazılır ve uygulama durumları karaf üzerinde listelenir. Liste içerinde uygulama durumunda **failure** durumu varsa, sorun giderme başlığında lider sunucu adımında kurulum kontrolleri yapılarak kuruluma devam edilir.
-
-Servis dosyalarının oluşturulması için aşağıdaki komut karaf konsolda çalıştırılır.
-
-	feature:install wrapper
-
-sonra;
-
-	wrapper:install -s AUTO_START -n KARAF -d Karaf -D "Karaf Service"
-
-bu komut servis olarak çalışması için gerekli dosyaların oluşmasını sağlar. Bu komut ile karaf konsolunda yer alan şeklinde bir takım yazılar belirir. Karaf bu adımdan sonra durdurulur.
-
-Karaf konsolda ;
-
-	logout
-
-yazılarak kapanması sağlanır.
-
-Burada yer alan;
-
-	sudo ln -s /opt/lider-distro-1.1/bin/KARAF-service /etc/init.d/
-
-	sudo update-rc.d KARAF-service defaults
-
-
-komutları çalıştırılır. Artık karaf, servis olarak çalışmaya hazırdır.
-
-Lider-sunucu yapılandırma dosyasının düzenlenmesi
-
-	sudo pico /opt/lider-distro-1.1/etc/tr.org.liderahenk.cfg
-
-Bu dosya düzenlenmek için açılır;
+ile bu dosya düzenlenmek için açılır;
 
     ldap.server = ip_adresi
     ldap.port = 389
@@ -632,17 +603,21 @@ Dosya sunucu kullanıcı adı, şifre bilgieri tanımlanır. Lider sunucudan far
     file.server.agreement.path = /home/kullanici_adi/sample-agreement.txt
     file.server.agent.file.path = /home/kullanici_adi/agent-files/{0}/
 
-**/home/kullanici_adi/plugins**, **/home/kullanici_adi/sample-agreement.txt**, **/home/kullanici_adi/agent-files/{0}** dosyaları dosya sunucu üzerinde konsolda;
+**/home/kullanici_adi/plugins**, **/home/kullanici_adi/sample-agreement.txt**, **/home/kullanici_adi/agent-files/{0}** dosyaları dosya sunucu adımlarında oluşturulan ayarlar tanımlanır.
+
+```
+Not: Lider sunucu aynı zamanda dosya sunucu olarakta kullanılacak ise konsolda;
 
 	mkdir /home/kullanici_adi/plugins && touch /home/kullanici_adi/sample-agreement.txt
 
 	mkdir -p /home/kullanici_adi/agent-files/{0}
 
-komutları ile (**kullanici_adi** dosya sunucudaki kullanıcını home dizinidir) oluşturulmalıdır. Bu dizin ve dosyalar farklı adreslere tanımlanabilir, fakat bu tanımlamalara göre dosya ve dizinlerin oluşturulma  işlemi gerçekleştirilmelidir.
+komutları ile (**kullanici_adi** dosya sunucudaki kullanıcını home dizinidir) oluşturulmalı ve yukarıdaki dosya sunucu konfigürasyonuna tanımlanmalıdır.
+``` 
 
 Daha sonra
 
-	sudo pico /opt/lider-distro-1.1/etc/tr.org.liderahenk.datasource.cfg
+	sudo pico /usr/share/lider-server/etc/tr.org.liderahenk.datasource.cfg
 
 dosyasında;
 
@@ -655,29 +630,39 @@ veritabanı konfigürasyonu yapılır. **localhost** alanına ip bilgisi,port, v
 
 Lider sunucu;
 
-	systemctl start KARAF-service.service
+	systemctl start lider.service
 
-komutu ile yeniden başlatılarak lider sunucu kurulumu tamamlanır. Karaf servisinin başladığından emin olmak için 
+komutu ile yeniden başlatılarak  kurulum tamamlanır. Lider servisinin başladığından emin olmak için 
 
-	systemctl status KARAF-service.service
+	systemctl status lider.service
 
 alternatif olarak
 
-	ps -ef | grep karaf
+	ps -ef | grep lider
 
 komutu çıktısına bakılır.  Eğer “start” durumda değilse alternatif olarak;
 
-	/etc/init.d/KARAF-service start
+	/etc/init.d/lider start
 
-komutu ile karaf çalıştırılır. Karaf servis olarak çalıştırılmışsa;
+komutu ile karaf çalıştırılır. Lider servis olarak çalıştırılmışsa;
 
-	ssh -p 8101 karaf@localhost
+	lider-client
+    
+ile giriş yapılır;
 
-şifre “karaf” ile sunucu durumu izlenebilir. Hatalı bir durum kontrolu için karaf konsolda;
+```
+Not: Alternatif olarak;
+    
+    ssh -p 8101 karaf@localhost
+
+şifre “karaf” ile de lider sunucuya giriş yapılabilir.
+``` 
+
+Hatalı bir durum kontrolu için lider konsolda;
 
 	log:tail
 
-lider servislerinin aktif olmadığını görmek için karaf konsolda;
+yazılarak loglar izlenir. Lider servislerinin aktif olmadığını görmek için lider konsolda;
 
 	list
 
