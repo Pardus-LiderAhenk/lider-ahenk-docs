@@ -6,7 +6,7 @@ Ahenk paketi "repo.liderahenk.org" adresinde sunulmaktadır. Pardus bilgisayarla
 
 komutları ile "liderahenk-archive-keyring.asc" key dosyası indirilerek sisteme yüklenmelidir. Ardından;
 
-	sudo add-apt-repository 'deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main'
+	sudo printf  "deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main" | sudo tee -a /etc/apt/sources.list
 
 komutu ile depo adresi "/etc/apt/sources.list" dosyasına eklenir. 
 
