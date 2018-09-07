@@ -478,7 +478,7 @@ Admin kullanıcsından sonra birde KARAF tarafından kullanılacak lider_sunucu 
 
 Bu şifreler daha sonra yapılandırma ayarlarında kullanılacak olduğu için unutulmamalıdır.
 
-Ahenkler ile Lider sunucunun birbiri ile mesajlaşması ve için Ejaberd roster ayarları yapımalıdır. Bunun için;
+Ahenklerin  Lider sunucu ile mesajlaşması  için Ejaberd roster ayarları yapımalıdır. Bunun için;
 
 	./ejabberdctl srg-create everyone #SERVICE_NAME "everyone" this_is_everyone everyone
 	./ejabberdctl srg-user-add @all@ #SERVICE_NAME everyone #SERVICE_NAME
