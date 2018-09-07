@@ -459,13 +459,20 @@ Alınan cevap;
 	User admin@#SERVICE_NAME successfully registered
 
 şeklinde olmalıdır.
-Admin kullanıcsıından sonra birde KARAF tarafından kullanılacak lider_sunucu(Farklı bir isim verilerbilir, fakat bu kullanıcı adı Karaf kurulumunda da verileceği için not edilmelidir) kullanıcısı oluşturulmalıdır. Bu senaryoda sadece 1 adet lider sunucusu olacağı varsayılarak lider_sunucu adında sadece 1 adet kullanıcı oluşturulmuştur. Eğer birden fazla lider sunucusu çalıştırılacak ise her birisi için aşağıdaki gibi bir kullanıcı oluşturulmalı ve daha sonra tanımlanacak lider yapılandırma ayarlarında her bir lider sunucusu için girilmelidir.
+Admin kullanıcsından sonra birde KARAF tarafından kullanılacak lider_sunucu kullanıcısı oluşturulmalıdır. 
 
 	./ejabberdctl register lider_sunucu #SERVICE_NAME #ejabberd_admin_pass
 	./ejabberdctl restart
 
 Bu şifreler daha sonra yapılandırma ayarlarında kullanılacak olduğu için unutulmamalıdır.
 
+Ahenkler ile Lider sunucunun birbiri ile mesajlaşması ve için Ejaberd roster ayarları yapımalıdır. Bunun için;
+
+	./ejabberdctl srg-create everyone #SERVICE_NAME "everyone" this_is_everyone everyone
+	./ejabberdctl srg-user-add @all@ #SERVICE_NAME everyone #SERVICE_NAME
+    
+komutları çalıştırılmalıdır. Bu komutlardaki #SERVICE_NAME alanında yukarıda belirlenen servis adı girilmelidir.
+	
 ```
 NOT: Ejabberd sunucusu lider ve diğer sunuculardan bağımsız ayrı bir sunucu üzerinde çalıştırılacak ise, yukarıdaki konfigürasyon örneğinde yer alan portların dışarıdan ulaşılabilir olması için gerekli firewall ayarlarının yapılması gerekmektedir.
 ```
