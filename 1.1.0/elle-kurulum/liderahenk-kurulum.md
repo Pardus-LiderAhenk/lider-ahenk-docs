@@ -278,7 +278,7 @@ nesne sınıflarını oluşturmayı sağlar.
 
 Daha sonra liderahenk.ldif dosyası konsolda 
 
-	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer-console/master/lider-installer/conf/liderahenk.ldif && sudo cp liderahenk.ldif /tmp
+	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/src/conf/liderahenk.ldif && sudo cp liderahenk.ldif /tmp
 
 adresinden indirilerek **/tmp** klasörü altına kopyalanır. Lider ahenk şemaları varolan ldap'a yüklenmelidir. Bunun için ;
 
@@ -298,6 +298,66 @@ Bu dosya herhangi bir ldap arayüzü ile ldap'a bağlanarakta sisteme yüklenebi
 NOT : Ldap yeniden başlatılmaz ise lider nesne sınıfları ldap düğümleri oluşturulurken görüntülenmeyecektir.
 ```
 
+###OpenLDAP'a Yetkili Grup Ekleme(Sudoers)###
+
+OpenLDAP üzerinde roller oluşturarak ldap kullanıcılarına merkezi yetkilendirme yapmak için aşağıdaki adımlar uygulanmalıdır. Konsolda;
+
+	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/src/conf/sudo.ldif && sudo cp liderahenk.ldif /tmp
+
+komutu ile ldif indirilir. Daha sonra;
+
+	ldapadd -f /tmp/sudo.ldif -D "cn=admin,cn=config" -w
+
+komutu sonrası OpenLDAP admin kullanıcı şifresi girilere ldap'a eklenir. Ardından;
+
+	sudo pico roles.ldif
+
+komutu ile açılan ekrana aşağıdaki bilgiler kopyalanır; 
+
+    dn: ou=Roles,base_dn
+    objectclass:organizationalunit
+    objectclass:top
+    ou: Roles
+    description: Roles groups
+
+bu ldif dosyasında **base_dn** alanına  yukarıda tanımlanan base_dn bilgisi girilir(Örn: dc=liderahenk,dc=org) ve
+
+	ldapadd -x -W -D "cn=admin,dc=liderahenk,dc=org" -f roles.ldif
+
+komutu ile ldap'a Roles grubu eklenir. Bu komut sonrasında alınacak yanıt;
+
+    Enter LDAP Password:
+
+    adding new entry "ou=Roles,dc=liderahenk,dc=org"
+
+şeklinde olmalıdır. Daha sonra;
+
+	sudo systemctl restart slapd.service
+
+komutu ile OpenLDAP yeniden başlatılır. OpenLdap'ta oluşan Roles grubu altına roller tanımlanır.
+
+####Örnek Rol Tanımlama####
+
+Basit bir anlatımla bu grup altına bir rol tanımlayalım. Aşağıda satırları;
+
+    dn: cn=role1,ou=Roles,base_dn
+    objectClass: sudoRole
+    objectClass: top
+    cn: role1
+    sudoUser: pardus
+    sudoHost: ALL
+    sudoCommand: ALL
+
+şeklinde örnek bir rolü;
+
+	pico ornek_role.ldif
+
+ile açılan ekrana yapıştırarak **role1** alanına tanımlamak istediğiniz rolün ismini, **base_dn** kısmına ldap base_dn (Örn: dc=liderahenk,dc=org) tanımlaması yapın. Daha sonra;
+
+	ldapadd -x -W -D "cn=admin,base_dn" -f ornek_role.ldif
+    
+komutu ile base_dn yazılarak yukarıdaki örnek rol sisteme eklenir. Örnekler için [https://linux.die.net](https://linux.die.net/man/5/sudoers.ldap) adresini ziyaret edebilirsiniz.
+
 ###OpenLDAP Üzerinde Gerekli Düğümlerin Oluşturulması###
 
 OpenLDAP'ta;
@@ -313,7 +373,7 @@ dn: ou=Ahenkler,base_dn
 objectclass:organizationalunit
 objectclass:top
 ou: Ahenkler
-description: Ahenkler 
+description: pardusDeviceGroup 
 
 dn: cn=lider_console,base_dn
 objectClass: top
