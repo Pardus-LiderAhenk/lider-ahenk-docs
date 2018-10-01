@@ -45,7 +45,11 @@ Kurulum işlemleri aşamasında mariadb-server root parolası ekrana gelir.
 
 ![MariaDB Şifre-1](images/mariadb-sifre-1.png)
 
-Bu örnekte root parolası **SIFRE**  olarak ayarlanmıştır.
+Bu örnekte root parolası **SIFRE**  olarak ayarlanmıştır. 
+
+```
+Farklı bir parola verilir ise **SIFRE** ifadesinin geçtiği yerlerde o parola tanımlanmalıdır.
+```
 
 ![MariaDB Şifre-1](images/mariadb-sifre-2.png)
 
@@ -155,11 +159,9 @@ LDAP bileşeni için bu örnekte OpenLDAP kullanılacaktır. LiderAhenk, kullan�
 
 Konsolda;
 
-	sudo apt install slapd ldap-utils
+	sudo apt install slapd ldap-utils -y
 
-komutu sonrasında paket yöneticisi slapd kurulumu için ön gereksinim ya da gereksinimler var ise kurulacak bu bileşenlerin listesini gösterir ve kurulum için **E/e** onay bekler.
-
-**Enter** tuşu yardımı ile kurulum onaylandıktan sonra, doğrulanmamış paketler var ise tekrar bu paketlerin kurulumu için **e/E** onay ekranı gösterilir. **E** yazıp **Enter** tuşuna basarak bu işlemi de onayladıktan sonra paket yöneticisi gerekli paketleri indirme ve kurma işlemine başlar.
+komutu ile kurulum başlatılır.
 
 Slapd kurulum sırasında kullanıcıdan bir yönetici (administrator)  parolası belirlenmesini ister. Bu örnekte kullanıcı parolası **SIFRE** olarak belirlenmiştir.
 
@@ -244,7 +246,7 @@ LDAP sunucunuzun yapılandırma erişimi için(**config** kullanıcına) bir şi
 	sudo su
 	slappasswd
 
-Komutu ile “yapılandırma(konfigürasyon) kullanıcısı” şifresi  girmenizi isteyecektir.  Be şifre LDAP sunucunuzun yapılandırma erişimi için gerekmektedir.
+Komutu ile “yapılandırma(konfigürasyon) kullanıcısı” şifresi  girmenizi isteyecektir. Bu şifre LDAP sunucunuzun yapılandırma erişimi için gerekmektedir.
 
 	New Password: <şifrenizi giriniz>
 	Re-enter new password: <şifrenizi tekrar giriniz>
@@ -282,9 +284,9 @@ Daha sonra liderahenk.ldif dosyası konsolda
 
 adresinden indirilerek **/tmp** klasörü altına kopyalanır. Lider ahenk şemaları varolan ldap'a yüklenmelidir. Bunun için ;
 
-	ldapadd -x -f /tmp/liderahenk.ldif -D "cn=admin,cn=config" -w $CNCONFIGADMINPASSWD
+	ldapadd -x -f /tmp/liderahenk.ldif -D "cn=admin,cn=config" -w $config_admin_pwd
 
-komutu ile ldif ldap'a yüklenir. Burada **cn=admin,cn=config** config kullanıcısı,  **$CNCONFIGADMINPASSWD** yapılandırma(konfigürasyon) kullanıcısı şifresidir. Bir önceki adımda belirlenmiştir. Örneğin;
+komutu ile ldif ldap'a yüklenir. Burada **cn=admin,cn=config** config kullanıcısı,  **$config_admin_pwd** yapılandırma(konfigürasyon) kullanıcısı şifresidir. Bir önceki adımda belirlenmiştir. Örneğin;
 
 	ldapadd -x -f /tmp/liderahenk.ldif -D "cn=admin,cn=config" -w SIFRE
 
@@ -302,11 +304,11 @@ NOT : Ldap yeniden başlatılmaz ise lider nesne sınıfları ldap düğümleri 
 
 OpenLDAP üzerinde roller oluşturarak ldap kullanıcılarına merkezi yetkilendirme yapmak için aşağıdaki adımlar uygulanmalıdır. Konsolda;
 
-	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/src/conf/sudo.ldif && sudo cp liderahenk.ldif /tmp
+	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/src/conf/sudo.ldif && sudo cp sudo.ldif /tmp
 
 komutu ile ldif indirilir. Daha sonra;
 
-	ldapadd -f /tmp/sudo.ldif -D "cn=admin,cn=config" -w
+	ldapadd -f /tmp/sudo.ldif -D "cn=admin,cn=config" -w SIFRE
 
 komutu sonrası OpenLDAP admin kullanıcı şifresi girilere ldap'a eklenir. Ardından;
 
@@ -373,7 +375,7 @@ dn: ou=Ahenkler,base_dn
 objectclass:organizationalunit
 objectclass:top
 ou: Ahenkler
-description: pardusDeviceGroup 
+description: pardusDeviceGroup
 
 dn: cn=lider_console,base_dn
 objectClass: top
@@ -386,9 +388,10 @@ cn: lider_console
 sn: lider_console
 uid: lider_console
 userPassword: lider_console_parola
-
 liderPrivilege: [TASK:base_dn:ALL]
-liderPrivilege: [REPORT:ALL]dn: cn=liderAhenkConfig,base_dn
+liderPrivilege: [REPORT:ALL]
+
+dn: cn=liderAhenkConfig,base_dn
 objectClass: pardusLiderAhenkConfig
 cn: liderAhenkConfig
 liderServiceAddress: http://lider.liderahenk.org:8181
@@ -408,7 +411,7 @@ ile açılan ekrana yapıştırılır.
 
 Dosya kaydedilerek çıkılır. Daha sonra;
 
-	ldapadd -x -W -D "cn=admin,**base_dn**" -f lider_dugumler.ldif
+	ldapadd -x -W -D "cn=admin,base_dn" -f lider_dugumler.ldif
 
 şeklinde base_dn bilgisi yazılır, komut sonrasında **admin** parolası girilerek OpenLDAP'a eklenir.
 
@@ -459,10 +462,9 @@ Not: Bu konfigürasyon  **“ejabberd ejabberd-16.06”** versiyonuna göre **ej
 Açılan dosyada aşağıdaki satırlara gerekli bilgiler tanımlanır.
 
 	hosts:
-		 #	- "localhost"
- 		- "#SERVICE_NAME"
+		- "#SERVICE_NAME"
 
-***localhost*** satırı kapatılır, altına kullanılacak ***#SERVICE_NAME** (Örn: im.liderahenk.org) tanımlaması yapılır.
+***localhost*** satırı açık ise kapatılır, altına kullanılacak ***#SERVICE_NAME** (Örn: im.liderahenk.org) tanımlaması yapılır.
 
 	ldap_servers:
    		- "#LDAP_SERVER"
@@ -624,7 +626,11 @@ Lider Sunucu;
 
 	sudo apt install lider-server -y
 
-komutu ile depodan kurulumu sağlanır. 
+komutu ile depodan kurulumu sağlanır. Daha sonra -;
+
+	sudo systemctl start lider.service
+    
+ile servis aktif edilir.
 
 ###Lider Sunucu Konfigurasyon Dosyası###
 
@@ -650,6 +656,9 @@ ile bu dosya düzenlenmek için açılır;
     xmpp.service.name = im.liderahenk.org
 
 **ip_adresi** bu alana tanımlanmalıdır. Ejabberd da oluşturulan lider_sunucu ve host bilgileri yukarıdaki şekilde tanımlanır.
+```
+NOT :Lider sunucu cluster yapıda kurulacaksa xmpp.resource değeri 2 sunucuda ayrı ayrı tanımlanmalıdır. Örneğin, 1.ci sunucuya Smack, 2.ci sunucuya Smack1 olarak yazılmalıdır.
+```
 
 Ahenklerin hangi ou altında görüleceği bilgisi aşağıdaki gibi tanımlanır. Bu bilgi daha önce Ldap kurulumunda oluşturulan Ahenkler gurubudur.
 
