@@ -302,11 +302,11 @@ NOT : Ldap yeniden başlatılmaz ise lider nesne sınıfları ldap düğümleri 
 
 OpenLDAP üzerinde roller oluşturarak ldap kullanıcılarına merkezi yetkilendirme yapmak için aşağıdaki adımlar uygulanmalıdır. Konsolda;
 
-	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/src/conf/sudo.ldif && sudo cp liderahenk.ldif /tmp
+	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer/master/src/conf/sudo.ldif && sudo cp sudo.ldif /tmp
 
 komutu ile ldif indirilir. Daha sonra;
 
-	ldapadd -f /tmp/sudo.ldif -D "cn=admin,cn=config" -w
+	ldapadd -f /tmp/sudo.ldif -D "cn=admin,cn=config" -w SIFRE
 
 komutu sonrası OpenLDAP admin kullanıcı şifresi girilere ldap'a eklenir. Ardından;
 
@@ -373,7 +373,7 @@ dn: ou=Ahenkler,base_dn
 objectclass:organizationalunit
 objectclass:top
 ou: Ahenkler
-description: pardusDeviceGroup 
+description: pardusDeviceGroup
 
 dn: cn=lider_console,base_dn
 objectClass: top
@@ -386,9 +386,10 @@ cn: lider_console
 sn: lider_console
 uid: lider_console
 userPassword: lider_console_parola
-
 liderPrivilege: [TASK:base_dn:ALL]
-liderPrivilege: [REPORT:ALL]dn: cn=liderAhenkConfig,base_dn
+liderPrivilege: [REPORT:ALL]
+
+dn: cn=liderAhenkConfig,base_dn
 objectClass: pardusLiderAhenkConfig
 cn: liderAhenkConfig
 liderServiceAddress: http://lider.liderahenk.org:8181
@@ -408,7 +409,7 @@ ile açılan ekrana yapıştırılır.
 
 Dosya kaydedilerek çıkılır. Daha sonra;
 
-	ldapadd -x -W -D "cn=admin,**base_dn**" -f lider_dugumler.ldif
+	ldapadd -x -W -D "cn=admin,base_dn" -f lider_dugumler.ldif
 
 şeklinde base_dn bilgisi yazılır, komut sonrasında **admin** parolası girilerek OpenLDAP'a eklenir.
 
@@ -624,7 +625,11 @@ Lider Sunucu;
 
 	sudo apt install lider-server -y
 
-komutu ile depodan kurulumu sağlanır. 
+komutu ile depodan kurulumu sağlanır. Daha sonra -;
+
+	sudo systemctl start lider.service
+    
+ile servis aktif edilir.
 
 ###Lider Sunucu Konfigurasyon Dosyası###
 
