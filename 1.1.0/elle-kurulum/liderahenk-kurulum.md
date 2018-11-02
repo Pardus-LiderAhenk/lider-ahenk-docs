@@ -22,7 +22,8 @@ komutları ile "liderahenk-archive-keyring.asc" key dosyası indirilerek sisteme
 komutu ile depo adresi "/etc/apt/sources.list" dosyasına eklenir. 
 
 ```
-Not: Yukarıdaki adımı uçbirimde bir metin editörü(vi,nano,pico) yardımı ile ;
+Not: Yukarıdaki komutlarda problem yaşanırsa aşağıda anlatılan şekilde elle tanımlama yapabilirsiniz.
+Uçbirimde bir metin editörü(vi,nano) yardımı ile ;
 
 	deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main
 
@@ -59,13 +60,13 @@ Aynı parola tekrar girilip **enter** tuşu ile kurulum işlemine devam edilir. 
 
 Kurulum başarı ile sonlandıktan sonra LiderAhenk sistemi için utf8 karakter setini kullanan **liderdb** adında bir veritabanı oluşturulması gerekiyor. Bu işlemi tamamlamak için konsol(Uçbirim) da aşağıdaki komutun çalıştırılması yeterli olacaktır;
 
-	mysql -uroot -pSIFRE -e "CREATE DATABASE liderdb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci"
+	sudo mysql -uroot -pSIFRE -e "CREATE DATABASE liderdb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci"
    
 ####Veritabanın Kontrolü####
 
 Bunun için;
 
-	mysql -uroot -pSIFRE
+	sudo mysql -uroot -pSIFRE
 
 ile giriş yapılır,
 
@@ -89,7 +90,7 @@ komutu ile veritabanlarının listesi;
 ```
 Not: Eğer mariadb-server kurulu sunucu, lider kurulumu yapılacak sunucudan bağımsız bir sunucu olacak ise, mariadb konfigürasyon dosyasında (/etc/mysql/my.cnf ) yer alan bind-address parametresi satırının önüne **#** simgesi yazılmalıdır, bunun için konsolda;
 
-	sudo pico /etc/mysql/my.cnf
+	sudo nano /etc/mysql/my.cnf
     
 ile açılan ekranda;
 
@@ -110,7 +111,7 @@ Bu ayarı nasıl bir yapı kurulacaksa ona göre şekillendirilmelidir. Tek bir 
 ###Veritabanı Grant Yetkileri###
 Lider sunucunun veritabanı sunucusundaki veritabanına ulaşması için **liderdb** database grant yetkilerinin verilmesi gerekir. Bunun için;
 
-	mysql -uroot -pSIFRE
+	sudo mysql -uroot -pSIFRE
 
 ile giriş yapılır,
 
@@ -226,7 +227,7 @@ değerleri girilmiştir.
 
 Yukarıda girilen bilgiler sonrasında OpenLdap'ta **admin** kullanıcısı oluşmalıdır. Kontrol için;
 
-	ldapsearch -H ldap://localhost -x -LLL -b "dc=liderahenk,dc=org" "(objectClass=simpleSecurityObject)"
+	sudo ldapsearch -H ldap://localhost -x -LLL -b "dc=liderahenk,dc=org" "(objectClass=simpleSecurityObject)"
     
 komutu çalıştırılır. Örnek çıktı;
 
@@ -243,8 +244,7 @@ description: LDAP administrator
 
 LDAP sunucunuzun yapılandırma erişimi için(**config** kullanıcına) bir şifre belileyin ve bunu LDAP şifre satırı haline getirin. Bunun için;
 
-	sudo su
-	slappasswd
+	sudo slappasswd
 
 Komutu ile “yapılandırma(konfigürasyon) kullanıcısı” şifresi  girmenizi isteyecektir. Bu şifre LDAP sunucunuzun yapılandırma erişimi için gerekmektedir.
 
@@ -254,7 +254,7 @@ Komutu ile “yapılandırma(konfigürasyon) kullanıcısı” şifresi  girmeni
 
 ekranda beliren şifreyi kopyalayınız ve bu şifreyi;
 
-	sudo pico /etc/ldap/slapd.d/cn=config/olcDatabase={0}config.ldif 
+	sudo nano /etc/ldap/slapd.d/cn=config/olcDatabase={0}config.ldif 
 
 dosyanın içerisindeki olcRootDN: satırının altına
 
@@ -262,11 +262,11 @@ dosyanın içerisindeki olcRootDN: satırının altına
 
 şeklinde kopyalayın, OpenLDAP sunucunuzu durdurun ve bunun için aşağıdaki komutu çalıştırın.
 
-	systemctl stop slapd.service
+	sudo systemctl stop slapd.service
 
 OpenLDAP sunucunuzu aşağıdaki komut ile  yeniden başlatabilirsiniz.
 
-	systemctl start slapd
+	sudo systemctl start slapd
 
 ###LiderAhenk Şemalarının OpenLDAP'a Yüklenmesi###
 
@@ -284,11 +284,11 @@ Daha sonra liderahenk.ldif dosyası konsolda
 
 adresinden indirilerek **/tmp** klasörü altına kopyalanır. Lider ahenk şemaları varolan ldap'a yüklenmelidir. Bunun için ;
 
-	ldapadd -x -f /tmp/liderahenk.ldif -D "cn=admin,cn=config" -w $config_admin_pwd
+	sudo ldapadd -x -f /tmp/liderahenk.ldif -D "cn=admin,cn=config" -w $config_admin_pwd
 
 komutu ile ldif ldap'a yüklenir. Burada **cn=admin,cn=config** config kullanıcısı,  **$config_admin_pwd** yapılandırma(konfigürasyon) kullanıcısı şifresidir. Bir önceki adımda belirlenmiştir. Örneğin;
 
-	ldapadd -x -f /tmp/liderahenk.ldif -D "cn=admin,cn=config" -w SIFRE
+	sudo ldapadd -x -f /tmp/liderahenk.ldif -D "cn=admin,cn=config" -w SIFRE
 
 şeklinde olmalıdır.
 
@@ -308,11 +308,11 @@ OpenLDAP üzerinde roller oluşturarak ldap kullanıcılarına merkezi yetkilend
 
 komutu ile ldif indirilir. Daha sonra;
 
-	ldapadd -f /tmp/sudo.ldif -D "cn=admin,cn=config" -w SIFRE
+	sudo ldapadd -f /tmp/sudo.ldif -D "cn=admin,cn=config" -w SIFRE
 
 komutu sonrası OpenLDAP admin kullanıcı şifresi girilere ldap'a eklenir. Ardından;
 
-	sudo pico roles.ldif
+	sudo nano roles.ldif
 
 komutu ile açılan ekrana aşağıdaki bilgiler kopyalanır; 
 
@@ -322,9 +322,19 @@ komutu ile açılan ekrana aşağıdaki bilgiler kopyalanır;
     ou: Roles
     description: Roles groups
 
-bu ldif dosyasında **base_dn** alanına  yukarıda tanımlanan base_dn bilgisi girilir(Örn: dc=liderahenk,dc=org) ve
+bu ldif dosyasında **base_dn** alanına  yukarıda tanımlanan base_dn bilgisi girilir. 
 
-	ldapadd -x -W -D "cn=admin,dc=liderahenk,dc=org" -f roles.ldif
+Örnek roles.ldif:
+
+	dn: ou=Roles,dc=liderahenk,dc=org
+    objectclass:organizationalunit
+    objectclass:top
+    ou: Roles
+    description: Roles groups
+
+Daha sonra;
+
+	sudo ldapadd -x -W -D "cn=admin,dc=liderahenk,dc=org" -f roles.ldif
 
 komutu ile ldap'a Roles grubu eklenir. Bu komut sonrasında alınacak yanıt;
 
@@ -352,11 +362,23 @@ Basit bir anlatımla bu grup altına bir rol tanımlayalım. Aşağıda satırla
 
 şeklinde örnek bir rolü;
 
-	pico ornek_role.ldif
+	nano ornek_role.ldif
 
-ile açılan ekrana yapıştırarak **role1** alanına tanımlamak istediğiniz rolün ismini, **base_dn** kısmına ldap base_dn (Örn: dc=liderahenk,dc=org) tanımlaması yapın. Daha sonra;
+ile açılan ekrana yapıştırarak **role1** alanına tanımlamak istediğiniz rolün ismini, **base_dn** kısmına ldap base_dn (Örn: dc=liderahenk,dc=org) tanımlaması yapın.
 
-	ldapadd -x -W -D "cn=admin,base_dn" -f ornek_role.ldif
+Örnek ornek_role.ldif :
+
+    dn: cn=role1,ou=Roles,dc=ldierahenk,dc=org
+    objectClass: sudoRole
+    objectClass: top
+    cn: role1
+    sudoUser: pardus
+    sudoHost: ALL
+    sudoCommand: ALL
+
+Daha sonra;
+
+	sudo ldapadd -x -W -D "cn=admin,base_dn" -f ornek_role.ldif
     
 komutu ile base_dn yazılarak yukarıdaki örnek rol sisteme eklenir. Örnekler için [https://linux.die.net](https://linux.die.net/man/5/sudoers.ldap) adresini ziyaret edebilirsiniz.
 
@@ -399,9 +421,38 @@ liderServiceAddress: http://lider.liderahenk.org:8181
 
 bilgileri;
 
-	pico lider_dugumler.ldif
+	nano lider_dugumler.ldif
 
 ile açılan ekrana yapıştırılır. 
+
+Örnek lider_dugumler.ldif;
+
+```
+dn: ou=Ahenkler,dc=liderahenk,dc=org
+objectclass:organizationalunit
+objectclass:top
+ou: Ahenkler
+description: pardusDeviceGroup
+
+dn: cn=lider_console,dc=liderahenk,dc=org
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pardusLider
+objectClass: pardusAccount
+cn: lider_console
+sn: lider_console
+uid: lider_console
+userPassword: SIFRE
+liderPrivilege: [TASK:dc=liderahenk,dc=org:ALL]
+liderPrivilege: [REPORT:ALL]
+
+dn: cn=liderAhenkConfig,dc=liderahenk,dc=org
+objectClass: pardusLiderAhenkConfig
+cn: liderAhenkConfig
+liderServiceAddress: http://lider.liderahenk.org:8181
+```
 
 * Bu bilgilerden **'base_dn'** geçen alanlara slapd kurulumunda verilen ldap temel ağacı bilgisi girilmelidir ( Örneğin: dc=liderahenk,dc=org )
 
@@ -411,7 +462,7 @@ ile açılan ekrana yapıştırılır.
 
 Dosya kaydedilerek çıkılır. Daha sonra;
 
-	ldapadd -x -W -D "cn=admin,base_dn" -f lider_dugumler.ldif
+	sudo ldapadd -x -W -D "cn=admin,base_dn" -f lider_dugumler.ldif
 
 şeklinde base_dn bilgisi yazılır, komut sonrasında **admin** parolası girilerek OpenLDAP'a eklenir.
 
@@ -445,7 +496,7 @@ komutu yeterlidir.
 
 Kurulum sonrası konfigurasyon için konsolda;
 
-	wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer-console/master/lider-installer/conf/ejabberd.yml
+	sudo wget https://raw.githubusercontent.com/Pardus-LiderAhenk/lider-ahenk-installer-console/master/lider-installer/conf/ejabberd.yml
 
 adresinde  bulunan  ***ejabberd.yml***  dosyasını;
 
@@ -457,14 +508,9 @@ Not: Bu konfigürasyon  **“ejabberd ejabberd-16.06”** versiyonuna göre **ej
 
 **ejabberd.yml** dosyasını konsolda bir editör ile açınız;
 
-	sudo pico /opt/ejabberd-16.06/conf/ejabberd.yml
+	sudo nano /opt/ejabberd-16.06/conf/ejabberd.yml
 
 Açılan dosyada aşağıdaki satırlara gerekli bilgiler tanımlanır.
-
-	hosts:
-		- "#SERVICE_NAME"
-
-***localhost*** satırı açık ise kapatılır, altına kullanılacak ***#SERVICE_NAME** (Örn: im.liderahenk.org) tanımlaması yapılır.
 
 	ldap_servers:
    		- "#LDAP_SERVER"
@@ -483,15 +529,7 @@ Açılan dosyada aşağıdaki satırlara gerekli bilgiler tanımlanır.
 
 ***ldap base dn*** (Örn: "dc=liderahenk,dc=org" ) bilgisi girilir.
 
-	host_config:
-	   "#SERVICE_NAME":
-     	  auth_method:
-       	    - internal
-       	    - ldap
-       	    - anonymous
-
-***host_config*** (Örn: "im.liderahenk.org": )satırları yukarıdaki şekilde olmalıdır. 
-
+	
 ```
 Not: Ejabberd.yml dosyası çok hassas bir dosyadır, herhangi boşluk veya karakter hatasında çalışmayabilir. Bu nedenle konfigurasyon dosyasında mümkün olduğu kadar varolan ayaların üzerinde değişiklik yapılarak gidilmelidir. Yeni satır eklemek veya başka bir yerden veri kopyalamak hataya neden olabilmektedir.
 ```
@@ -505,7 +543,7 @@ daha sonra
 
 	sudo ./ejabberdctl status
 
-komutu ile alınan çıktıda 
+komutu ile alınan çıktıda;
 
     The node ejabberd@localhost is started with status: started
     ejabberd 16.06 is running in that node
@@ -520,18 +558,18 @@ Bu işlemler için sırası ile aşağıdaki komutlar çalıştırılır. Komutl
 
 ile ***bin*** dizini altına gidilir. ***Ejabberd Admin*** kullanıcısı oluşturmak için;
 
-	./ejabberdctl register admin  #SERVICE_NAME #ejabberd_admin_pass
+	sudo ./ejabberdctl register admin  im.liderahenk.org #ejabberd_admin_pass
     
-şeklinde #SERVICE_NAME (Örn: im.liderahenk.org)  bilgisi ve #ejabberd_admin_pass (Örn: SIFRE) bilgileri girilir.
+şeklinde  #ejabberd_admin_pass (Örn: SIFRE) bilgileri girilir.
 Alınan cevap;
 
-	User admin@#SERVICE_NAME successfully registered
+	User admin@im.liderahenk.org successfully registered
 
 şeklinde olmalıdır.
 Admin kullanıcsından sonra birde KARAF tarafından kullanılacak lider_sunucu kullanıcısı oluşturulmalıdır. 
 
-	./ejabberdctl register lider_sunucu #SERVICE_NAME #ejabberd_admin_pass
-	./ejabberdctl restart
+	sudo ./ejabberdctl register lider_sunucu im.liderahenk.org #ejabberd_admin_pass
+	sudo ./ejabberdctl restart
 
 Bu parolalar daha sonra yapılandırma ayarlarında kullanılacak olduğu için unutulmamalıdır.
 
@@ -540,18 +578,18 @@ Bu parolalar daha sonra yapılandırma ayarlarında kullanılacak olduğu için 
 Ahenklerin  Lider sunucu ile mesajlaşması  için Ejaberd roster ayarları yapımalıdır. Bunun için;
 
 	cd /opt/ejabberd-16.06/bin
-	./ejabberdctl srg-create everyone #SERVICE_NAME "everyone" this_is_everyone everyone
-	./ejabberdctl srg-user-add @all@ #SERVICE_NAME everyone #SERVICE_NAME
+	sudo ./ejabberdctl srg-create everyone im.liderahenk.org "everyone" this_is_everyone everyone
+	sudo ./ejabberdctl srg-user-add @all@ im.liderahenk.org everyone im.liderahenk.org
     
 komutları çalıştırılmalıdır. Bu komutlardaki #SERVICE_NAME alanında yukarıda belirlenen servis adı girilmelidir.
 	
 Xmpp sunucusunun son durumda hatasız kurulduğunun testlerinin yapılması için; 
 
-	./ejabberdctl stop
+	sudo ./ejabberdctl stop
 
 servisi durduruyoruz.
 
-	./ejabberdctl live
+	sudo ./ejabberdctl live
 
 komutu ile ejabberd sunucusu çalıştırılır. Bu çalışma sırasında ejabberd herhangi bir hata alıp çıkmıyor ve açık kalıyorsa kurulumumuz doğru yapılmış demektir. Aksi durumda kurulum adımını tekrar kontrol ediniz. Bu adımdan sonra;
 
@@ -559,7 +597,7 @@ komutu ile ejabberd sunucusu çalıştırılır. Bu çalışma sırasında ejabb
 
 ile live çalışma modundan çılır ve;
 
-	./ejabberdctl start
+	sudo ./ejabberdctl start
 
 ile ejabberd sunucusu tekrar başlatılır. 
 
@@ -576,7 +614,7 @@ Eklentilerin üzerinde tutulacağı ve mesajlaşma ile yapılamayacak boyuttaki 
 komutu ile kurulum tamamlanır. Kurulan bu dosya sunucu bilgileri **Lider Sunucu** konfigurasyonunda gereklidir. Dosya sunucu lider sunucudan farklı bir makine olacaksa;
 
 	mkdir /home/kullanici_adi/plugins && touch /home/kullanici_adi/sample-agreement.txt
-	mkdir -p /home/kullanici_adi/agent-files/{0}
+	mkdir -p /home/kullanici_adi/agent-files/
     
 komutları ile lider sunucu adımlarında kullanılacak dosya-dizinler oluşturulur. Bu dosya sunucunun ip adresi ve kullanıcı adı ve yukarıda oluşturulan dosya-dizin yolları **lider sunucu konfigürasyonunda** kullanılacaktır.
 
@@ -592,14 +630,14 @@ JAVA_HOME çevresel değişkeni sisteme tanımlanmalıdır. Bunun için;
 
 	update-alternatives --config java
 
-komutu ile sistemde kurulu java sürümü ve yolu görüntülenir. eğerbir java sürümü yoksa;
+komutu ile sistemde kurulu java sürümü ve yolu görüntülenir. Eğer bir java sürümü yoksa;
 
 	sudo apt install openjdk-8-jre
 
 komutu ile Openjdk-8-jre sisteme yüklenir.
 Not: Farklı bir sürüm kullanılacaksa java sürümü ve yolu ona göre tanımlanmalıdır.
 
-	sudo pico ~/.bashrc
+	sudo nano ~/.bashrc
 
 ile açılan dosyanın en atına;
 
@@ -611,7 +649,7 @@ ve
 
 Burada {sdk ev dizini} ile belirtilen yere sdk ev dizini adı gelir. Bu adımdan sonra
 
-	source ~/.bashrc
+	sudo source ~/.bashrc
 
 ile yeni çevresel değişkenler sistem tarafından tanınmış hale gelir. (Bu adımda makinenin yeniden başlatılması önerilir. )
 Bu işlemin testi için;
@@ -624,7 +662,7 @@ ekrana oracle sdk ev dizini yolunu ekrana çıktı olarak veriyorsa işlem doğr
 
 Lider Sunucu;
 
-	sudo apt install lider-server -y
+	sudo apt install lider-server ssh -y
 
 komutu ile depodan kurulumu sağlanır. Daha sonra -;
 
@@ -636,14 +674,14 @@ ile servis aktif edilir.
 
 Bu adımda OpenLdap, XMPP ve Dosya sunucu ayarlarının lider sunucuya tanımlanması yapılır. Bu konfigurasyonlar sonucunda (veritabanı hariç) bileşenler birbirleri ile haberleşirler. Lider-sunucu yapılandırma dosyasının düzenlenmesi için;
 
-	sudo pico /usr/share/lider-server/etc/tr.org.liderahenk.cfg
+	sudo nano /usr/share/lider-server/etc/tr.org.liderahenk.cfg
 
 ile bu dosya düzenlenmek için açılır;
 
     ldap.server = ip_adresi
     ldap.port = 389
     ldap.username = cn=admin,dc=liderahenk,dc=org
-    ldap.password = SIFRE!
+    ldap.password = SIFRE
     ldap.root.dn = dc=liderahenk,dc=org
 
 **ip_adresi** bu alana tanımlanmalıdır. Ldap **admin** şifresi ve dn bilgileri örnekte olduğu şekilde tanımlanır.
@@ -686,33 +724,37 @@ Not: Lider sunucu aynı zamanda dosya sunucu olarakta kullanılacak ise konsolda
 
 	mkdir /home/kullanici_adi/plugins && touch /home/kullanici_adi/sample-agreement.txt
 
-	mkdir -p /home/kullanici_adi/agent-files/{0}
+	mkdir -p /home/kullanici_adi/agent-files/
 
 komutları ile (**kullanici_adi** dosya sunucudaki kullanıcını home dizinidir) oluşturulmalı ve yukarıdaki dosya sunucu konfigürasyonuna tanımlanmalıdır.
 ``` 
 
 Daha sonra
 
-	sudo pico /usr/share/lider-server/etc/tr.org.liderahenk.datasource.cfg
+	sudo nano /usr/share/lider-server/etc/tr.org.liderahenk.datasource.cfg
 
 dosyasında;
 
-    db.server = localhost:3306
+    db.server = db_ip:3306
     db.database = liderdb
     db.username = root
     db.password = SIFRE
 
-veritabanı konfigürasyonu yapılır. **localhost** alanına ip bilgisi,port, veritabanına erişimi olan kullanıcı ve şifre bilgisi tanımlanır.
+veritabanı konfigürasyonu yapılır. **db_ip** alanına veritabanı sunucusu ip bilgisi,port, veritabanına erişimi olan kullanıcı ve şifre bilgisi tanımlanır. 
+
+```
+Not: Veritabanı sunucusu ile lider sunucu aynı makinede ise ip yerine "localhost" yazılmalıdır.
+```
 
 ###Lider Sunucu Servis Adımları###
 
 Lider sunucu;
 
-	systemctl start lider.service
+	sudo systemctl start lider.service
 
 komutu ile yeniden başlatılarak  kurulum tamamlanır. Lider servisinin başladığından emin olmak için 
 
-	systemctl status lider.service
+	sudo systemctl status lider.service
 
 alternatif olarak
 
@@ -720,7 +762,7 @@ alternatif olarak
 
 komutu çıktısına bakılır.  Eğer “start” durumda değilse alternatif olarak;
 
-	/etc/init.d/lider start
+	sudo /etc/init.d/lider start
 
 komutu ile karaf çalıştırılır. 
 
