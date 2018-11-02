@@ -1,6 +1,6 @@
 #  LiderAhenk OVA
 
-Ova dosyasını [buradan](http://download.liderahenk.org/lider-server-1.1.ova) indirebilirsiniz. Bu Virtualbox dosyası aşağıdaki bilgileri içermektedir. **Virtualbox > Dosya > Aygıtı İçe Aktar** yolu ile içe aktararak kullanabilirsiniz. Bu adım için https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html adresinden bilgi alabilirsiniz.
+Ova dosyasını [buradan](docs.liderahenk.org/lider-ahenk-docs/1.1.0/ova/lider-server-1.1.ova) indirebilirsiniz. Bu Virtualbox dosyası aşağıdaki bilgileri içermektedir. **Virtualbox > Dosya > Aygıtı İçe Aktar** yolu ile içe aktararak kullanabilirsiniz. Bu adım için https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html adresinden bilgi alabilirsiniz.
 
 Ova ağ ayarları **"Köprü Bağdaştırıcısı"** şeklinde ayarlanmıştır. Sistem çalıştığında DHCP'den otomatik ip alacaktır. Statik bir ip olması gerekli olduğu için bu ip adresinin ova içerisindeki sisteme tanımlanması gereklidir. Bu işlem için https://wiki.debian.org/NetworkConfiguration adresinden bilgi alabilirsiniz.
 
