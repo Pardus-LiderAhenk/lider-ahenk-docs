@@ -7,7 +7,7 @@ Kurulum adımları;
 * KARAF(Lider)
 
 
-bileşenlerinden oluşmaktadır. Bu adımlar Pardus 17 üzerinde test edilmiştir.
+bileşenlerinden oluşmaktadır. Bu adımlar Pardus 17 ve Pardus 17 Sunucu sürümleri üzerinde test edilmiştir.
 
 ##LiderAhenk Depo Adresini Ekleme
 
@@ -40,7 +40,7 @@ komutu ile güncel paket listesi alınarak kurulumlara başlanmalıdır.
 
 Veritabanı olarak  MariaDB kullanılmaktadır. Veritabanları birbirleriyle ilişkili bilgilerin depolandığı alanlardır. Lider Sunucu veritabanıdır. Bir kez kurulur.
 
-	sudo apt install mariadb-server -y
+	sudo apt install mariadb-server
 
 Kurulum işlemleri aşamasında mariadb-server root parolası ekrana gelir.
 
@@ -160,7 +160,7 @@ LDAP bileşeni için bu örnekte OpenLDAP kullanılacaktır. LiderAhenk, kullan�
 
 Konsolda;
 
-	sudo apt install slapd ldap-utils -y
+	sudo apt install slapd ldap-utils
 
 komutu ile kurulum başlatılır.
 
@@ -368,7 +368,7 @@ ile açılan ekrana yapıştırarak **role1** alanına tanımlamak istediğiniz 
 
 Örnek ornek_role.ldif :
 
-    dn: cn=role1,ou=Roles,dc=ldierahenk,dc=org
+    dn: cn=role1,ou=Roles,dc=liderahenk,dc=org
     objectClass: sudoRole
     objectClass: top
     cn: role1
@@ -451,14 +451,14 @@ liderPrivilege: [REPORT:ALL]
 dn: cn=liderAhenkConfig,dc=liderahenk,dc=org
 objectClass: pardusLiderAhenkConfig
 cn: liderAhenkConfig
-liderServiceAddress: http://lider.liderahenk.org:8181
+liderServiceAddress: http://lider_sunucu_ip:8181
 ```
 
 * Bu bilgilerden **'base_dn'** geçen alanlara slapd kurulumunda verilen ldap temel ağacı bilgisi girilmelidir ( Örneğin: dc=liderahenk,dc=org )
 
 * **userPassword** değeri karşısındaki **'lider_console_parola'** yerine **lider_console** kullanıcısı için parolası tanımlanmalıdır.
 
-* **liderServiceAddress** değeri karşısına Lider Sunucu adresi tanımlanır. Bu değer **http://lider.liderahenk.org:8181** örneğinde olduğu gibi **lider.liderahenk.org** lider sunucu adresi ve **8181** portu yazılarak tanımlanmalıdır.
+* **liderServiceAddress** değeri karşısına Lider Sunucu adresi tanımlanır. Bu değer **http://lider_sunucu_ip:8181** örneğinde olduğu gibi **lider_sunucu_ip** lider sunucu adresi ve **8181** portu yazılarak tanımlanmalıdır.
 
 Dosya kaydedilerek çıkılır. Daha sonra;
 
@@ -474,7 +474,7 @@ Bütün ahenklerin bağlandığı bileşendir. Lider Sunucu ve ahenkler bu bu bi
 
 Komut satırında;
 
-    sudo apt install ejabberd=16.06-0 -y
+    sudo apt install ejabberd=16.06-0
 
 komutu ile kurulur. 
 
@@ -607,16 +607,16 @@ NOT: Ejabberd sunucusu lider ve diğer sunuculardan bağımsız ayrı bir sunuc
 
 ##Dosya Sunucu##
 
-Eklentilerin üzerinde tutulacağı ve mesajlaşma ile yapılamayacak boyuttaki işlemlerin (ssh şeklinde)  dosya aktarımı için kullanıcılacak sunucudur. Herhangi bir ssh ile erişimi sağlanacak bilgisayar olabilir, tercihen lider sunucuyu kullanıyoruz. Aşağıdaki paketler dosya aktarımı ve iletişim için gereklidir;
+Eklentilerin üzerinde tutulacağı ve mesajlaşma ile yapılamayacak boyuttaki işlemlerin (ssh şeklinde)  dosya aktarımı için kullanıcılacak sunucudur. ssh ile erişimi sağlanacak  herhangi bir bilgisayar olabilir(Tercihen lider sunucuyu kullanıyoruz). Aşağıdaki paketler dosya aktarımı ve iletişim için gereklidir;
 
-	sudo apt install sshpass rsync -y
+	sudo apt install sshpass rsync
 
-komutu ile kurulum tamamlanır. Kurulan bu dosya sunucu bilgileri **Lider Sunucu** konfigurasyonunda gereklidir. Dosya sunucu lider sunucudan farklı bir makine olacaksa;
+komutu ile kurulum tamamlanır. Kurulan bu dosya sunucu bilgileri **Lider Sunucu** konfigurasyonunda gereklidir. **Dosya sunucu lider sunucudan farklı bir makine olacaksa**;
 
 	mkdir /home/kullanici_adi/plugins && touch /home/kullanici_adi/sample-agreement.txt
 	mkdir -p /home/kullanici_adi/agent-files/
     
-komutları ile lider sunucu adımlarında kullanılacak dosya-dizinler oluşturulur. Bu dosya sunucunun ip adresi ve kullanıcı adı ve yukarıda oluşturulan dosya-dizin yolları **lider sunucu konfigürasyonunda** kullanılacaktır.
+komutları ile lider sunucu adımlarında kullanılacak dosya-dizinler oluşturulur. Dosya  sunucuda bulunan bir **kullanıcı adı** yazılarak komutlar çalıştırılmalıdır. Yukarıda oluşturulan dosya-dizin yolları **lider sunucu konfigürasyonunda** kullanılacaktır.
 
 ##Lider Sunucu##
 
@@ -624,9 +624,9 @@ Lider Sunucu, liderahenk uygulamasının merkezinde yer alır.  Xmpp ile bütün
 
 ###Lider Sunucu Java Ayarları###
 
-Pardus 17 sürümlerinde java kurulu olarak geldiği için bu adıma gerek yoktur. Lider Sunucu Pardus Sunucu sürümü üzerine kurulacaksa aşağıdaki adımlar uygulanmalıdır.
+**NOT: Pardus 17 ve Pardus 17 Sunucu sürümlerinde java kurulu olarak geldiği için bu adıma ++GEREK YOKTUR++!.**
 
-JAVA_HOME çevresel değişkeni sisteme tanımlanmalıdır. Bunun için;
+Lider Sunucu başka bir dağıtım  üzerine kurulacaksa aşağıdaki adımlar uygulanmalıdır. JAVA_HOME çevresel değişkeni sisteme tanımlanmalıdır. Bunun için;
 
 	update-alternatives --config java
 
@@ -662,13 +662,15 @@ ekrana oracle sdk ev dizini yolunu ekrana çıktı olarak veriyorsa işlem doğr
 
 Lider Sunucu;
 
-	sudo apt install lider-server ssh -y
+	sudo apt install lider-server
 
 komutu ile depodan kurulumu sağlanır. Daha sonra -;
 
 	sudo systemctl start lider.service
     
-ile servis aktif edilir.
+ile servis aktif edilir. Servis başlatılduıktan sonra varsayılan konfigurasyon dosyaları oluşur. Lider Sunucu servisi durdurularak konfigurasyon dosyaları düzenlenmelidir;
+
+	sudo systemctl stop lider.service
 
 ###Lider Sunucu Konfigurasyon Dosyası###
 
