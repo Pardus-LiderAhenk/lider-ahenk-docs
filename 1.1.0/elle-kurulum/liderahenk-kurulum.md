@@ -267,6 +267,29 @@ dosyanın içerisindeki olcRootDN: satırının altına
 OpenLDAP sunucunuzu aşağıdaki komut ile  yeniden başlatabilirsiniz.
 
 	sudo systemctl start slapd
+    
+####Ldap'ta Yazma Yetkisi Tanımlama####
+
+Apache DS'e **config** kullanıcısı ile(Yukarıda tanımlana kullanıcı ve şifre ile) giriş yaptıktan sonra **olcDatabase={1}mdb** alanına tıklanır ve ekranın sağındaki alanda **{2}to by * read** satırı silinir.
+
+![Ldap Yazma Yetkisi-1](images/ldap-yazma-yetkisi-ilk.png)
+
+**Sağ tık > New Value** ile aşağıdaki satır eklenir;
+
+	{1}to dn.subtree="dc=liderahenk,dc=org" by group.exact="cn=adminGroups,dc=liderahenk,dc=org" write by * read
+
+![Ldap Yazma Yetkisi-2](images/ldap-yazma-yetkisi-son.png)
+
+Apache DS'ten **config** kullanıcısından çıkış yapılarak  **admin** kullanıcısı ile giriş yapılır. **group.exact= admin** ifadesinde tanımlanan yolda **groupOfNames objectclass**'ına sahip **adminGroups** grubu eklenir. Bu örnekte **base dn**(dc=liderahenk,dc=org) altına eklenmiştir.
+
+* DIT
+  * Root DSE
+  	* dc=liderahenk,dc=org
+		* cn=adminGroups (Bu gruba member olarak ldap ta yazma yetkisine sahip olacak kullanıcılar eklenir. )
+
+**adminGroups** grubuna member olarak eklenen kullanıcılar ldap'ta yazma yetkisine sahip olurlar.
+
+![Ldap Yazma Yetkisi-3](images/ldap-yazma-yetkisi-grup.png)
 
 ###LiderAhenk Şemalarının OpenLDAP'a Yüklenmesi###
 
@@ -668,7 +691,7 @@ komutu ile depodan kurulumu sağlanır. Daha sonra -;
 
 	sudo systemctl start lider.service
     
-ile servis aktif edilir. Servis başlatılduıktan sonra varsayılan konfigurasyon dosyaları oluşur. Lider Sunucu servisi durdurularak konfigurasyon dosyaları düzenlenmelidir;
+ile servis aktif edilir. Servis başlatıldıktan sonra varsayılan konfigurasyon dosyaları oluşur. Lider Sunucu servisi durdurularak konfigurasyon dosyaları düzenlenmelidir;
 
 	sudo systemctl stop lider.service
 
@@ -697,7 +720,7 @@ ile bu dosya düzenlenmek için açılır;
 
 **ip_adresi** bu alana tanımlanmalıdır. Ejabberd da oluşturulan lider_sunucu ve host bilgileri yukarıdaki şekilde tanımlanır.
 ```
-NOT :Lider sunucu cluster yapıda kurulacaksa xmpp.resource değeri 2 sunucuda ayrı ayrı tanımlanmalıdır. Örneğin, 1.ci sunucuya Smack, 2.ci sunucuya Smack1 olarak yazılmalıdır.
+NOT :Lider sunucu cluster yapıda kurulacaksa xmpp.resource değeri 2 sunucuda ayrı ayrı tanımlanmalıdır. Örneğin, 1.ci sunucuya Smack1, 2.ci sunucuya Smack2 olarak yazılmalıdır.
 ```
 
 Ahenklerin hangi ou altında görüleceği bilgisi aşağıdaki gibi tanımlanır. Bu bilgi daha önce Ldap kurulumunda oluşturulan Ahenkler gurubudur.
