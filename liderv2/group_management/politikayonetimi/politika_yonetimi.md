@@ -10,7 +10,7 @@ Ayarlar kısmında seçilen politkanın altında bulunan görevler güncellenebi
 
 ![Politika_Listesi](../images/politikayonetimi/politikalistesi.png)
 
-Betik Ayarları
+**Betik Ayarları**
 
 Betik listesi kısmında daha önceden tanımlanmış betikler listelenir. 
 
@@ -22,21 +22,21 @@ listesine eklenir.
 
 ![Betik](../images/politikayonetimi/betik.png)
 
-İnternet Tarayıcı Ayarları
+**İnternet Tarayıcı Ayarları**
 
 İnternet tarayıcı ayalarında internet tarayıcısının vekil sunucu, sertifika, giriş sayfası, 
 sekme ayarları, gizlilik ayarları, döküman indirme gibi özelleştirmeler yapılabilir.
 
 ![Tarayıcı](../images/politikayonetimi/internet.png)
 
-Oturum Yönetim Ayarları
+**Oturum Yönetim Ayarları**
 
 Oturum yönetimi kısmında kullanıcıların hangi zaman aralığında giriş yaptığını ve oturum süresi gibi bilgileri görüntüleyebiliriz.
  Bunun yanı sıra hangi günler oturum açabileceği, ne kadar süre aktif kalabileceği gibi politikalarda belirlenebilir.
 
 ![Oturum_Yonetimi](../images/politikayonetimi/oturumyonetimi.png)
 
-Rsyslog Ayarları
+**Rsyslog Ayarları**
 
 ![Rsyslog](../images/politikayonetimi/rsyslog.png)
 
@@ -49,7 +49,7 @@ sekmesinde #VARSAYILAN olarak sunulan içerik gibi olacak şekilde özelleştiri
 
 ![Sistem_Gozlemci](../images/politikayonetimi/sistemgozlemcisi.png)
 
-USB Erişim Ayarları
+**USB Erişim Ayarları**
 
 USB modülleri ve aygıtları üzerindeki izinleri düzenler.İlgili Ahenk makinesi üzerinde web kamerası, yazıcı, USB bellek ve fare-klavye izinlerini düzenler. 
 İzin verme seçeneğinin seçilmesi sonucunda kullanıcı izin verilmeyen usb modülünü kullanamaz. İzin ver ya da verme
