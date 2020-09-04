@@ -33,7 +33,10 @@ Gönderilecek dosya seçildikten sonra hedef dizin belirlenir. Ardından paylaş
 
 **Sistem Gözlemcisi**
 
-Eklenti, Conky masaüstü uygulamasını kullanır. Metin tabanlı bilgilerin kullanıcının masaüstünde görülmesini sağlar.Genel bilgilerden sonra TEXT başlığı altında Ahenk kullanıcısının masaüstünde görülecek olan yazı yazılır.
+Metin tabanlı bilgilerin kullanıcının masaüstünde görülmesini sağlar. Şablon İçeriği 
+ve Şablon Ayarları eksiksiz girilerek şablon kaydedilir. 
+Şablon İçeriği ve Şablon Ayarları ayrı ayrı girilmelidir. Ayarlar, Şablon Ayarları 
+sekmesinde #VARSAYILAN olarak sunulan içerik gibi olacak şekilde özelleştirilebilir.
 
 ![Sistem Gözlemcisi](../images/istemcigrupyonetimi/sistem_gozlemcisi.png)
 

@@ -14,7 +14,6 @@ Betik Ayarları
 
 Betik listesi kısmında daha önceden tanımlanmış betikler listelenir. 
 
-
 Betik ayar listesi kısmında özel olarak yazılmış betik dosyalarının içeriği düzenlenmektedir. Betik adı girilir. 
 Ardından betiğin türü Python, Bash, Perl ve Ruby olmak üzere 4 betik çeşidinden biri seçilir. 
 Oluşturulan betiklerden biri seçilir ve betik parametreleri (eğer var ise) belirtilerek görev çalıştırılır.
@@ -30,22 +29,29 @@ sekme ayarları, gizlilik ayarları, döküman indirme gibi özelleştirmeler ya
 
 ![Tarayıcı](../images/politikayonetimi/internet.png)
 
+Oturum Yönetim Ayarları
+
 Oturum yönetimi kısmında kullanıcıların hangi zaman aralığında giriş yaptığını ve oturum süresi gibi bilgileri görüntüleyebiliriz.
  Bunun yanı sıra hangi günler oturum açabileceği, ne kadar süre aktif kalabileceği gibi politikalarda belirlenebilir.
 
 ![Oturum_Yonetimi](../images/politikayonetimi/oturumyonetimi.png)
 
-**Bilmiyorum**
+Rsyslog Ayarları
 
 ![Rsyslog](../images/politikayonetimi/rsyslog.png)
 
-Sistem gözlemcisi kısmında kullanıcların masaüstlerinde gözükecek bilgilerin düzenlendiği ve conky ile sunulduğu alandır.
+Sistem Gözlemcisi Ayar Listesi
+
+Metin tabanlı bilgilerin kullanıcının masaüstünde görülmesini sağlar. Şablon İçeriği 
+ve Şablon Ayarları eksiksiz girilerek şablon kaydedilir. 
+Şablon İçeriği ve Şablon Ayarları ayrı ayrı girilmelidir. Ayarlar, Şablon Ayarları 
+sekmesinde #VARSAYILAN olarak sunulan içerik gibi olacak şekilde özelleştirilebilir.
 
 ![Sistem_Gozlemci](../images/politikayonetimi/sistemgozlemcisi.png)
 
-USB modülleri ve aygıtları üzerindeki izinleri düzenler.
+USB Erişim Ayarları
 
-İlgili Ahenk makinesi üzerinde web kamerası, yazıcı, USB bellek ve fare-klavye izinlerini düzenler. 
+USB modülleri ve aygıtları üzerindeki izinleri düzenler.İlgili Ahenk makinesi üzerinde web kamerası, yazıcı, USB bellek ve fare-klavye izinlerini düzenler. 
 İzin verme seçeneğinin seçilmesi sonucunda kullanıcı izin verilmeyen usb modülünü kullanamaz. İzin ver ya da verme
  seçeneklerinden hiçbirinin seçilmemesi durumunda ilgili usb elemanına izin verilmeyecektir. 
 Bu nedenle izin için mutlaka "İzin ver" seçeneğinin seçilmiş olması gereklidir.
