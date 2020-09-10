@@ -31,14 +31,21 @@ Kullanıcı grubu istenildiği takdirde silinebilir.
 
 ![Sil](../images/kullanicigrupyönetimi/sil.png)
 
+**Aktif Politika Listesi**
+
+Grup politika yönetimi kısmında oluşturulan ve kaydedilen politikaların listesinin gözüktüğü kısımdır.
+
+![Aktif_Politika_Listesi](../images/kullanicigrupyönetimi/aktifpolitikalistesi.png)
+
+Politika atamak için aktif politika listesinden bir politika seçilir ve uygula butonuna tıklanır.
+
+![Politika_Uygula](../images/kullanicigrupyönetimi/politikaatama.png)
+
+
 **Atanan Politikalar**
 
 Aktif politika yönetimi kısmından atanan politikalar bu kısımda gözükmektedir. Bu politikalar aynı zamanda bu kısımdan silinebilir.
 
 ![Atanan_Politikalar](../images/kullanicigrupyönetimi/atananpolitikalar.png)
 
-**Aktif Politika Listesi**
 
-Grup politika yönetimi kısmında oluşturulan ve kaydedilen politikaların listesinin gözüktüğü kısımdır.
-
-![Aktif_Politika_Listesi](../images/kullanicigrupyönetimi/aktifpolitikalistesi.png)

@@ -6,7 +6,7 @@ ve Oluşturulma Tarihi bilgileri gözlemlenir.
 
 ![Raporlar](../reports/images/raporlar.png)
 
-Dışa Aktar butonu  istemcilerin bütün bilgileri pdf formatında dışa aktarılır.
+Dışa Aktar butonu  istemcilerin bütün bilgileri Excel formatında dışa aktarılır.
 
 ![Dısa_Aktar](../reports/images/raporlardisaaktar.png)
 
@@ -23,4 +23,16 @@ Filtre Alanı kısmında uygulanacak filtrelemeler sayesinde istemcilerin DN, JI
 
 ![Filtre](../reports/images/raporlarfilitrealani.png)
 
+Seçilen kullanıcılar daha önceden oluşturulmuş bir gruba dahil edilebilir veya seçilen bu kullanıcılar 
+ile yeni bir grup oluşturulabilir.
 
+![Grup_Oluşturma](../reports/images/raporlargrup.png)
+
+Mevcut gruba ekle seçeniği ile açılan pencereden daha önceden oluşturulmuş kullanıcı gruplarından 
+birine eklenebilir.
+
+![Mevcut_Grup](../reports/images/mevcutgrup.png)
+
+Yeni istemci grup oluştur seçeneği ile açılana pencereden yeni istemci grubu oluşturulur.
+
+![Yeni_Grup](../reports/images/yenigrup.png)

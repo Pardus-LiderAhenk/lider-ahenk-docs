@@ -17,11 +17,11 @@ Oturum yönetimi sayesinde makineler yeniden başlatılabilir, kapatılabilir ve
 
 Root Kullanıcısı, root parola yönetimi eklentisinden tekrar parola verilene kadar istemcide kullanılamaz hale getirilebilir. Root parolası sıfırlanabilir. Yeni oluşturulacak parolada en az 8 karakter olmalıdır. En az bir büyük harf, küçük harf, sayı ve karakter içermelidir. İzin verilen özel karakterler: +=.@*!
 
-![Anlık Mesaj](../images/istemcigrupyonetimi/anlik_mesaj.png)
+![Root_Parola_Yönetimi](../images/istemcigrupyonetimi/root_parola_yonetimi.png)
  
 **İstemci Oturum Açma Ayarları**
 
-İstemci oturum açma ayarları eklentisi ile domaine alınan makine için 2 çeşit görev gönderilebilmektedir. LDAP veya Active Directory'den domaine alınan makinın oturum açma ayarlarını iptal edebilir. LDAP üzerinden domaine alınan makinaları Active Directory'e veya Active Directory ile domaine alınan makinaların LDAP üzerinden oturum açabilir hale gelmektedir.
+İstemci oturum açma ayarları eklentisi ile domaine alınan makine için 2 çeşit görev gönderilebilmektedir. LDAP veya Active Directory'den domaine alınan makinanın oturum açma ayarlarını iptal edebilir. LDAP üzerinden domaine alınan makinaları Active Directory'e veya Active Directory ile domaine alınan makinaların LDAP üzerinden oturum açabilir hale gelmektedir.
 
 ![İstemci Oturum Açma Ayarları](../images/istemcigrupyonetimi/istemcioturumacmaayarlari.png)
 
