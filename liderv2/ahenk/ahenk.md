@@ -1,4 +1,4 @@
-**Ahenk Kayıt**
+**Lider-Ahenk Repo Tanımlama**
 
 Ahenk paketi "repo.liderahenk.org" adresinde sunulmaktadır. Pardus bilgisayarlarda bu adres tanımlanarak ahenk paketi 
 depodan yüklenebilmektedir. Bu deponun sisteminize tanımlanması için uçbirim(konsol)da;
@@ -11,17 +11,11 @@ komutları ile "liderahenk-archive-keyring.asc" key dosyası indirilerek sisteme
     
 komutu ile depo adresi "/etc/apt/sources.list" dosyasına eklenir.
 
-Not: Test reposu için aşağıda belirtilen komut çalıştırılmalıdır.
-    
-    sudo printf  "deb [arch=amd64] http://repo.liderahenk.org/liderahenk-test testing main" | sudo tee -a /etc/apt/sources.list
+**Ahenk Kurulum**
 
-Not: Yukarıdaki adımı uçbirimde bir metin editörü(vi,nano,pico) yardımı ile ;
+Repo tanımlama işleminden sonra sırasıyla aşağıdaki işlemler uygulanır.
 
-    deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main
-
-satırını "/etc/apt/sources.list" dosyasına elinizle de tanımlayabilirsiniz.
-
-Daha sonra;
+İlk önce ;
 
     sudo apt update
     
@@ -30,8 +24,12 @@ komutu ile güncel paket listesini alınmalıdır.
     sudo apt install ahenk
     
 komutu ile güncel Ahenk versiyonu indirilir.    
+
+**Ahenk Register**
+
+Ahenk indirildikten sonra ;
     
-    ahenk-register
+    sudo ahenk-register
 
 komutu ile ahenk çalıştırılır.
 

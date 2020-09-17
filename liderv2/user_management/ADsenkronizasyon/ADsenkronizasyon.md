@@ -1,7 +1,14 @@
 **AD Senkronizasyon**
 
 AD senkronizasyon bölümü Active Directory'de bulunan ağaç yapısını olduğu gibi göstermektedir. Active Directory'de
-bulunan kullanıcılar veya gruplar seçilerek LDAP'a aktarılabilir.
+bulunan kullanıcılar veya gruplar seçilerek LDAP'a aktarılabilir. 
+
+Sol kısımda gözüken ağaç yapısı sayesinde Active Directory'de arama yapılabilir.
+İstemciler arasında ad, soyad, ID ve klasör ile ilgili aramalar yapılabilir. Arama yapılırken : 
+
+    *test* , test* , *test
+
+veritabanı aratması şeklinde istenilen isimler girilmelidir.
 
 ![AD_senkronizasyon](../images/ADsenkronizasyon/ADsenkronizasyon.png)
 

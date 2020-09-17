@@ -1,6 +1,10 @@
 **Kullanıcı İşlemleri**
 
-Kullanıcı işlemleri, kullanıcı yönetiminin altında bulunur. Kullanıcı işlemlerinde seçilen 
+Kullanıcı işlemleri, kullanıcı yönetiminin altında bulunur. Kullanıcı işlemlerinin ağaç yapısında seçilen kullanıcı ile
+ilgili bilgiler gözükmektedir. Bunun yanı sıra ağaçta seçilen klasörün altına kullanıcı eklenebilir veya yeni klasör 
+oluşturulabilir. 
+
+Kullanıcı işlemlerinde seçilen 
 kullanıcının kişisel bilgilerini, login geçmişini, grup listesini, parola politikasını, hangi 
 yetki grubuna dahil olduğunu ve politika geçmişi ayrıntılı bir şekilde görüntülenebilmektedir. 
 
