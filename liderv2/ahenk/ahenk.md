@@ -25,7 +25,7 @@ komutu ile güncel paket listesini alınmalıdır.
     
 komutu ile güncel Ahenk versiyonu indirilir.    
 
-**Ahenk Register**
+**Ahenk Kayıt**
 
 Ahenk indirildikten sonra ;
     
