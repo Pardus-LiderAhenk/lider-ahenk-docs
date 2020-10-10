@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a28f45d-2ff5-44bf-b867-8386170d77fd" name="Default" comment="" />
+    <list default="true" id="7a28f45d-2ff5-44bf-b867-8386170d77fd" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/liderv2/computer_management/betik/betik.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/genelekran.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/gecmis/gecmis.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/gecmis/gecmis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/guvenlik/ag_yonetimi.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/guvenlik/ag_yonetimi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/images/güvenlik/ag_yonetimi01.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/images/güvenlik/ag_yonetimi01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/images/sistem/istemci_bilgileri.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/images/sistem/istemci_bilgileri.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/paket/istemci_paketlerini_listele_ve_kaldir.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/paket/istemci_paketlerini_listele_ve_kaldir.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/paket/paket_kur_veya_kaldir.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/paket/paket_kur_veya_kaldir.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/servis/servis_yonetimi.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/servis/servis_yonetimi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/sistem/istemci_bilgileri.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/sistem/istemci_bilgileri.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/paket.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/paket.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/lider/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/lider/lider.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/lider/lider.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/user_management/images/ADsenkronizasyon/GrupLDAPaktarim.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/user_management/images/ADsenkronizasyon/GrupLDAPaktarim.png" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,48 +30,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ahenk.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liderv2/ahenk/ahenk.md">
+      <file leaf-file-name="politika_yonetimi.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="405">
-                <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <first_editor relative-caret-position="380">
+                <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lider.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liderv2/lider/lider.md">
+      <file leaf-file-name="genelekran.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/genelekran.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="503">
-                <caret line="81" column="3" selection-start-line="81" selection-start-column="3" selection-end-line="81" selection-end-column="3" />
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="giris.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liderv2/giris.md">
+      <file leaf-file-name="kaynak_kullanimi.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="50" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexx.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/indexx.md">
+      <file leaf-file-name="sistem.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/sistem.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="52" selection-start-column="52" selection-end-column="52" />
+              <first_editor relative-caret-position="555">
+                <caret line="37" column="83" lean-forward="true" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
               </first_editor>
               <second_editor />
             </state>
@@ -75,24 +94,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/İstemciOturumAçmaAyarları.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/KaynakKullanımı.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/OturumYönetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/RootParolaYönetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/SistemGözlemcisi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/UzakMasaüstü.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/YerelKullanıcıYönetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/ahenk_kur.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/gecmis/gecmis.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/guvenlik/ag_yonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/guvenlik/usb_yonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/paket/istemci_paket_depolari.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/paket/istemci_paketlerini_listele_ve_kaldir.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/paket/paket_kur_veya_kaldir.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/servis/servis_yonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/dosya_paylasimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/dosya_yonetimi.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/istemci_bilgileri.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/istemci_oturum_acma_ayarlari.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/oturum_yonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/root_parola_yonetimi.md" />
@@ -110,29 +121,37 @@
         <option value="$PROJECT_DIR$/liderv2/settings/betiktanimlari/betik.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/images/sistemgozlemcitanımlari/sistemgozlemcisi.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/sistemgozlemcitanımlari/sistemgozlemcisi.md" />
-        <option value="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/sistem_gozlemcisi.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/kayitsablonlari/kayitsablonlari.md" />
         <option value="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/sistem.md" />
-        <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md" />
         <option value="$PROJECT_DIR$/liderv2/reports/raporlar.md" />
-        <option value="$PROJECT_DIR$/liderv2/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/ahenkkur/ahenk_kur.md" />
-        <option value="$PROJECT_DIR$/liderv2/lider/lider.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/istemciyönetimi.md" />
-        <option value="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/paket.md" />
         <option value="$PROJECT_DIR$/liderv2/giris.md" />
         <option value="$PROJECT_DIR$/liderv2/user_management/ADsenkronizasyon/ADsenkronizasyon.md" />
         <option value="$PROJECT_DIR$/liderv2/user_management/kullaniciislemleri/kullaniciislemleri.md" />
         <option value="$PROJECT_DIR$/liderv2/ahenk/ahenk.md" />
         <option value="$PROJECT_DIR$/index.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/servis/servis_yonetimi.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/betik/betik.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/gecmis/gecmis.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/guvenlik/ag_yonetimi.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/istemci_bilgileri.md" />
+        <option value="$PROJECT_DIR$/liderv2/lider/lider.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/paket/istemci_paketlerini_listele_ve_kaldir.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/paket/paket_kur_veya_kaldir.md" />
+        <option value="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/paket.md" />
+        <option value="$PROJECT_DIR$/liderv2/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md" />
+        <option value="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/genelekran.md" />
+        <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md" />
+        <option value="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="189" />
-    <option name="width" value="1914" />
-    <option name="height" value="1055" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1919" />
+    <option name="width" value="1922" />
+    <option name="height" value="1083" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -142,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,10 +168,36 @@
               <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
               <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
+              <item name="liderv2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
+              <item name="liderv2" type="462c0819:PsiDirectoryNode" />
+              <item name="group_management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
+              <item name="liderv2" type="462c0819:PsiDirectoryNode" />
+              <item name="group_management" type="462c0819:PsiDirectoryNode" />
+              <item name="istemcigrupyonetimi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
+              <item name="liderv2" type="462c0819:PsiDirectoryNode" />
+              <item name="group_management" type="462c0819:PsiDirectoryNode" />
+              <item name="politikayonetimi" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,17 +242,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="189" width="1914" height="1055" extended-state="0" />
+    <frame x="1919" y="0" width="1922" height="1083" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18455844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18378094" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32983193" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28463203" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2762605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -234,16 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/sistem/istemci_bilgileri.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/computer_management/sistem/uzak_masaustu.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -264,38 +298,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/gecmis/gecmis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/servis/servis_yonetimi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1.1.0/eklentiler/betik.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="120">
             <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="36" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -328,36 +342,6 @@
     <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/betik/betik_listesi.md" />
     <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/paket/paket.md" />
     <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/betik_tanimi.md" />
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/betik/betik_listesi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/betik/betik_tanimi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="152" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/paket/paket_kur_veya_kaldir.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="76" selection-start-line="2" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/computer_management/sistem/oturum_yonetimi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -398,16 +382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/guvenlik/usb_yonetimi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/settings/images/sistemgozlemcitanımlari/sistemgozlemcisi.md" />
     <entry file="file://$PROJECT_DIR$/liderv2/settings/betiktanimlari/betik.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -424,16 +398,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="4" column="14" selection-start-line="4" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="279">
-            <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
           </first_editor>
           <second_editor />
         </state>
@@ -469,36 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/betik.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/sistem.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="555">
-            <caret line="37" column="83" lean-forward="true" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="58" lean-forward="true" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/reports/raporlar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -519,19 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/istemciyonetimi.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="607">
-            <caret line="42" selection-start-line="42" selection-end-line="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/computer_management/SSH/SSH.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -541,9 +462,6 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/giris.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/computer_management/istemciyonetimi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -555,29 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/user_management/ADsenkronizasyon/ADsenkronizasyon.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/paket.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="81" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/user_management/images/kullaniciislemleri/kullaniciislemleri.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/user_management/kullaniciislemleri/kullaniciislemleri.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -587,29 +482,6 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/ahenk/ahenk.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="405">
-            <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/lider/lider.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="503">
-            <caret line="81" column="3" selection-start-line="81" selection-start-column="3" selection-end-line="81" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/1.0.0/virtual-images/virtual-ova.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -627,21 +499,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/giris.md">
+    <entry file="file://$PROJECT_DIR$/indexx.md" />
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/betik/betik_tanimi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="16" selection-end-line="7" selection-end-column="152" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/indexx.md">
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/guvenlik/usb_yonetimi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
-            <caret column="52" selection-start-column="52" selection-end-column="52" />
+            <caret selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/betik/betik.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/servis/servis_yonetimi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/betik/betik_listesi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/giris.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/guvenlik/ag_yonetimi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="61" lean-forward="true" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/gecmis/gecmis.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="110" selection-start-line="6" selection-start-column="110" selection-end-line="6" selection-end-column="110" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/sistem/istemci_bilgileri.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/lider/lider.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1185">
+            <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/ahenk/ahenk.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/paket/istemci_paketlerini_listele_ve_kaldir.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/paket/paket_kur_veya_kaldir.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" selection-start-line="2" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/user_management/ADsenkronizasyon/ADsenkronizasyon.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="458">
+            <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/betik.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/paket.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="81" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/genelekran.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/sistem.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="555">
+            <caret line="37" column="83" lean-forward="true" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="380">
+            <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>

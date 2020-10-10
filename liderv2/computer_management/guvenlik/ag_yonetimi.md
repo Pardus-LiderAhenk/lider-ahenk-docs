@@ -4,7 +4,7 @@ Mevcut konfigürasyon bölümünde bilgisayarın adı değiştirilir.
 
 ![Ağ Yönetimi01](../images/güvenlik/ag_yonetimi01.png)
 
-DNS bölümünde silmek istediğiniz DNS kaydını seçerek DNS silebilir ya da yeni bir DNS kaydı eklemek için formu doldurduktan sonra DNS ekleyebilirsiniz.
+DNS bölümünde silmek istediğiniz kaydı seçerek silebilir ya da yeni bir kayıt eklemek için formu doldurduktan sonra ekle butonuna basarak yeni DNS ekleyebilirsiniz.
 
 ![Ağ Yönetimi02](../images/güvenlik/ag_yonetimi02.png)
 

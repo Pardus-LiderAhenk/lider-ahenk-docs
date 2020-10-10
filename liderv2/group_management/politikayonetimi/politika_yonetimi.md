@@ -24,7 +24,7 @@ listesine eklenir.
 
 **İnternet Tarayıcı Ayarları**
 
-İnternet tarayıcı ayalarında internet tarayıcısının vekil sunucu, sertifika, giriş sayfası, 
+İnternet tarayıcı ayalarında internet tarayıcısının vekil sunucu, giriş sayfası, 
 sekme ayarları, gizlilik ayarları, döküman indirme gibi özelleştirmeler yapılabilir.
 
 ![Tarayıcı](../images/politikayonetimi/internet.png)
@@ -38,9 +38,13 @@ Oturum yönetimi kısmında kullanıcıların hangi zaman aralığında giriş y
 
 **Rsyslog Ayarları**
 
+Seçilen kullanıcların Rsysloglarının yedekte tutulması için oluşturulan politikadır.
+Belirlenen aralıklarla ve yedekte tutma süresi ayarlanabilir. Rsyslog ayarları kısmından  
+log yedeklerinin tutulacağı sunucuların adresi, portu ve kullanacağı protokol değiştirilebilir.
+
 ![Rsyslog](../images/politikayonetimi/rsyslog.png)
 
-Sistem Gözlemcisi Ayar Listesi
+**Sistem Gözlemcisi Ayar Listesi**
 
 Metin tabanlı bilgilerin kullanıcının masaüstünde görülmesini sağlar. Şablon İçeriği 
 ve Şablon Ayarları eksiksiz girilerek şablon kaydedilir. 

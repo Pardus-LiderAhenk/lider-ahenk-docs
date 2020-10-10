@@ -1,7 +1,7 @@
 **Kullanıcı Grup Yönetimi**
 
-Kullanıcı grup yönetimi, kullanıcı gruplarının düzenlendiği, politika atandığı ve atanan politikaların
-gözlemlenebileceği kısımdır.
+Kullanıcı grup yönetimi kısmında, kullanıcı grupları düzenlenebilir, seçilen gruplara politika atanabilir, atanan 
+politalar kaldırılabilir ve atanan politikalar gözlemlenebilir.
 
 ![Kullanıcı_Grup_Yönetimi](../images/kullanicigrupyönetimi/kullanicigrupyonetimi.png)
 
@@ -33,7 +33,7 @@ Kullanıcı grubu istenildiği takdirde silinebilir.
 
 **Aktif Politika Listesi**
 
-Grup politika yönetimi kısmında oluşturulan ve kaydedilen politikaların listesinin gözüktüğü kısımdır.
+Aktif Politika Listesi kısmında oluşturulan ve kaydedilen politikaların listesinin gözüktüğü kısımdır.
 
 ![Aktif_Politika_Listesi](../images/kullanicigrupyönetimi/aktifpolitikalistesi.png)
 
@@ -44,7 +44,8 @@ Politika atamak için aktif politika listesinden bir politika seçilir ve uygula
 
 **Atanan Politikalar**
 
-Aktif politika yönetimi kısmından atanan politikalar bu kısımda gözükmektedir. Bu politikalar aynı zamanda bu kısımdan silinebilir.
+Atanan politika kısmında seçilen gruba atanan politikalar bu kısımda listelenir. Bu kısımda seçilen gruplara atanan 
+politikalar kaldırılabilir.
 
 ![Atanan_Politikalar](../images/kullanicigrupyönetimi/atananpolitikalar.png)
 

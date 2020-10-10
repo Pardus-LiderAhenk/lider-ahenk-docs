@@ -77,8 +77,6 @@ Lider Ahenk sunucu konfigürasyonları için aşağıdaki alanların girilmesi g
 **Lider Arayüz Kullanıcı Adı:** Lider arayüzü kullanacak kullanıcı adı (Lider Admini veya Sistem Yönetici), <br>
 **Lider Arayüz Kullanıcı Parolası:** Lider arayüzü kullanacak kullanıcı parolası, <br>
 
-Lider Ahenk & Active Directory kontrollü senkronizasyonu için "**Active Directory Bilgilerini Düzenle**" seçeneği seçilerek Active Directory sunucu bilgileri girilir.
 
-![4](./images/4.png)
 
 **Kuruluma Başla** butonuna tıklanarak Lider Ahenk sunucu kurulumu başlatılır.
