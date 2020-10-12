@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a28f45d-2ff5-44bf-b867-8386170d77fd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/liderv2/group_management/kullaniciyetkilendirme/kullaniciyetkilendirme.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/group_management/kullaniciyetkilendirme/kullaniciyetkilendirme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldaperisimayarlari.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldaperisimayarlari.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +14,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="politika_yonetimi.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="149">
+                <caret line="44" column="316" selection-start-line="44" selection-start-column="316" selection-end-line="44" selection-end-column="316" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ldapayrlari.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldapayrlari.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -26,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kullaniciyetkilendirme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kullaniciyetkilendirme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/liderv2/group_management/kullaniciyetkilendirme/kullaniciyetkilendirme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -42,8 +54,8 @@
         <entry file="file://$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldaperisimayarlari.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="118" lean-forward="true" selection-start-line="17" selection-start-column="118" selection-end-line="17" selection-end-column="118" />
               </first_editor>
               <second_editor />
             </state>
@@ -109,19 +121,20 @@
         <option value="$PROJECT_DIR$/liderv2/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/genelekran.md" />
         <option value="$PROJECT_DIR$/liderv2/computer_management/sistem/kaynak_kullanimi.md" />
-        <option value="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/digerayarlar.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/dosyasunucuayarlari.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/konsolkullanicisiayarlari.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldapayrlari.md" />
         <option value="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/xmppayarlari.md" />
-        <option value="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldaperisimayarlari.md" />
         <option value="$PROJECT_DIR$/liderv2/group_management/kullaniciyetkilendirme/kullaniciyetkilendirme.md" />
+        <option value="$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldaperisimayarlari.md" />
+        <option value="$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="291" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="6" />
+    <option name="y" value="54" />
     <option name="width" value="1914" />
     <option name="height" value="1084" />
   </component>
@@ -149,35 +162,21 @@
               <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
               <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
               <item name="liderv2" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="group_management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
               <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
               <item name="liderv2" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-              <item name="betiktanimlari" type="462c0819:PsiDirectoryNode" />
+              <item name="group_management" type="462c0819:PsiDirectoryNode" />
+              <item name="kullaniciyetkilendirme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
               <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
               <item name="liderv2" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-              <item name="kayitsablonlari" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
-              <item name="liderv2" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-              <item name="sistemgozlemcitanımlari" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lider-ahenk-docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lider-ahenk-docs" type="462c0819:PsiDirectoryNode" />
-              <item name="liderv2" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-              <item name="sunucuayarlari" type="462c0819:PsiDirectoryNode" />
+              <item name="group_management" type="462c0819:PsiDirectoryNode" />
+              <item name="politikayonetimi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,17 +227,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1054" extended-state="6" />
+    <frame x="6" y="54" width="1914" height="1084" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18378094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18455844" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32983193" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29577464" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2864638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -596,16 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="57">
-            <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/settings/kayitsablonlari/kayitsablonlari.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -679,21 +668,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldaperisimayarlari.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liderv2/group_management/kullaniciyetkilendirme/kullaniciyetkilendirme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/settings/sunucuayarlari/ldaperisimayarlari.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="118" lean-forward="true" selection-start-line="17" selection-start-column="118" selection-end-line="17" selection-end-column="118" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liderv2/group_management/politikayonetimi/politika_yonetimi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="149">
+            <caret line="44" column="316" selection-start-line="44" selection-start-column="316" selection-end-line="44" selection-end-column="316" />
           </first_editor>
           <second_editor />
         </state>

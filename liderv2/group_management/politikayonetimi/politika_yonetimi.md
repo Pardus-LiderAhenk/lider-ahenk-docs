@@ -38,10 +38,11 @@ Oturum yönetimi kısmında kullanıcıların hangi zaman aralığında giriş y
 
 **Rsyslog Ayarları**
 
-Seçilen kullanıcların Rsysloglarının yedekte tutulması için oluşturulan politikadır.
-Belirlenen aralıklarla ve yedekte tutma süresi ayarlanabilir. Rsyslog ayarları kısmından  
-log yedeklerinin tutulacağı sunucuların adresi, portu ve kullanacağı protokol değiştirilebilir.
+Rsyslog eklentisi bir profil eklentisi olup Ahenk makinesinde bulunan log dosyalarının- rotasyon konfigürasyonun sağlanmasına yardımcı olmaktadır.
 
+Profilde, kullanıcı log dosyalarının rotasyon sıklığını (günlük, haftalık, aylık, yıllık), ne kadar eski logu tutacağı bilgisini, log dosyasının rotasyonu için gereken dosya büyüklüğü miktarını(MB) belirleyebilmektedir. Ayrıca kullanıcıya log dosyaları ile ilgili; rotasyondan sonra yeni log dosyası yaratılsın, eski log dosyaları sıkıştırılsın, log dosyası yok ise hata verilmeden geçilsin gibi seçenekler de sunulmaktadır.
+
+Kullanıcı tabloya rotasyonunu sağlamak istediği log dosyalarını, nereye rotasyon sağlanacağını ve yerelde mi yoksa uzak makinaya mı yedekleneceği bilgilerini ekleyerek konfigürasyonu sağlayabilmektedir. Uzak sunucuya yedeklenecek olan log dosyaları için uzak sunucu adres, port ve protokol bilgileri de girilmelidir.
 ![Rsyslog](../images/politikayonetimi/rsyslog.png)
 
 **Sistem Gözlemcisi Ayar Listesi**
