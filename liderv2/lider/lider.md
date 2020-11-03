@@ -1,8 +1,9 @@
 # LİDER AHENK UYGULAMASI NASIL KURULUR
 
-##### Not : Lider ahenk sunucusu için Pardus-19.2-SERVER sürümünü kullanınız. Pardus 19.2 sürümünü http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.2-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
+Not : Lider ahenk sunucusu için Pardus-19.3-SERVER sürümünü kullanınız. Pardus 19.2 sürümünü http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
 
 ## Bağımlılıkların Kurulması
+
 
 Uçbirimde aşağıdaki komutlar sırasıyla yazılır.
 
@@ -76,7 +77,7 @@ Lider Ahenk sunucu konfigürasyonları için aşağıdaki alanların girilmesi g
 **Sistem Admin Parolası:** Lider Ahenk bileşenleri için admin yönetici parolası,<br>
 **Lider Arayüz Kullanıcı Adı:** Lider arayüzü kullanacak kullanıcı adı (Lider Admini veya Sistem Yönetici), <br>
 **Lider Arayüz Kullanıcı Parolası:** Lider arayüzü kullanacak kullanıcı parolası, <br>
-
+**Lider Arayüz Kullanıcı Mail Adresi:** Lider arayüz kullanısının parolasını unuttuğunda kullanabileceği mail adresi.
 
 
 **Kuruluma Başla** butonuna tıklanarak Lider Ahenk sunucu kurulumu başlatılır.
