@@ -1,8 +1,8 @@
-# LİDER AHENK UYGULAMASI NASIL KURULUR
+**Lider Ahenk Uygulaması Nasıl Kurulur**
 
 Not : Lider ahenk sunucusu için Pardus-19.3-SERVER sürümünü kullanınız. Pardus 19.2 sürümünü http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
 
-## Bağımlılıkların Kurulması
+**Bağımlılıkların Kurulması**
 
 
 Uçbirimde aşağıdaki komutlar sırasıyla yazılır.
@@ -12,7 +12,7 @@ sudo apt-get install python3-paramiko python3-pyqt5 python3-mysql.connector pyth
 ````
 
 
-## Uygulamanın İndirilmesi
+**Uygulamanın İndirilmesi**
 
 Lider Ahenk Kurulum Uygulamasını indirmek için;
 
@@ -28,7 +28,7 @@ git clone https://github.com/Pardus-LiderAhenk/lider-ahenk-installer.git
 
 Komutu ile Lider Ahenk Kurulum Uygulaması indirilir.
 
-## Uygulamanın Çalıştırılması
+**Uygulamanın Çalıştırılması**
 
 Kurulum uygulamasını çalıştırmak için;
 
