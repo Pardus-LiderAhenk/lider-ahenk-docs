@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a28f45d-2ff5-44bf-b867-8386170d77fd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/liderv2/lider/extra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liderv2/reports/günceraporu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liderv2/reports/istemciraporu.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/lider/lider.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/lider/lider.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liderv2/reports/raporlar.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/görevraporu.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +51,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/liderv2/reports" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/liderv2/computer_management/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/liderv2/reports" />
       <recent name="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi" />
       <recent name="$PROJECT_DIR$/liderv2/group_management/images/istemcigrupyonetimi" />
       <recent name="$PROJECT_DIR$/liderv2/group_management/istemcigrupyonetimi/betik" />
       <recent name="$PROJECT_DIR$/liderv2/computer_management" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/liderv2/computer_management/images" />
     </key>
   </component>
@@ -87,6 +90,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />

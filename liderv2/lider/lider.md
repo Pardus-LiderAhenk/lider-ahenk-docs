@@ -1,6 +1,6 @@
-**Lider Ahenk Uygulaması Nasıl Kurulur**
+**Lider Kurulum Uygulaması Nasıl Kurulur**
 
-**Not** : Lider ahenk sunucusu için Pardus-19.3-SERVER sürümünü kullanınız. Pardus 19.2 sürümünü http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
+**Not** : Lider sunucusu için Pardus-19.3-SERVER sürümünü kullanınız. Pardus 19.2 sürümünü http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
 
 **Bağımlılıkların Kurulması**
 
@@ -14,7 +14,7 @@ sudo apt-get install python3-paramiko python3-pyqt5 python3-mysql.connector pyth
 
 **Uygulamanın İndirilmesi**
 
-Lider Ahenk Kurulum Uygulamasını indirmek için;
+Lider Kurulum Uygulamasını indirmek için;
 
 ````
 sudo apt-get install git
@@ -26,7 +26,7 @@ komutu ile git paketi yüklenir.
 git clone https://github.com/Pardus-LiderAhenk/lider-ahenk-installer.git
 ````
 
-Komutu ile Lider Ahenk Kurulum Uygulaması indirilir.
+Komutu ile Lider Kurulum Uygulaması indirilir.
 
 **Uygulamanın Çalıştırılması**
 
@@ -48,7 +48,7 @@ komutu ile kurulum uygulaması çalıştırılır.
 
 **Lider Ahenk Sunucu Erişim Bilgileri**
 
-Lider Ahenk sunucu bileşenlerinin (Veritabanı, OpenLDAP, XMPP ve Lider) hangi sunucu ya da sunuculara kurulucağının belirlendiği alandır. Tüm bileşenler tek sunucuya kurulacaksa "**Tüm Bileşenler Tek Sunucuya Kurulsun**" seçeneği seçilir. 
+Lider sunucu bileşenlerinin (Veritabanı, OpenLDAP, XMPP ve Lider) hangi sunucu ya da sunuculara kurulucağının belirlendiği alandır. Tüm bileşenler tek sunucuya kurulacaksa "**Tüm Bileşenler Tek Sunucuya Kurulsun**" seçeneği seçilir. 
 Aşağıdaki resimde bileşenlerin tek sunucuya kurulması durumu gösterilmiştir.
 
 ![1](./images/1.png)
@@ -60,16 +60,16 @@ Aşağıdaki resimde bileşenlerin ayrı ayrı sunuculara kurulması durumu gös
 
 Sunucu erişim bilgileri girildikten sonra "**Bağlantıyı Kontrol Et**" butonuna tıklanarak sunucuya erişim olup olmadığı kontrol edilir.
 
-**Lider Ahenk Deposu Ayarları**
+**Lider Deposu Ayarları**
 
-Lider Ahenk bileşenlerinin hangi paket deposu kullanılarak kurulması bu menüde gerçekleştirilir. Stable lider ahenk paketleri için Ana Paket Deposu, test lider ahenk paketleri için Test Paket Deposu seçilir.
+Lider bileşenlerinin hangi paket deposu kullanılarak kurulması bu menüde gerçekleştirilir. Stable lider ahenk paketleri için Ana Paket Deposu, test lider ahenk paketleri için Test Paket Deposu seçilir.
 Depo Key Dosyası: Lider Ahenk paket deposu için oluşturulan anahtar dosyasıyı ifade eder.
 
 **NOT:** Kurulum yapılacak sunucu için paket depoları yerele aynalanmış ise(mirror) Depo Adresi ve Depo Key Dosyası için yerel adresler girilmelidir.
  
-**Lider Ahenk Sunucu Konfigürasyonları**
+**Lider Sunucu Konfigürasyonları**
 
-Lider Ahenk sunucu konfigürasyonları için aşağıdaki alanların girilmesi gerekmektedir.
+Lider sunucu konfigürasyonları için aşağıdaki alanların girilmesi gerekmektedir.
 
 ![3](./images/3.png)
 

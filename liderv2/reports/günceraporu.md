@@ -1,4 +1,4 @@
-**Raporlar**
+**Sistem Güncesi Raporu**
 
 Raporlar kısmında istemcilerin detaylı raporları ve bilgileri verilir. İstemcilerin : 
 Bilgisayar Adı,	MAC Adresi, IP Adresi,	Durum, Faz	Marka, İşletim Sistemi,	Versiyon
