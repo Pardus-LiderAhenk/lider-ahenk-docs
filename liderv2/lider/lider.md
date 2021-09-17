@@ -1,6 +1,6 @@
 **Lider Kurulum Uygulaması Nasıl Kurulur**
 
-**Not** : Lider sunucusu için Pardus-19.3-SERVER sürümünü kullanınız. Pardus 19.2 sürümünü http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
+**Not** : Lider sunucusu için Pardus-19.5-SERVER sürümünü kullanınız. Pardus 19.5 sürümünü http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.5-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
 
 **Bağımlılıkların Kurulması**
 
@@ -8,7 +8,11 @@
 Uçbirimde aşağıdaki komutlar sırasıyla yazılır.
 
 ````
-sudo apt-get install python3-paramiko python3-pyqt5 python3-mysql.connector python3-psutil xterm 
+sudo apt-get install python3-paramiko python3-pyqt5 pip python3-psutil xterm 
+````
+
+````
+pip install mysql-connector-python 
 ````
 
 
