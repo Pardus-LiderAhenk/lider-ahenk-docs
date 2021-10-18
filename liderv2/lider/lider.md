@@ -1,8 +1,8 @@
 **Lider Kurulum Uygulaması Nasıl Kurulur**
 
-**Not** : Lider Kurulum Uygulamasını Pardus-21.0-GNOME sürümü https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-GNOME-amd64.iso veya Pardus-21.0-XFCE https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-XFCE-amd64.iso sürümü üzerinde çalıştırınız.
+**Not** : Lider Kurulum Uygulamasını Pardus-21.0-GNOME sürümü  https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-GNOME-amd64.iso veya Pardus-21.0-XFCE https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-XFCE-amd64.iso sürümü üzerinde çalıştırınız.
 
-**Not** : Lider sunucusu için Pardus-21.0-SERVER sürümünü kullanınız. Pardus 21.0 sürümünü https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
+**Not** : Lider sunucusu için Pardus-21.0-SERVER sürümünü kullanınız. Pardus 21.0 sürümünü  https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
 
 **Bağımlılıkların Kurulması**
 
