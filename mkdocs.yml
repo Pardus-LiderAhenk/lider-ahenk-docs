@@ -1,5 +1,5 @@
 site_name: Liderahenk Doküman
-docs_dir: liderahenk-docs
+docs_dir: docs
 theme:
   language: tr
   name: material
