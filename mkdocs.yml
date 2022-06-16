@@ -16,8 +16,7 @@ theme:
 
 
 nav:
-    - ANASAYFA: index.md
-  #      - agah: 'https://google.com/'
+    - ANASAYFA: index.mds
     - KURULUM:
         - Sunucu Kurulumu(Lider): lider2.0/lider/lider.md
         - İstemci Kurulumu(Ahenk): lider2.0/ahenk/ahenk.md
