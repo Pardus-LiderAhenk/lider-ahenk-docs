@@ -1,8 +1,10 @@
-site_name: Liderahenk Doküman
+site_name: Liderahenk Dokümanlar
 docs_dir: docs
 theme:
   language: tr
   name: material
+  logo: liderahenk_logo.png
+  favicon: favicon.png
   palette:
     - scheme: default
       toggle:
@@ -16,12 +18,12 @@ theme:
 
 
 nav:
-    - ANASAYFA: index.mds
-    - KURULUM:
+    - Ana Sayfa: index.md
+    - Kurulum:
         - Sunucu Kurulumu(Lider): lider2.0/lider/lider.md
         - İstemci Kurulumu(Ahenk): lider2.0/ahenk/ahenk.md
-    - LİDER2.0:
-        - KULLANIM:
+    - Liderahenk 2.0:
+        - Kullanım:
             - Anlık Mesaj: lider2.0/computer_management/sistem/anlik_mesaj.md
             - Dosya Paylaşımı: lider2.0/computer_management/sistem/dosya_paylasimi.md
             - Dosya Yönetimi: lider2.0/computer_management/sistem/dosya_yonetimi.md
@@ -44,10 +46,10 @@ nav:
             - USB Yönetimi: lider2.0/computer_management/guvenlik/usb_yonetimi.md
             - Geçmiş: lider2.0/computer_management/gecmis/gecmis.md
             - Ahenk Kur: lider2.0/computer_management/ahenkkur/ahenk_kur.md
-        - KULLANICI YÖNETİMİ:
+        - Kullanıcı Yönetimi:
             - Kullanıcı İşlemleri: lider2.0/user_management/kullaniciislemleri/kullaniciislemleri.md
             - AD Senkronizasyon: lider2.0/user_management/ADsenkronizasyon/ADsenkronizasyon.md
-        - GRUP YÖNETİMİ:
+        - Grup Yönetimi:
             - Kullanıcı Grup Yönetimi: lider2.0/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md
             - Genel Ekran: lider2.0/group_management/istemcigrupyonetimi/genelekran.md
             - Sistem: lider2.0/group_management/istemcigrupyonetimi/sistem.md
@@ -55,11 +57,11 @@ nav:
             - Paket: lider2.0/group_management/istemcigrupyonetimi/paket.md
             - Kullanıcı Yetkilendirme (Sudo): lider2.0/group_management/kullaniciyetkilendirme/kullaniciyetkilendirme.md
             - Politika Yönetimi: lider2.0/group_management/politikayonetimi/politika_yonetimi.md
-        - RAPORLAR:
+        - Raporlar:
             - Detaylı İştemci Raporu: lider2.0/reports/detayli_istemci_raporu.md
             - Çalıştırılan Görevler Raporu: lider2.0/reports/calistirilan_görev_raporu.md
             - Sistem Güncesi Raporu: lider2.0/reports/sistem_güncesi_raporu.md
-        - AYARLAR:
+        - Ayarlar:
             - Konsol Kullanıcısı Ayarları: lider2.0/settings/sunucuayarlari/konsolkullanicisiayarlari.md
             - LDAP Erişim Ayarları: lider2.0/settings/sunucuayarlari/ldaperisimayarlari.md
             - LDAP Ayarları: lider2.0/settings/sunucuayarlari/ldapayrlari.md
@@ -69,10 +71,10 @@ nav:
             - Sistem Gözlemcisi Tanımlama: lider2.0/settings/sistemgozlemcitanımlari/sistemgozlemcisi.md
             - Betik Tanımları: lider2.0/settings/betiktanimlari/betik.md
             - Kayıt Şablonları: lider2.0/settings/kayitsablonlari/kayitsablonlari.md
-    - LİDER3.0:
-        - GİRİŞ: lider3.0/login.md
-        
-        - İSTEMCİ YÖNETİMİ:
+            
+    - Liderahenk 3.0:
+        - Oturum Açma: lider3.0/login.md
+        - İstemci Yönetimi:
             - İstemci Yönetimi:
                 - Genel Bilgi: lider3.0/computerManagement/computerManagement.md
                 - Anlık Mesaj: lider3.0/computerManagement/computerManagement/instantMessage.md
@@ -107,20 +109,20 @@ nav:
                 - Anlık Mesaj: lider3.0/computerManagement/computerGroupManagement/instantMessage.md
                 - Dosya Paylaşımı: lider3.0/computerManagement/computerGroupManagement/fileShare.md
                 - İstemci Oturum Açma Ayarları: lider3.0/computerManagement/computerGroupManagement/computerLoginSettings.md                
-        - KULLANICI YÖNETİMİ:
+        - Kullanıcı Yönetici:
             - Kullanıcı Yönetimi: lider3.0/userManagement/userManagement/userManagement.md
             - Kullanıcı Grup Yönetimi: lider3.0/userManagement/userGroupManagement/userGroupManagement.md
             - Kullanıcı Yetkilendirme(Sudo): lider3.0/userManagement/userAuthorizationSudo/userAuthorizationSudo.md
             - AD Yönetimi: lider3.0/userManagement/adManagement/adManagement.md
-        - POLİTİKA YÖNETİMİ:
+        - Politika Yönetimi:
             - Politikalar: lider3.0/policyManagement/policies/policies.md
             - Profiller: lider3.0/policyManagement/profiles/profiles.md        
-        - RAPORLAR:
+        - Raporlar:
             - Detaylı İstemci Raporu: lider3.0/reports/detailedAgentReport/detailedAgentReport.md
             - Çalıştırılan Görev Raporu: lider3.0/reports/executedTaskReport/executedTaskReport.md
             - Sistem Güncesi Raporu: lider3.0/reports/systemLogReport/systemLogReport.md
             - Zamanlanmış Görev Raporu: lider3.0/reports/scheduledTaskReport/scheduledTaskReport.md
-        - AYARLAR:
+        - Ayarlar:
             - Arayüz Kullanıcı Ayarları: lider3.0/settings/consoleUserSettings/consoleUserSettings.md
             - Sunucu Ayarları:
                 - Dizin Sunucu Ayarları: lider3.0/settings/serverSettings/ldapSettings.md
@@ -131,7 +133,7 @@ nav:
             - Sistem Gözlemcisi Ayarları: lider3.0/settings/systemMonitoringDefinitons/systemMonitoringDefinition.md
             - Betik Tanımları: lider3.0/settings/scriptDefinition/script.md
             - Kayıt Şablonları: lider3.0/settings/registirationTemplate/registirationTemplate.md      
-        - PROFİL:
+        - Profil:
             - Kullanıcı Bilgileri: lider3.0/profile/userInformation/userInformation.md
             - Hesap Güvenliği: lider3.0/profile/accountSecurity/accountSecurity.md
             - Kullanım Geçmişi: lider3.0/profile/loginLogoutHistory/loginLogoutHistory.md
