@@ -1,9 +1,0 @@
-**Kayıt Bilgisi**
-
-Kayıt bilgisi istemci gruplarının yönetimi için oluşturulan klasörler veya gruplar hakkında detaylı bilgi verir. 
-
-![Kayit Bilgisi](../images/computerGroupManagement/registirationInformation.png)
-
-Grupların içerdiği üyeleri ayrıntılı bir şekilde gözlemleyip arayabilir veya kaldırabilirisiniz.
-
-![Kayit Bilgisi](../images/computerGroupManagement/registirationInformationDetail.png)

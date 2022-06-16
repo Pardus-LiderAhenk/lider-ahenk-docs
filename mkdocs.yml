@@ -1,0 +1,185 @@
+site_name: Liderahenk Doküman
+docs_dir: liderahenk-docs
+theme:
+  language: tr
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  direction: ltr
+
+
+nav:
+    - ANASAYFA: index.md
+  #      - agah: 'https://google.com/'
+    - KURULUM:
+        - Sunucu Kurulumu(Lider): lider2.0/lider/lider.md
+        - İstemci Kurulumu(Ahenk): lider2.0/ahenk/ahenk.md
+    - LİDER2.0:
+        - KULLANIM:
+            - Anlık Mesaj: lider2.0/computer_management/sistem/anlik_mesaj.md
+            - Dosya Paylaşımı: lider2.0/computer_management/sistem/dosya_paylasimi.md
+            - Dosya Yönetimi: lider2.0/computer_management/sistem/dosya_yonetimi.md
+            - İstemci Bilgileri: lider2.0/computer_management/sistem/istemci_bilgileri.md
+            - İstemci Oturum Açma Ayarları: lider2.0/computer_management/sistem/istemci_oturum_acma_ayarlari.md
+            - Kaynak Kullanımı: lider2.0/computer_management/sistem/kaynak_kullanimi.md
+            - Oturum Yönetimi: lider2.0/computer_management/sistem/oturum_yonetimi.md
+            - Root Parola Yönetimi: lider2.0/computer_management/sistem/root_parola_yonetimi.md
+            - Sistem Gözlemcisi: lider2.0/computer_management/sistem/sistem_gozlemcisi.md
+            - Uzak Masaüstü: lider2.0/computer_management/sistem/uzak_masaustu.md
+            - Yerel Kullanıcı Yönetimi: lider2.0/computer_management/sistem/yerel_kullanici_yonetimi.md
+            - İstemci Paket Depoları: lider2.0/computer_management/paket/istemci_paket_depolari.md
+            - İstemci Paketlerini Listele ve Kaldır: lider2.0/computer_management/paket/istemci_paketlerini_listele_ve_kaldir.md
+            - Paket Kur ve Kaldır: lider2.0/computer_management/paket/paket_kur_veya_kaldir.md
+            - Servis Yönetimi: lider2.0/computer_management/servis/servis_yonetimi.md
+            - Betik Listesi: lider2.0/computer_management/betik/betik_listesi.md
+            - Betik Tanımı: lider2.0/computer_management/betik/betik_tanimi.md
+            - SSH: lider2.0/computer_management/SSH/SSH.md
+            - Ağ Yönetimi: lider2.0/computer_management/guvenlik/ag_yonetimi.md
+            - USB Yönetimi: lider2.0/computer_management/guvenlik/usb_yonetimi.md
+            - Geçmiş: lider2.0/computer_management/gecmis/gecmis.md
+            - Ahenk Kur: lider2.0/computer_management/ahenkkur/ahenk_kur.md
+        - KULLANICI YÖNETİMİ:
+            - Kullanıcı İşlemleri: lider2.0/user_management/kullaniciislemleri/kullaniciislemleri.md
+            - AD Senkronizasyon: lider2.0/user_management/ADsenkronizasyon/ADsenkronizasyon.md
+        - GRUP YÖNETİMİ:
+            - Kullanıcı Grup Yönetimi: lider2.0/group_management/kullanicigrupyönetimi/kullanicigrupyonetimi.md
+            - Genel Ekran: lider2.0/group_management/istemcigrupyonetimi/genelekran.md
+            - Sistem: lider2.0/group_management/istemcigrupyonetimi/sistem.md
+            - Betik: lider2.0/group_management/istemcigrupyonetimi/betik.md
+            - Paket: lider2.0/group_management/istemcigrupyonetimi/paket.md
+            - Kullanıcı Yetkilendirme (Sudo): lider2.0/group_management/kullaniciyetkilendirme/kullaniciyetkilendirme.md
+            - Politika Yönetimi: lider2.0/group_management/politikayonetimi/politika_yonetimi.md
+        - RAPORLAR:
+            - Detaylı İştemci Raporu: lider2.0/reports/detayli_istemci_raporu.md
+            - Çalıştırılan Görevler Raporu: lider2.0/reports/calistirilan_görev_raporu.md
+            - Sistem Güncesi Raporu: lider2.0/reports/sistem_güncesi_raporu.md
+        - AYARLAR:
+            - Konsol Kullanıcısı Ayarları: lider2.0/settings/sunucuayarlari/konsolkullanicisiayarlari.md
+            - LDAP Erişim Ayarları: lider2.0/settings/sunucuayarlari/ldaperisimayarlari.md
+            - LDAP Ayarları: lider2.0/settings/sunucuayarlari/ldapayrlari.md
+            - XMPP Ayarları: lider2.0/settings/sunucuayarlari/xmppayarlari.md
+            - Dosya Sunucu Ayarları: lider2.0/settings/sunucuayarlari/dosyasunucuayarlari.md
+            - Diğer Ayarları: lider2.0/settings/sunucuayarlari/digerayarlar.md
+            - Sistem Gözlemcisi Tanımlama: lider2.0/settings/sistemgozlemcitanımlari/sistemgozlemcisi.md
+            - Betik Tanımları: lider2.0/settings/betiktanimlari/betik.md
+            - Kayıt Şablonları: lider2.0/settings/kayitsablonlari/kayitsablonlari.md
+    - LİDER3.0:
+        - GİRİŞ: lider3.0/login.md
+        
+        - İSTEMCİ YÖNETİMİ:
+            - İstemci Yönetimi:
+                - Genel Bilgi: lider3.0/computerManagement/computerManagement.md
+                - Anlık Mesaj: lider3.0/computerManagement/computerManagement/instantMessage.md
+                - Dosya Paylaşımı: lider3.0/computerManagement/computerManagement/fileShare.md
+                - Dosya Yönetimi: lider3.0/computerManagement/computerManagement/fileManagement.md
+                - İstemci Bilgileri: lider3.0/computerManagement/computerManagement/computerInformation.md
+                - İstemci Oturum Açma Ayarları: lider3.0/computerManagement/computerManagement/computerLoginSettings.md
+                - Kaynak Kullanımı: lider3.0/computerManagement/computerManagement/resourcesUsage.md
+                - Oturum Yönetimi: lider3.0/computerManagement/computerManagement/sessionPowerManagement.md
+                - Root Parola Yönetimi: lider3.0/computerManagement/computerManagement/rootPasswordManagement.md
+                - Sistem Gözlemcisi: lider3.0/computerManagement/computerManagement/systemMonitoring.md
+                - Yerel Kullanıcı Yönetimi: lider3.0/computerManagement/computerManagement/localUserManagement.md
+                - Depo Yönetimi: lider3.0/computerManagement/computerManagement/repositoryManagement.md
+                - Kurulu Paket Yönetimi: lider3.0/computerManagement/computerManagement/installedPackageManagement.md
+                - Paket Kur veya Kaldır: lider3.0/computerManagement/computerManagement/packageInstallUninstall.md
+                - Paket Kontrolü: lider3.0/computerManagement/computerManagement/packageControl.md
+                - Servis Yönetimi: lider3.0/computerManagement/computerManagement/serviceManagement.md                
+                - Betik : lider3.0/computerManagement/computerManagement/script.md
+                - Ağ Yönetimi: lider3.0/computerManagement/computerManagement/networkManagement.md
+                - USB Yönetimi: lider3.0/computerManagement/computerManagement/usbManagement.md
+                - Geçmiş: lider3.0/computerManagement/computerManagement/taskHistory.md
+            - İstemci Grup Yönetimi:
+                - Genel Bilgi: lider3.0/computerManagement/computerGroupManagement.md
+                - USB Yönetimi: lider3.0/computerManagement/computerGroupManagement/usbManagement.md
+                - Sistem Gözlemcisi: lider3.0/computerManagement/computerGroupManagement/systemMonitoring.md
+                - Oturum Yönetimi: lider3.0/computerManagement/computerGroupManagement/sessionPowerManagement.md
+                - Betik : lider3.0/computerManagement/computerGroupManagement/script.md
+                - Root Parola Yönetimi: lider3.0/computerManagement/computerGroupManagement/rootPasswordManagement.md
+                - Kayıt Bilgileri: lider3.0/computerManagement/computerGroupManagement/registirationInformation.md
+                - Paket Kur veya Kaldır: lider3.0/computerManagement/computerGroupManagement/packageInstallUninstall.md
+                - Paket Kontrolü: lider3.0/computerManagement/computerGroupManagement/packageControl.md
+                - Anlık Mesaj: lider3.0/computerManagement/computerGroupManagement/instantMessage.md
+                - Dosya Paylaşımı: lider3.0/computerManagement/computerGroupManagement/fileShare.md
+                - İstemci Oturum Açma Ayarları: lider3.0/computerManagement/computerGroupManagement/computerLoginSettings.md                
+        - KULLANICI YÖNETİMİ:
+            - Kullanıcı Yönetimi: lider3.0/userManagement/userManagement/userManagement.md
+            - Kullanıcı Grup Yönetimi: lider3.0/userManagement/userGroupManagement/userGroupManagement.md
+            - Kullanıcı Yetkilendirme(Sudo): lider3.0/userManagement/userAuthorizationSudo/userAuthorizationSudo.md
+            - AD Yönetimi: lider3.0/userManagement/adManagement/adManagement.md
+        - POLİTİKA YÖNETİMİ:
+            - Politikalar: lider3.0/policyManagement/policies/policies.md
+            - Profiller: lider3.0/policyManagement/profiles/profiles.md        
+        - RAPORLAR:
+            - Detaylı İstemci Raporu: lider3.0/reports/detailedAgentReport/detailedAgentReport.md
+            - Çalıştırılan Görev Raporu: lider3.0/reports/executedTaskReport/executedTaskReport.md
+            - Sistem Güncesi Raporu: lider3.0/reports/systemLogReport/systemLogReport.md
+            - Zamanlanmış Görev Raporu: lider3.0/reports/scheduledTaskReport/scheduledTaskReport.md
+        - AYARLAR:
+            - Arayüz Kullanıcı Ayarları: lider3.0/settings/consoleUserSettings/consoleUserSettings.md
+            - Sunucu Ayarları:
+                - Dizin Sunucu Ayarları: lider3.0/settings/serverSettings/ldapSettings.md
+                - XMPP Sunucusu Ayarları: lider3.0/settings/serverSettings/xmppSettings.md
+                - Dosya Sunucusu Ayarları: lider3.0/settings/serverSettings/fileServerSettings.md
+                - Email Sunucusu Ayarları: lider3.0/settings/serverSettings/mailSettings.md
+                - Diğer Ayarlar: lider3.0/settings/serverSettings/otherSettings.md
+            - Sistem Gözlemcisi Ayarları: lider3.0/settings/systemMonitoringDefinitons/systemMonitoringDefinition.md
+            - Betik Tanımları: lider3.0/settings/scriptDefinition/script.md
+            - Kayıt Şablonları: lider3.0/settings/registirationTemplate/registirationTemplate.md      
+        - PROFİL:
+            - Kullanıcı Bilgileri: lider3.0/profile/userInformation/userInformation.md
+            - Hesap Güvenliği: lider3.0/profile/accountSecurity/accountSecurity.md
+            - Kullanım Geçmişi: lider3.0/profile/loginLogoutHistory/loginLogoutHistory.md
+            - Grup Bilgileri: lider3.0/profile/groupInformation/groupInformation.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
