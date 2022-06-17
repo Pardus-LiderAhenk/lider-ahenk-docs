@@ -3,7 +3,7 @@ docs_dir: docs
 theme:
   language: tr
   name: material
-  logo: liderahenk_logo.png
+  logo: liderahenk-logo.png
   favicon: favicon.png
   palette:
     - scheme: default
