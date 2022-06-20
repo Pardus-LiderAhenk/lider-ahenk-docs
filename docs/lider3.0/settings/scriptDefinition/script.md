@@ -11,3 +11,16 @@ bir görev eklentisidir. Betik adı girilir. Ardından betiğin türü Python, B
 (eğer var ise) belirtilerek görev çalıştırılır.
 
 ![Dosya Paylaşımı](../images/scriptDefinition/scriptCreate.png)
+
+![minipic](../images/scriptDefinition/scriptCreate.png)
+
+<style>
+img[alt="minipic"] { 
+  max-width:  2000px; 
+  display: block;
+}
+</style>
+
+
+[![Alternative Text](../images/scriptDefinition/scriptCreate.png)](../images/scriptDefinition/scriptCreate.png)
+

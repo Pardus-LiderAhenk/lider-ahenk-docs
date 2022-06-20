@@ -20,30 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a28f45d-2ff5-44bf-b867-8386170d77fd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/calistirilan_görev_raporu/calistirilangorev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/calistirilan_görev_raporu/calistirilangorev1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/calistirilan_görev_raporu/calistirilangorev2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/calistirilan_görev_raporu/calistirilangorev3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/calistirilan_görev_raporu/calistirilangorev4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/sistem_guncesi_raporu/sistemguncesi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/sistem_guncesi_raporu/sistemguncesi1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/sistem_guncesi_raporu/sistemguncesi2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/sistem_guncesi_raporu/sistemguncesi3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/sistem_guncesi_raporu/sistemguncesi4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/sistem_guncesi_raporu/sistemguncesi5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liderv2/reports/images/sistem_guncesi_raporu/sistemguncesi6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/görevraporu.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/detayli_istemci_raporu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/günceraporu.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/sistem_güncesi_raporu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/mevcutgrup.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/mevcutgrup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/raporlar.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/raporlar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/raporlardisaaktar.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/raporlardisaaktar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/raporlardurumu.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/raporlardurumu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/raporlarfilitrealani.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/raporlarfilitrealani.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/raporlargrup.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/raporlargrup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/raporlarkayittarihi.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/raporlarkayittarihi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/images/yenigrup.png" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/images/detayli_istemci_raporu/yenigrup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liderv2/reports/istemciraporu.md" beforeDir="false" afterPath="$PROJECT_DIR$/liderv2/reports/calistirilan_görev_raporu.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lider3.0/settings/images/registirationTemplate/registirationTemplate.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/lider3.0/settings/images/registirationTemplate/registirationTemplate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lider3.0/settings/registirationTemplate/registirationTemplate.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/lider3.0/settings/registirationTemplate/registirationTemplate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lider3.0/settings/scriptDefinition/script.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/lider3.0/settings/scriptDefinition/script.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +33,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1nEVue9HC4eEZsH5eK95xz8T97s" />
   <component name="ProjectLevelVcsManager">
@@ -102,9 +86,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
 </project>

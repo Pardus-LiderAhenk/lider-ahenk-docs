@@ -16,7 +16,6 @@ theme:
         name: Switch to light mode
   direction: ltr
 
-
 nav:
     - Ana Sayfa: index.md
     - Kurulum:
@@ -138,6 +137,11 @@ nav:
             - Hesap Güvenliği: lider3.0/profile/accountSecurity/accountSecurity.md
             - Kullanım Geçmişi: lider3.0/profile/loginLogoutHistory/loginLogoutHistory.md
             - Grup Bilgileri: lider3.0/profile/groupInformation/groupInformation.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
 
 
 
