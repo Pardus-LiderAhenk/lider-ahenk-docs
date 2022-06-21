@@ -5,4 +5,4 @@ sayesinde anlık olarak istemciler arasında çevirimiçi kullanıcılar  filtre
 çevrimiçi istemcilerin sayısı ağacın en alt kısmında yazmaktadır. İstemciler arasında ad, ID ve klasör ile ilgili 
 aramalar yapılabilir.
 
-![Istemci Yonetimi](../computerManagement/images/computerManagement.png)
+[![Istemci Yonetimi](../computerManagement/images/computerManagement.png)](../computerManagement/images/computerManagement.png)

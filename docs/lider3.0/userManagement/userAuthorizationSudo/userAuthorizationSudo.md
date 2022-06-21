@@ -9,4 +9,5 @@ sudoUser: Seçilen istemcilerde hangi kullanıcıların yetkili olacağını gö
 Bu işlemlerden sonra yetki verilen kullanıcılar eklenen istemcilerde sudoCommand alanında eklenen komutları 
 çalıştırabilirler.
 
-![Kullanıcı Yetkilendirme(sudo)](../images/userAuthorizationSudo/userAuthorization.png)
+
+[![Kullanıcı Yetkilendirme(sudo)](../images/userAuthorizationSudo/userAuthorization.png)](../images/userAuthorizationSudo/userAuthorization.png)

@@ -2,4 +2,4 @@
 
 Usb yönetimi bölümünde seçilen I/O aygıtlarının kullanım izinlerini düzenlenir. 
 
-![Aygit Yonetimi](../images/computerGroupManagement/usbManagement.png)
+[![Usb Yonetimi](../images/computerManagement/usbManagement.png)](../images/computerManagement/usbManagement.png)

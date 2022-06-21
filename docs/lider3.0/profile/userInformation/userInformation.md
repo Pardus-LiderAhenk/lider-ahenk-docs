@@ -2,4 +2,5 @@
 
 Liderahenk uygulamasına girişi yapan kullanıcının kişisel bilgilerini düzenleyebileceği sayfadır.
 
-![Dosya Paylaşımı](../images/userInformation/userInformation.png)
+[![Kullanıcı Bilgileri](../images/userInformation/userInformation.png)](../images/userInformation/userInformation.png)
+

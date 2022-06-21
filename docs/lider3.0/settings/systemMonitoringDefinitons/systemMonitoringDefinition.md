@@ -4,4 +4,5 @@ Metin tabanlı bilgilerin kullanıcının masaüstünde görülmesini sağlar. �
 eksiksiz girilerek şablon kaydedilir. Şablon İçeriği ve Şablon Ayarları ayrı ayrı girilmelidir. Ayarlar, 
 Şablon Ayarları sekmesinde #VARSAYILAN olarak sunulan içerik gibi olacak şekilde özelleştirilebilir.
 
-![Dosya Paylaşımı](../images/systemMonitoringDefinitions/systemMonitoringDefinition.png)
+
+[![Sistem Gözlemcisi Tanımları](../images/systemMonitoringDefinitions/systemMonitoringDefinition.png)](../images/systemMonitoringDefinitions/systemMonitoringDefinition.png)

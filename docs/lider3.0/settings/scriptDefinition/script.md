@@ -1,26 +1,13 @@
-**İstemci Yönetimi**
+**Betik Tanımları**
 
 Bu eklenti daha önceden tanımlanan betiklerinin listesini tutar. Yeni betik oluşturulur veya daha önceden 
 oluşturulmuş betik silinir.
 
-![Dosya Paylaşımı](../images/scriptDefinition/scriptList.png)
+[![Betik Tanımları](../images/scriptDefinition/scriptList.png)](../images/scriptDefinition/scriptList.png)
 
 Betik eklentisi, özel olarak yazılmış betik dosyalarının Ahenk makinelerde çalıştırılmasını sağlayan 
 bir görev eklentisidir. Betik adı girilir. Ardından betiğin türü Python, Bash, Perl ve Ruby olmak üzere 
 4 betik çeşidinden biri seçilir. Oluşturulan betiklerden biri seçilir ve betik parametreleri 
 (eğer var ise) belirtilerek görev çalıştırılır.
 
-![Dosya Paylaşımı](../images/scriptDefinition/scriptCreate.png)
-
-![minipic](../images/scriptDefinition/scriptCreate.png)
-
-<style>
-img[alt="minipic"] { 
-  max-width:  2000px; 
-  display: block;
-}
-</style>
-
-
-[![Alternative Text](../images/scriptDefinition/scriptCreate.png)](../images/scriptDefinition/scriptCreate.png)
-
+[![Betik Tanımları](../images/scriptDefinition/scriptCreate.png)](../images/scriptDefinition/scriptCreate.png)

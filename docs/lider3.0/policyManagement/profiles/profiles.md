@@ -5,16 +5,17 @@ araya gelerek politikayı oluşturur. Tek başına çalıştırılamaz. Bir poli
 Örneğin; Tarayıcı eklentisi için; Lider Arayüz üzerinden eklenti aracılığı ile anasayfa belirleme gibi yapılandırma 
 ayarlarının belirlenip kaydedilmesi ile profil oluşturulabilir.
 
-![Profile](../images/profiles/profiles.png)
+[![Profil](../images/profiles/profiles.png)](../images/profiles/profiles.png)
+
 
 **İnternet Tarayıcı Ayarları**
 
 İnternet tarayıcı ayalarında internet tarayıcısının vekil sunucu, giriş sayfası, sekme ayarları, gizlilik ayarları, 
 döküman indirme gibi özelleştirmeler yapılabilir.
 
-![Profile](../images/profiles/browserProfile.png)
+[![Profil](../images/profiles/browserProfile.png)](../images/profiles/browserProfile.png)
 
-![Profile](../images/profiles/browserPolicy.png)
+[![Profil](../images/profiles/browserPolicy.png)](../images/profiles/browserPolicy.png)
 
 **Rsyslog Ayarları**
 
@@ -30,9 +31,9 @@ Kullanıcı tabloya rotasyonunu sağlamak istediği log dosyalarını, nereye ro
 makinaya mı yedekleneceği bilgilerini ekleyerek konfigürasyonu sağlayabilmektedir. Uzak sunucuya yedeklenecek olan 
 log dosyaları için uzak sunucu adres, port ve protokol bilgileri de girilmelidir.
 
-![Profile](../images/profiles/rsyslogProfile.png)
+[![Profil](../images/profiles/rsyslogProfile.png)](../images/profiles/rsyslogProfile.png)
 
-![Profile](../images/profiles/rsyslogPolicy.png)
+[![Profil](../images/profiles/rsyslogPolicy.png)](../images/profiles/rsyslogPolicy.png)
 
 **Betik Ayarları**
 
@@ -43,9 +44,9 @@ Ardından betiğin türü Python, Bash, Perl ve Ruby olmak üzere 4 betik çeşi
 biri seçilir ve betik parametreleri (eğer var ise) belirtilerek görev çalıştırılır. Çalıştırılan betikler kaydet butonu 
 ile Betik Listesine kaydedilebilir. Ardından istenildiği zaman politika listesine eklenir.
 
-![Profile](../images/profiles/scriptProfile.png)
+[![Profil](../images/profiles/scriptProfile.png)](../images/profiles/scriptProfile.png)
 
-![Profile](../images/profiles/scriptPolicy.png)
+[![Profil](../images/profiles/scriptPolicy.png)](../images/profiles/scriptPolicy.png)
 
 **Oturum Yönetim Ayarları**
 
@@ -53,9 +54,9 @@ Oturum yönetimi kısmında kullanıcıların hangi zaman aralığında giriş y
 görüntüleyebiliriz. Bunun yanı sıra hangi günler oturum açabileceği, ne kadar süre aktif kalabileceği gibi politikalarda 
 belirlenebilir.
 
-![Profile](../images/profiles/sessionManagementProfile.png)
+[![Profil](../images/profiles/sessionManagementProfile.png)](../images/profiles/sessionManagementProfile.png)
 
-![Profile](../images/profiles/sessionManagementPolicy.png)
+[![Profil](../images/profiles/sessionManagementPolicy.png)](../images/profiles/sessionManagementPolicy.png)
 
 **Sistem Gözlemcisi Ayarları**
 
@@ -63,9 +64,9 @@ Metin tabanlı bilgilerin kullanıcının masaüstünde görülmesini sağlar. �
 şablon kaydedilir. Şablon İçeriği ve Şablon Ayarları ayrı ayrı girilmelidir. Ayarlar, Şablon Ayarları sekmesinde 
 "Bilgisayar Bilgisi" olarak sunulan içerik gibi olacak şekilde özelleştirilebilir.
 
-![Profile](../images/profiles/systemMonitoringProfile.png)
+[![Profil](../images/profiles/systemMonitoringProfile.png)](../images/profiles/systemMonitoringProfile.png)
 
-![Profile](../images/profiles/systemMonitoringPolicy.png)
+[![Profil](../images/profiles/systemMonitoringPolicy.png)](../images/profiles/systemMonitoringPolicy.png)
 
 **USB Erişim Ayarları**
 
@@ -82,8 +83,8 @@ seçilip “Ekle” butonuna basılmasıyla liste üzerinde ekleme yapılır. Yi
 kayıt silinir.
 
 
-![Profile](../images/profiles/usbProfile.png)
+[![Profil](../images/profiles/usbProfile.png)](../images/profiles/usbProfile.png)
 
-![Profile](../images/profiles/usbPolicy.png)
+[![Profil](../images/profiles/usbPolicy.png)](../images/profiles/usbPolicy.png)
 
 

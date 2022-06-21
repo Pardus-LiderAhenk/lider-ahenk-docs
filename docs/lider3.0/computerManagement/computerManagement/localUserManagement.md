@@ -2,7 +2,8 @@
 
 Sisteme yeni kullanıcı ekleme, kullanıcıyı silme ve varolan kullanıcı üzerinde değişiklikler yapmak için geliştirilmiştir. Ekleme ekranında kullanıcı adı, parola, ev dizini, aktiflik/pasiflik durumu ve kullanıcı grupları alanları yer alır. Yerel kullanıcı eklentisi dört farklı özelliğe sahiptir: Listeleme, Kullanıcı Ekleme, Silme ve Düzenleme.
 
-![Yerel Kullanici Yonetimi](../images/computerManagement/localUserManagement.png)
+[![Yerel Kullanici Yonetimi](../images/computerManagement/localUserManagement.png)](../images/computerManagement/localUserManagement.png)
+
 
 Yeni kullanıcı eklemek için kullanıcı adı kısıtlarına uyan bir kullanıcı adı, parola ve ev dizini girilir.
 

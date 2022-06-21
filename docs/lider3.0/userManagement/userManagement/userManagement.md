@@ -5,7 +5,7 @@ seçilen kullanıcı ile ilgili bilgiler gözükmektedir. Bunun yanı sıra ağa
 kullanıcı eklenebilir, kullanıcı silinebilir, kullanıcı taşınablir, kullanıcıya ait detaylı bilgiler
 gözlemlenebilir veya yeni klasör oluşturulabilir.
 
-![Kullanıcı Yönetimi](../images/userManagement/userManagement.png)
+[![Kullanıcı Yönetimi](../images/userManagement/userManagement.png)](../images/userManagement/userManagement.png)
 
 Kullanıcı işlemlerinde seçilen kullanıcının kişisel bilgilerini, login geçmişini, grup listesini, 
 parola yönetimini ayrıntılı bir şekilde görüntülenebilmektedir.

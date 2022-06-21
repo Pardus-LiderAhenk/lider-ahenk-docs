@@ -4,4 +4,5 @@ Bir Ahenk için çalıştırılabilen bu görevde, Ahenk makinesinde var olan t�
 açıldığında otomatik başlatılıp başlatılmadığı bilgisiyle bu ekranda listelenmektedir. Kullanıcı bir ya da daha çok 
 servis için bu bilgileri istenilen durum kolonlarını güncellemesiyle değiştirebilmektedir.
 
-![Servis Yonetimi](../images/computerManagement/serviceManagement.png)
+[![Servis Yonetimi](../images/computerManagement/serviceManagement.png)](../images/computerManagement/serviceManagement.png)
+

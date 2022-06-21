@@ -4,4 +4,4 @@ Liderahenk uygulamasına girişi yapan kullanıcının kullanım geçmişinin g�
 Liderahenk uygulamasına yaptığı oturum açma ve oturum kapatma hareketlerinin tarih aralığı ve IP'ye göre sıralama 
 yapılabilir.
 
-![Dosya Paylaşımı](../images/loginLogoutHistory/loginLogoutHistory.png)
+[![Kullanıcı Geçmişi](../images/loginLogoutHistory/loginLogoutHistory.png)](../images/loginLogoutHistory/loginLogoutHistory.png)

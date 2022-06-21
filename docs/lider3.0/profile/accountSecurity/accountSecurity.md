@@ -3,4 +3,4 @@
 Liderahenk uygulamasına girişi yapan kullanıcının parola durumunu gözlemleyebildiği sayfadır.
 Kullanıcı kendi parolasını değiştirebilir.
 
-![Dosya Paylaşımı](../images/accountSecurity/accountSecurity.png)
+[![Hesap Güvenligi](../images/accountSecurity/accountSecurity.png)](../images/accountSecurity/accountSecurity.png)

@@ -6,4 +6,4 @@ Kulanıcı buradan istenen durum bilgisini değiştirerek her bir paket için y�
 seçeneklerinden biri seçilmelidir. Aynı anda birden çok paket işlemi yapılabilmektedir. Paket sorgulandığında 
 kaldırıldığı görülebilir. 
 
-![Paket Kur veya Kaldir](../images/computerManagement/packageInstallUninstall.png)
+[![Paket Kur veya Kaldir](../images/computerManagement/packageInstallUninstall.png)](../images/computerManagement/packageInstallUninstall.png)

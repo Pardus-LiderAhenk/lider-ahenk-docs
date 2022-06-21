@@ -4,7 +4,7 @@ Diğer ayarlar bölümünde Ahenk kurulan makinelerde yerel kullanıcıları pas
 hangi etki alanı üzerinden domaine dahil edileceği, kullanıcıların nereden yetkilendirileceği(sudo) ve uzaktan
 ahenk kurulumu sırasında kullanılacak depo adresi ve imzası ayarları bulunmaktadır.
 
-![Dosya Paylaşımı](../images/serverSettings/otherSettings.png)
+[![Diğer Sunucu Ayaları](../images/serverSettings/otherSettings.png)](../images/serverSettings/otherSettings.png)
 
 Düzenle butonuna tıklanarak istenilen bilgiler değiştirilir ve Değişiklikleri Kaydet butonuna tıklayarak 
 ayarlar kaydedilir.

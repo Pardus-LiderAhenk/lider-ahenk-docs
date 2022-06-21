@@ -2,4 +2,4 @@
 
 Oturum yönetimi sayesinde makineler yeniden başlatılabilir, kapatılabilir ve kullanıcıların açık oturumundan çıkış yaptırılabilir.
 
-![Oturum ve Guc Yonetimi](../images/computerGroupManagement/sessionPowerManagement.png)
+[![Oturum ve Guc Yonetimi](../images/computerManagement/sessionPowerManagement.png)](../images/computerManagement/sessionPowerManagement.png)
