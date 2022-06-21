@@ -1,6 +1,9 @@
 site_name: Liderahenk Dokümanlar
 docs_dir: docs
 theme:
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
   language: tr
   name: material
   logo: liderahenk-logo.png
@@ -115,7 +118,14 @@ nav:
             - AD Yönetimi: lider3.0/userManagement/adManagement/adManagement.md
         - Politika Yönetimi:
             - Politikalar: lider3.0/policyManagement/policies/policies.md
-            - Profiller: lider3.0/policyManagement/profiles/profiles.md        
+            - Profiller: 
+                - Genel Bilgi: lider3.0/policyManagement/profiles/profiles.md
+                - İnternet Tarayıcı Ayarları: lider3.0/policyManagement/profiles/browserProfile.md
+                - Rsyslog Ayarları: lider3.0/policyManagement/profiles/rsyslogProfile.md
+                - Betik Ayarları: lider3.0/policyManagement/profiles/scriptProfile.md
+                - Oturum Yönetim Ayarları: lider3.0/policyManagement/profiles/sessionManagementProfile.md
+                - Sistem Gözlemcisi Ayarları: lider3.0/policyManagement/profiles/systemMonitoringProfile.md
+                - USB Erişim Ayarları: lider3.0/policyManagement/profiles/usbProfile.md
         - Raporlar:
             - Detaylı İstemci Raporu: lider3.0/reports/detailedAgentReport/detailedAgentReport.md
             - Çalıştırılan Görev Raporu: lider3.0/reports/executedTaskReport/executedTaskReport.md
@@ -139,12 +149,69 @@ nav:
             - Grup Bilgileri: lider3.0/profile/groupInformation/groupInformation.md
 
 markdown_extensions:
+  - abbr
+  - admonition
   - attr_list
+  - def_list
+  - footnotes
+  - meta
   - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
 
+# Repository
+repo_name: Pardus / Liderahenk
+repo_url: https://github.com/Pardus-LiderAhenk
 
+plugins:
+  - git-revision-date
 
 
 
