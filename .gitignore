@@ -1,0 +1,6 @@
+.DS_Store
+/site
+
+# Editor directories and files
+.idea
+.vscode
