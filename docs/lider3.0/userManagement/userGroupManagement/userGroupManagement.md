@@ -18,3 +18,4 @@ Politika atamak için aktif politika listesinden bir politika seçilir ve uygula
 
 Atanan politika kısmında seçilen gruba atanan politikalar bu kısımda listelenir. Bu kısımda seçilen 
 gruplara atanan politikalar kaldırılabilir.
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

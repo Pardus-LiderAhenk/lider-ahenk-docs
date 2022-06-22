@@ -11,3 +11,4 @@ bir görev eklentisidir. Betik adı girilir. Ardından betiğin türü Python, B
 (eğer var ise) belirtilerek görev çalıştırılır.
 
 [![Betik Tanımları](../images/scriptDefinition/scriptCreate.png)](../images/scriptDefinition/scriptCreate.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

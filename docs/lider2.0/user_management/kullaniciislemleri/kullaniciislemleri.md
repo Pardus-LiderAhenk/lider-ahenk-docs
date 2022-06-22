@@ -34,3 +34,4 @@ Parola en az 8 karakter olmalıdır. En az bir büyük harf, küçük harf, say�
 ![sil](../images/kullaniciislemleri/sil.png)
 
 Seçilen kullanıcı için "Sil" butonuna tıklandığı zaman açılan pencereden kullanıcı kalıcı olarak LDAP tan silinir.
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

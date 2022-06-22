@@ -6,3 +6,4 @@ Bu kısımda mail sunucusuna ait bilgiler gözükmektedir.
 
 Düzenle butonuna tıklanarak istenilen bilgiler değiştirilir ve Değişiklikleri 
 Kaydet butonuna tıklayarak ayarlar kaydedilir.
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

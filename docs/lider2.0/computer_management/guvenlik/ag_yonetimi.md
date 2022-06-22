@@ -19,3 +19,4 @@ Ağ bölümünde istediğiniz ağ ayarını seçerek ağ ayarını silebilir ya 
 Portlar bölümünde istediğiniz portu seçerek engelleyebilir veya izin verebilirsiniz.
 
 ![Ağ Yönetimi05](../images/güvenlik/ag_yonetimi05.png)
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

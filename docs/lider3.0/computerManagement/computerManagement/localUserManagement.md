@@ -7,4 +7,4 @@ Sisteme yeni kullanıcı ekleme, kullanıcıyı silme ve varolan kullanıcı üz
 
 Yeni kullanıcı eklemek için kullanıcı adı kısıtlarına uyan bir kullanıcı adı, parola ve ev dizini girilir.
 
-Kullanıcının "Aktif" ya da "Pasif" olacağı belirtilir (Pasif olma durumunda kullanıcının login olmasına izin verilmemektedir.). Kullanıcı Grupları kısmı ise opsiyoneldir. Kullanıcı birden fazla gruba eklenebileceği gibi hiçbir gruba da eklenmeyebilir.
+Kullanıcının "Aktif" ya da "Pasif" olacağı belirtilir (Pasif olma durumunda kullanıcının login olmasına izin verilmemektedir.). Kullanıcı Grupları kısmı ise opsiyoneldir. Kullanıcı birden fazla gruba eklenebileceği gibi hiçbir gruba da eklenmeyebilir.<link href=/lider3.0/assets/style.css rel=stylesheet></link>

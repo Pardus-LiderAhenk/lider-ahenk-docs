@@ -35,4 +35,4 @@ birine eklenebilir.
 
 Yeni istemci grup oluştur seçeneği ile açılana pencereden yeni istemci grubu oluşturulur.
 
-![Yeni_Grup](images/detayli_istemci_raporu/yenigrup.png)
+![Yeni_Grup](images/detayli_istemci_raporu/yenigrup.png)<link href=/lider2.0/assets/style.css rel=stylesheet></link>

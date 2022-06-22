@@ -42,3 +42,5 @@ IP Adresinin kullanıldığı yöntemdir.
 
 Belirtilen metinle başlayan istemcilerin domaine alınırken doğru dizin ve doğru yetki grubuna dahil edilmesi için
 Bilgisayar Adının kullanıldığı yöntemdir. 
+
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

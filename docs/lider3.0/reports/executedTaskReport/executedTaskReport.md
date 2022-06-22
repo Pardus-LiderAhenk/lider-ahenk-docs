@@ -26,3 +26,4 @@ Listelenmiş görevler hakkında detaylı bilgi almak için ilgili butona tıkla
 
 [![Çalıştırılan Görev Raporu](../images/executedTaskReport/reportTimeFilter.png)](../images/executedTaskReport/reportTimeFilter.png)
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

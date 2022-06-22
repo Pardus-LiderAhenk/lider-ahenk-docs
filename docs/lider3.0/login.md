@@ -4,3 +4,4 @@ Liderahenk MYS uygulamasında oturum açabilmek için yetkili kullanıcı adı v
 
 
 [![Liderahenk Oturum Aç](./login.png)](./login.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

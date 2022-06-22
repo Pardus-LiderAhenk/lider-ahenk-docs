@@ -93,3 +93,4 @@ Lider sunucu konfigürasyonları için aşağıdaki alanların girilmesi gerekme
 
 **Kuruluma Başla** butonuna tıklanarak Lider Ahenk sunucu kurulumu başlatılır.
 
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

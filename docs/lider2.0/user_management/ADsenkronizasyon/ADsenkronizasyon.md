@@ -20,3 +20,4 @@ AD grup senkronizasyonu Active Directory'den seçilen kullanıcıların LDAP'a a
 
 ![Kullanıcı_LDAP_aktarim](../images/ADsenkronizasyon/KullaniciLDAPaktarim.png)
 
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

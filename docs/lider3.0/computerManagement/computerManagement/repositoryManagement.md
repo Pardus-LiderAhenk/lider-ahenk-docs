@@ -4,3 +4,4 @@ Makinede çalışan bu görev, önceden tanımlanmış makine üzerinde bulunan 
 
 
 [![Depo Yonetimi](../images/computerManagement/repositoryManagement.png)](../images/computerManagement/repositoryManagement.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

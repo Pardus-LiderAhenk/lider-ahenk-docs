@@ -18,3 +18,4 @@ kayıt silinir.
 [![Profil](../images/profiles/usbPolicy.png)](../images/profiles/usbPolicy.png)
 
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

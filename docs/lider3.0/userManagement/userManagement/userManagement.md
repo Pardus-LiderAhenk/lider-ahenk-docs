@@ -10,3 +10,4 @@ gözlemlenebilir veya yeni klasör oluşturulabilir.
 Kullanıcı işlemlerinde seçilen kullanıcının kişisel bilgilerini, login geçmişini, grup listesini, 
 parola yönetimini ayrıntılı bir şekilde görüntülenebilmektedir.
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

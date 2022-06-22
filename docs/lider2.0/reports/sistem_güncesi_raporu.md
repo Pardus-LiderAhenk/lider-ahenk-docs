@@ -33,3 +33,4 @@ Listelenmiş sistem günceleri hakkında detaylı bilgi almak için ilgili buton
 gözlemlenebilir.
 
 ![Filtre](images/sistem_guncesi_raporu/sistemguncesi6.png)
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

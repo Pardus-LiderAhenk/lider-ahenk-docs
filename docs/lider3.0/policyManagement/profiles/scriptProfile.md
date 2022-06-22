@@ -11,3 +11,4 @@ ile Betik Listesine kaydedilebilir. Ardından istenildiği zaman politika listes
 
 [![Profil](../images/profiles/scriptPolicy.png)](../images/profiles/scriptPolicy.png)
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

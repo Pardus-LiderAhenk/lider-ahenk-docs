@@ -7,3 +7,4 @@ Görev olarak uygulanan bu eklenti anlık olarak belirlenen ahenklere mesaj gön
 
 Kullanıcının masaüstünde görünecek içerik Mesaj alanına girildikten sonra Çalıştır simgesine tıklayarak anlık gönderim, zamanlı Çalıştır ile de belirlenen bir zaman diliminde gönderimi yapılabilir.
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

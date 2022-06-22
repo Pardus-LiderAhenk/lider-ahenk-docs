@@ -5,3 +5,4 @@ Liderahenk uygulamasına yaptığı oturum açma ve oturum kapatma hareketlerini
 yapılabilir.
 
 [![Kullanıcı Geçmişi](../images/loginLogoutHistory/loginLogoutHistory.png)](../images/loginLogoutHistory/loginLogoutHistory.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

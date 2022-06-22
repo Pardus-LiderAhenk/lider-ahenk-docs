@@ -48,4 +48,4 @@ Kurulum tamamlandıktan sonra açılan pencereden Tamam butonuna tıklayarak dev
 ![Ahenkregister](./images/restart.jpeg)
 
 Kurulum başarılı bir şekilde tamamlanmıştır. Tamam butonuna tıkladıktan sonra bilgisayar yeniden başlatılır.
-Bilgisayar domaine alınmıştır.
+Bilgisayar domaine alınmıştır.<link href=/lider2.0/assets/style.css rel=stylesheet></link>

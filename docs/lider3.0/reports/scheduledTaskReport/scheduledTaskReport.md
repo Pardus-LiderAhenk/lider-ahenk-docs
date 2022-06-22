@@ -30,3 +30,4 @@ Zamanlanmış görev Gönderilme tarihine göre filtrelendirilebilir.
 
 
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

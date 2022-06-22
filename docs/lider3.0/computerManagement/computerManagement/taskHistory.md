@@ -8,3 +8,4 @@ Geçmiş eklentisi seçilen ahenk üzerinde çalıştırılan görevlerin geçmi
 Seçilen görevin detayları : görev adı, çalıştırma sonucu, tarihi, gönderilen görevin parametrilerini gösterir.
  
 [![Gorev Gecmisi](../images/computerManagement/detailTaskHistory.png)](../images/computerManagement/detailTaskHistory.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

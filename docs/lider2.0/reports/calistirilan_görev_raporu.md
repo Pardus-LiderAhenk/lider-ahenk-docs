@@ -21,3 +21,4 @@ Dışa Aktar butonu istemcilerin bütün görev bilgileri Excel formatında dı�
 Listelenmiş görevler hakkında detaylı bilgi almak için ilgili butona tıklayarak görev detayları gözlemlenebilir.
 
 ![Raporlar](images/calistirilan_görev_raporu/calistirilangorev4.png)
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

@@ -40,3 +40,4 @@ Sistem günceleri Günce Tipine göre filtrelendirilebilir.
 
 [![Sistem Güncesi Raporu](../images/systemLogReport/reportType.png)](../images/systemLogReport/reportType.png)
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

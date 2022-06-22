@@ -19,4 +19,4 @@ grupların hangi düğümlerini görüntüleme ve hangi düğümlerine yazma yet
 
 Öncelikle lider konsol yetkisi verilen kullanıcılar bir kullanıcı grubuna atanır. Sonrasında bu sayfadan kullanıcının bulunduğu gruba bu sayfadan yukarıda listelenen ağaçların hangi düğümlerini okuyabileceğini ve hangi düğümlere yazabileceğinin yetkileri eklenir. 
 
-![Grup Üyeleri](../images/sunucuayarlari/ldaperisimayarlari.png)
+![Grup Üyeleri](../images/sunucuayarlari/ldaperisimayarlari.png)<link href=/lider2.0/assets/style.css rel=stylesheet></link>

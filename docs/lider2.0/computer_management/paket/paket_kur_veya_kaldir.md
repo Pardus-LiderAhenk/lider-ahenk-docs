@@ -7,3 +7,4 @@ seçeneklerinden biri seçilmelidir. Aynı anda birden çok paket işlemi yapıl
 kaldırıldığı görülebilir. 
 
 ![Paket kur Veya Kaldır](../images/paket/paket_kur_veya_kaldir.png)
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

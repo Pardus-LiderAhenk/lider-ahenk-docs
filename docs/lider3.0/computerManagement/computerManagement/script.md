@@ -17,3 +17,4 @@ Oluşturulan betiklerden biri seçilir ve betik parametreleri (eğer var ise) be
 Çalıştırılan betikler kaydet butonu ile Betik Listesine kaydedilebilir. Bu sayede kaydedilen betiklere Betik 
 Listesinden kolay ve hızlı ulaşım sağlanır.
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

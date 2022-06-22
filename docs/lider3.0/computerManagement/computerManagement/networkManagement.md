@@ -17,3 +17,4 @@ Ağ bölümünde istediğiniz ağ ayarını seçerek ağ ayarını silebilir ya 
 Portlar bölümünde istediğiniz portu seçerek engelleyebilir veya izin verebilirsiniz.
 
 [![Ag Yonetimi](../images/computerManagement/networkManagementPorts.png)](../images/computerManagement/networkManagementPorts.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

@@ -15,3 +15,4 @@ log dosyaları için uzak sunucu adres, port ve protokol bilgileri de girilmelid
 [![Profil](../images/profiles/rsyslogProfile.png)](../images/profiles/rsyslogProfile.png)
 
 [![Profil](../images/profiles/rsyslogPolicy.png)](../images/profiles/rsyslogPolicy.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

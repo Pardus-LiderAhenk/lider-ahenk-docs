@@ -6,3 +6,4 @@ eksiksiz girilerek şablon kaydedilir. Şablon İçeriği ve Şablon Ayarları a
 
 
 [![Sistem Gözlemcisi Tanımları](../images/systemMonitoringDefinitions/systemMonitoringDefinition.png)](../images/systemMonitoringDefinitions/systemMonitoringDefinition.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

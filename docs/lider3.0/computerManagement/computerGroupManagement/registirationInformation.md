@@ -6,4 +6,4 @@ Kayıt bilgisi istemci gruplarının yönetimi için oluşturulan klasörler vey
 
 Grupların içerdiği üyeleri ayrıntılı bir şekilde gözlemleyip arayabilir veya kaldırabilirisiniz.
 
-[![Kayit Bilgisi](../images/computerGroupManagement/registirationInformationDetail.png)](../images/computerGroupManagement/registirationInformationDetail.png)
+[![Kayit Bilgisi](../images/computerGroupManagement/registirationInformationDetail.png)](../images/computerGroupManagement/registirationInformationDetail.png)<link href=/lider3.0/assets/style.css rel=stylesheet></link>

@@ -8,3 +8,4 @@ Metin tabanlı bilgilerin kullanıcının masaüstünde görülmesini sağlar. �
 
 [![Profil](../images/profiles/systemMonitoringPolicy.png)](../images/profiles/systemMonitoringPolicy.png)
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

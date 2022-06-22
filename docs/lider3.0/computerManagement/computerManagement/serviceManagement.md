@@ -6,3 +6,4 @@ servis için bu bilgileri istenilen durum kolonlarını güncellemesiyle değiş
 
 [![Servis Yonetimi](../images/computerManagement/serviceManagement.png)](../images/computerManagement/serviceManagement.png)
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

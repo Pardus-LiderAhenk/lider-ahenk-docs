@@ -11,3 +11,4 @@ sudoUser: Seçilen istemcilerde hangi kullanıcıların yetkili olacağını gö
 Bu işlemlerden sonra yetki verilen kullanıcılar eklenen istemcilerde sudoCommand alanında eklenen komutları çalıştırabilirler.
 
 ![Grup Üyeleri](../images/kullaniciyetkilendirme/grupuyeleri.png)
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

@@ -7,4 +7,4 @@ ahenk kurulumu sırasında kullanılacak depo adresi ve imzası ayarları bulunm
 [![Diğer Sunucu Ayaları](../images/serverSettings/otherSettings.png)](../images/serverSettings/otherSettings.png)
 
 Düzenle butonuna tıklanarak istenilen bilgiler değiştirilir ve Değişiklikleri Kaydet butonuna tıklayarak 
-ayarlar kaydedilir.
+ayarlar kaydedilir.<link href=/lider3.0/assets/style.css rel=stylesheet></link>

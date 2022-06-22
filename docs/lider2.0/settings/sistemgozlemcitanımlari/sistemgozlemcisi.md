@@ -7,3 +7,4 @@ sekmesinde #VARSAYILAN olarak sunulan içerik gibi olacak şekilde özelleştiri
 
 
 ![Anlık Mesaj](../images/sistemgozlemcitanımlari/sistemgozlemcisitanimlari.png)
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

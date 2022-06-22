@@ -8,14 +8,16 @@ theme:
   name: material
   logo: liderahenk-logo.png
   favicon: favicon.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch 
+        icon: material/brightness-7 
         name: Switch to dark mode
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-4
         name: Switch to light mode
   direction: ltr
 
@@ -25,6 +27,7 @@ nav:
         - Sunucu Kurulumu(Lider): lider2.0/lider/lider.md
         - İstemci Kurulumu(Ahenk): lider2.0/ahenk/ahenk.md
     - Liderahenk 2.0:
+        - Oturum Açma: lider2.0/giris.md
         - Kullanım:
             - Anlık Mesaj: lider2.0/computer_management/sistem/anlik_mesaj.md
             - Dosya Paylaşımı: lider2.0/computer_management/sistem/dosya_paylasimi.md
@@ -154,60 +157,12 @@ markdown_extensions:
   - attr_list
   - def_list
   - footnotes
-  - meta
-  - md_in_html
-  - toc:
-      permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-
-
-# Customization
-extra:
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+  - pymdownx.snippets:
+      auto_append:
+        - agah.md
 
 # Repository
-repo_name: Pardus / Liderahenk
+repo_name: Liderahenk
 repo_url: https://github.com/Pardus-LiderAhenk
 
 plugins:

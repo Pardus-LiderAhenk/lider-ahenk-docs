@@ -7,4 +7,4 @@ Geçmiş eklentisi seçilen ahenk üzerinde çalıştırılan görevlerin geçmi
 Seçilen görevin detayları : görev adı, çalıştırma sonucu, tarihi, gönderilen görevin parametrilerini gösterir.
  
 
-![Geçmiş](../images/gecmis/gecmisdetay.png)
+![Geçmiş](../images/gecmis/gecmisdetay.png)<link href=/lider2.0/assets/style.css rel=stylesheet></link>

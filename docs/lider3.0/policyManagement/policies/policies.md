@@ -16,4 +16,4 @@ Politika oluşturmak için ekle butonuna tıklanır ve açılan pencerede ilgili
 
 [![Politika](../images/policies/policyEdit.png)](../images/policies/policyEdit.png)
 
-Oluşturulan politikalar düzenlenebilir, ismi değiştirebilir veya aktif/pasif durumları gözlemlenip değiştirilebilir.
+Oluşturulan politikalar düzenlenebilir, ismi değiştirebilir veya aktif/pasif durumları gözlemlenip değiştirilebilir.<link href=/lider3.0/assets/style.css rel=stylesheet></link>

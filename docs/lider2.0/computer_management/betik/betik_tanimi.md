@@ -5,4 +5,4 @@ Betik eklentisi, özel olarak yazılmış betik dosyalarının Ahenk makinelerde
 
 ![Betik Tanımı](../images/betik/betik_tanimi.png)
 
-Çalıştırılan betikler kaydet butonu ile Betik Listesine kaydedilebilir. Bu sayede kaydedilen betiklere Betik Listesinden kolay ve hızlı ulaşım sağlanır.
+Çalıştırılan betikler kaydet butonu ile Betik Listesine kaydedilebilir. Bu sayede kaydedilen betiklere Betik Listesinden kolay ve hızlı ulaşım sağlanır.<link href=/lider2.0/assets/style.css rel=stylesheet></link>

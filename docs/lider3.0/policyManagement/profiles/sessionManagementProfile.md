@@ -8,3 +8,4 @@ belirlenebilir.
 
 [![Profil](../images/profiles/sessionManagementPolicy.png)](../images/profiles/sessionManagementPolicy.png)
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

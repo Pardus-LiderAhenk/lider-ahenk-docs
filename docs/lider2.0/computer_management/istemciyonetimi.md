@@ -9,4 +9,4 @@ aramalar yapılabilir. Arama yapılırken :
 
 veritabanı aratması şeklinde istenilen isimler girilmelidir.
 
-![Anlık Mesaj](../computer_management/istemciyonetimi.png)
+![Anlık Mesaj](../computer_management/istemciyonetimi.png)<link href=/lider2.0/assets/style.css rel=stylesheet></link>

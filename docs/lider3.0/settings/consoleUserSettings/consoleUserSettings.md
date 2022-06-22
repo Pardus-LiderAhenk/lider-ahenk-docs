@@ -16,3 +16,4 @@ ve **ou=Agent,ou=Groups,dc=liderahenk,dc=org**	düğümlerinde yetkilendirebilme
 ekle butonundaki menülerden ilgili düğümler seçilir.
 
 [![Arayüz Erişim Ayarları](../images/consoleUserSettings/consoleUserAccessSettingsGroups.png)](../images/consoleUserSettings/consoleUserAccessSettingsGroups.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

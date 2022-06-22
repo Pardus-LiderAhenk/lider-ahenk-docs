@@ -12,4 +12,4 @@ tarafından domaine alınabilir(yetkili gruba sadece bir kullanıcı DN'i de ekl
 domaine alınan istemciler 'ou=Yöneticiler,ou=Çankaya,ou=Ankara,ou=People,dc=liderahenk,dc=org' 
 grubu altında oluşturulur.
 
-![Anlık Mesaj](../images/kayitsablonlari/kayitsablonlari.png)
+![Anlık Mesaj](../images/kayitsablonlari/kayitsablonlari.png)<link href=/lider2.0/assets/style.css rel=stylesheet></link>

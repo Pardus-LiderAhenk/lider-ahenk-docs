@@ -50,3 +50,4 @@ politikalar kaldırılabilir.
 ![Atanan_Politikalar](../images/kullanicigrupyönetimi/atananpolitikalar.png)
 
 
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

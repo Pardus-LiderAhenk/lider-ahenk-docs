@@ -39,3 +39,6 @@ Yeni istemci grup oluştur seçeneği ile açılana pencereden yeni istemci grub
 
 [![Detaylı İstemci Raporu](../images/detailedAgentReport/existingGroup.png)](../images/detailedAgentReport/existingGroup.png)
 
+
+
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

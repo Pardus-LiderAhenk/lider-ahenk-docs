@@ -50,3 +50,7 @@ yönetmek üzere ölçeklenebilir çözüm sağlar.
 4. **Raporlar**
 
 	Liderahenk Merkezi Yönetim Sistemine kayıt olan istemcilere ait detaylı arama yapılarak rapor alınabilmekte ve arama sonuçlarına göre İstemci Grubu oluşturulabilmektedir. Lider üzerinde istemcilere gönderilen görev detayları sorgulabilmektedir. Ayrıca Zamanlanmış olarak gönderilen görevlere ait rapor oluşturulabilmekte, tekrar düzenlenebilmekte ve iptal edilebilmektedir.
+
+
+<link href="/lider3.0/assets/style.css" rel="stylesheet"></link>
+

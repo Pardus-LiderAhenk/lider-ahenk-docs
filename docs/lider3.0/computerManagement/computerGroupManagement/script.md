@@ -17,3 +17,4 @@ Listesinden kolay ve hızlı ulaşım sağlanır.
 
 
 
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

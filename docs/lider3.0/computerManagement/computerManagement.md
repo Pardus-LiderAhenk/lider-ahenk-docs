@@ -6,3 +6,4 @@ sayesinde anlık olarak istemciler arasında çevirimiçi kullanıcılar  filtre
 aramalar yapılabilir.
 
 [![Istemci Yonetimi](../computerManagement/images/computerManagement.png)](../computerManagement/images/computerManagement.png)
+<link href=/lider3.0/assets/style.css rel=stylesheet></link>

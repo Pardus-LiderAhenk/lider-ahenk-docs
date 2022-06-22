@@ -6,3 +6,4 @@ servis için bu bilgileri istenilen durum kolonlarını güncellemesiyle değiş
 
 ![Anlık Mesaj](../images/servis/servis_yonetimi.png)
 
+<link href=/lider2.0/assets/style.css rel=stylesheet></link>

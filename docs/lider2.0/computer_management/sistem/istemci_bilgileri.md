@@ -5,4 +5,4 @@ IP Adresi, MAC Adresi, Faz ve Oluşturma Tarihi bilgilerinin anlık olarak kulla
 
 ![İstemci Bilgileri](../images/sistem/istemci_bilgileri.png)
 
-Bu kısımda seçilen istemci taşınabilir, yeniden adlandırılabilir ve silinebilir.
+Bu kısımda seçilen istemci taşınabilir, yeniden adlandırılabilir ve silinebilir.<link href=/lider2.0/assets/style.css rel=stylesheet></link>
