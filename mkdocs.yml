@@ -78,6 +78,7 @@ nav:
             - Kayıt Şablonları: lider2.0/settings/kayitsablonlari/kayitsablonlari.md
             
     - Liderahenk 3.0:
+        - Dashboard: lider3.0/index.md
         - Oturum Açma: lider3.0/login.md
         - İstemci Yönetimi:
             - İstemci Yönetimi:
@@ -113,7 +114,8 @@ nav:
                 - Paket Kontrolü: lider3.0/computerManagement/computerGroupManagement/packageControl.md
                 - Anlık Mesaj: lider3.0/computerManagement/computerGroupManagement/instantMessage.md
                 - Dosya Paylaşımı: lider3.0/computerManagement/computerGroupManagement/fileShare.md
-                - İstemci Oturum Açma Ayarları: lider3.0/computerManagement/computerGroupManagement/computerLoginSettings.md                
+                - İstemci Oturum Açma Ayarları: lider3.0/computerManagement/computerGroupManagement/computerLoginSettings.md
+            - Zamanlanmış Görev: lider3.0/computerManagement/crontabManagement.md              
         - Kullanıcı Yönetici:
             - Kullanıcı Yönetimi: lider3.0/userManagement/userManagement/userManagement.md
             - Kullanıcı Grup Yönetimi: lider3.0/userManagement/userGroupManagement/userGroupManagement.md
