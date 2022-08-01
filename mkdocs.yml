@@ -1,32 +1,15 @@
 site_name: Liderahenk Dokümanlar
-docs_dir: docs
-theme:
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-  language: tr
-  name: material
-  logo: liderahenk-logo.png
-  favicon: favicon.png
-  icon:
-    repo: fontawesome/brands/github
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-    - scheme: slate 
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  direction: ltr
+repo_name: Liderahenk
+repo_url: https://github.com/Pardus-LiderAhenk
 
+# docs_dir: lider/docs_suffix_structure
+docs_dir: docs
 nav:
-    - Ana Sayfa: index.md
-    - Kurulum:
-        - Sunucu Kurulumu(Lider): lider2.0/lider/lider.md
-        - İstemci Kurulumu(Ahenk): lider2.0/ahenk/ahenk.md
-    - Liderahenk 2.0:
+  - Ana Sayfa: index.md
+  - Kurulum:
+        - Sunucu Kurulumu(Lider): installation/lider/lider.md
+        - İstemci Kurulumu(Ahenk): installation/ahenk/ahenk.md
+  - Liderahenk 2.0:
         - Oturum Açma: lider2.0/giris.md
         - Kullanım:
             - Anlık Mesaj: lider2.0/computer_management/sistem/anlik_mesaj.md
@@ -76,9 +59,8 @@ nav:
             - Sistem Gözlemcisi Tanımlama: lider2.0/settings/sistemgozlemcitanımlari/sistemgozlemcisi.md
             - Betik Tanımları: lider2.0/settings/betiktanimlari/betik.md
             - Kayıt Şablonları: lider2.0/settings/kayitsablonlari/kayitsablonlari.md
-            
-    - Liderahenk 3.0:
-        - Dashboard: lider3.0/index.md
+  - Liderahenk 3.0:
+        - Kontrol Paneli: lider3.0/index.md
         - Oturum Açma: lider3.0/login.md
         - İstemci Yönetimi:
             - İstemci Yönetimi:
@@ -116,7 +98,7 @@ nav:
                 - Dosya Paylaşımı: lider3.0/computerManagement/computerGroupManagement/fileShare.md
                 - İstemci Oturum Açma Ayarları: lider3.0/computerManagement/computerGroupManagement/computerLoginSettings.md
             - Zamanlanmış Görev: lider3.0/computerManagement/crontabManagement.md              
-        - Kullanıcı Yönetici:
+        - Kullanıcı Yönetimi:
             - Kullanıcı Yönetimi: lider3.0/userManagement/userManagement/userManagement.md
             - Kullanıcı Grup Yönetimi: lider3.0/userManagement/userGroupManagement/userGroupManagement.md
             - Kullanıcı Yetkilendirme(Sudo): lider3.0/userManagement/userAuthorizationSudo/userAuthorizationSudo.md
@@ -153,62 +135,134 @@ nav:
             - Kullanım Geçmişi: lider3.0/profile/loginLogoutHistory/loginLogoutHistory.md
             - Grup Bilgileri: lider3.0/profile/groupInformation/groupInformation.md
 
-markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - pymdownx.snippets:
-      auto_append:
-        - agah.md
 
-# Repository
-repo_name: Liderahenk
-repo_url: https://github.com/Pardus-LiderAhenk
+theme:
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+  # language: tr
+  name: material
+  logo: liderahenk-logo.png
+  favicon: favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  direction: ltr
+  
+markdown_extensions:
+  - admonition
 
 plugins:
-  - git-revision-date
+  - search
+  - i18n:
+      default_language: !ENV [DEFAULT_LANGUAGE, "tr"]
+      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      docs_structure: suffix
+      languages:
+        tr:
+          name: Türkçe
+          build: true
+          site_name: "Liderahenk Dokümanlar"
+        en:
+          name: English
+          build: true
+          site_name: "Liderahenk Documents"
+      nav_translations:
+        en:
+          Kontrol Paneli: Dashboard
+          Oturum Açma: Login
+          İstemci Yönetimi: Computer Management
+          Genel Bilgi: General Information
+          Anlık Mesaj: Instant Message
+          Dosya Paylaşımı: File Share
+          Dosya Yönetimi: File Management
+          İstemci Bilgileri: Computer Information
+          İstemci Oturum Açma Ayarları: Computer Login Settings
+          Kaynak Kullanımı: Resources Usage
+          Oturum Yönetimi: Session Power Management
+          Root Parola Yönetimi: Root Password Management
+          Sistem Gözlemcisi: System Monitoring
+          Yerel Kullanıcı Yönetimi: Local User Management
+          Depo Yönetimi: Repository Management
+          Kurulu Paket Yönetimi: Installed Package Management
+          Paket Kur veya Kaldır: Package Install Uninstall
+          Paket Kontrolü: Package Control
+          Servis Yönetimi: Service Management
+          Betik: Script
+          Ağ Yönetimi: Network Management
+          USB Yönetimi: Usb Management
+          Geçmiş: Task History
+          İstemci Grup Yönetimi: Computer Group Management
+          Kayıt Bilgileri: Registiration Information
+          Zamanlanmış Görev: Crontab Management
+          Kullanıcı Yönetimi: User Management
+          Kullanıcı Grup Yönetimi: User Group Management
+          Kullanıcı Yetkilendirme(Sudo): User Authorization (Sudo)
+          AD Yönetimi: AD Management
+          Politika Yönetimi: Policies Management
+          Politikalar: Policies
+          Profiller: Profiles
+          İnternet Tarayıcı Ayarları: Browser Profile
+          Rsyslog Ayarları: Rsyslog Profile
+          Betik Ayarları: Script Profile
+          Oturum Yönetim Ayarları: Session Management Profile
+          Sistem Gözlemcisi Ayarları: System Monitoring Profile
+          USB Erişim Ayarları: Usb Profile
+          Raporlar: Reports
+          Detaylı İstemci Raporu: Detailed Agent Report
+          Çalıştırılan Görev Raporu: Executed Task Report
+          Sistem Güncesi Raporu: System Log Report
+          Zamanlanmış Görev Raporu: Scheduled Task Report
+          Ayarlar: Settings
+          Arayüz Kullanıcı Ayarları: Console User Settings
+          Sunucu Ayarları: Server Settings
+          Dizin Sunucu Ayarları: LDAP Settings
+          XMPP Sunucusu Ayarları: XMPP Settings
+          Dosya Sunucusu Ayarları: File Server Settings
+          Email Sunucusu Ayarları: Mail Server Settings
+          Diğer Ayarlar: Other Settings
+          Betik Tanımları: Script Definition
+          Kayıt Şablonları: Registiration Template
+          Profil: Profile
+          Kullanıcı Bilgileri: User Information
+          Hesap Güvenliği: Account Security
+          Kullanım Geçmişi: Login Logout History
+          Grup Bilgileri: Group Information
+          Ana Sayfa: Home Page
+          Kurulum: Installation
+          Sunucu Kurulumu(Lider): Server Installation(Lider)
+          İstemci Kurulumu(Ahenk): Client Installation(Ahenk)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+          #English navbar translate v2.0
+          Kullanım: Usage
+          Uzak Masaüstü: Remote Access
+          İstemci Paket Depoları: Client Repository
+          İstemci Paketlerini Listele ve Kaldır: List Package of Client and Remove Package
+          Paket Kur ve Kaldır: İnstall and Remove Package
+          Betik Listesi: List Script
+          Betik Tanımı: Define Script
+          Ahenk Kur: İnstall Ahenk
+          Grup Yönetimi: Group Management
+          Kullanıcı İşlemleri: User Operations
+          Ad Senkronizasyon: AD Sync
+          Genel Ekran: General Information
+          Sistem: System
+          Paket: Package
+          Kullanıcı Yetkilendirme (Sudo): User Privilege (Sudo)
+          Detaylı İştemci Raporu: Detail Agent Report
+          Çalıştırılan Görevler Raporu: Executed Task Report
+          Konsol Kullanıcısı Ayarları: Console User Settings
+          LDAP Erişim Ayarları: LDAP Settings
+          XMPP Ayarları: XMPP Settings
+          LDAP Ayarları: LDAP Settings
+          Diğer Ayarları: Other Settings
+          Dosya Sunucu Ayarları: File Server Settings
+          Sistem Gözlemcisi Tanımlama: Define System Monitoring
