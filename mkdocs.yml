@@ -7,8 +7,10 @@ docs_dir: docs
 nav:
   - Ana Sayfa: index.md
   - Kurulum:
+        - Sistem Gereksinimleri: installation/lider/systemRequirements.md
         - Sunucu Kurulumu(Lider): installation/lider/lider.md
         - İstemci Kurulumu(Ahenk): installation/ahenk/ahenk.md
+        - Lider 3.0 Sürümüne Yükseltme: installation/lider/liderUpgrade.md
   - Liderahenk 2.0:
         - Oturum Açma: lider2.0/giris.md
         - Kullanım:
@@ -240,6 +242,7 @@ plugins:
           Kurulum: Installation
           Sunucu Kurulumu(Lider): Server Installation(Lider)
           İstemci Kurulumu(Ahenk): Client Installation(Ahenk)
+          Sistem Gereksinimleri: System Requirements
 
           #English navbar translate v2.0
           Kullanım: Usage
@@ -266,3 +269,4 @@ plugins:
           Diğer Ayarları: Other Settings
           Dosya Sunucu Ayarları: File Server Settings
           Sistem Gözlemcisi Tanımlama: Define System Monitoring
+          Lider 3.0 Sürümüne Yükseltme: Upgrade to Lider 3.0
