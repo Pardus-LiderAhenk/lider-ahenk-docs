@@ -62,12 +62,12 @@ komutu ile kurulum uygulaması çalıştırılır.
 Lider sunucu bileşenlerinin (Veritabanı, OpenLDAP, XMPP ve Lider) hangi sunucu ya da sunuculara kurulucağının belirlendiği alandır. Tüm bileşenler tek sunucuya kurulacaksa "**Tüm Bileşenler Tek Sunucuya Kurulsun**" seçeneği seçilir. 
 Aşağıdaki resimde bileşenlerin tek sunucuya kurulması durumu gösterilmiştir.
 
-![1](./images/1.png)
+![1](./images/inst3.1.png)
 
 Bileşenlerin ayrı ayrı sunuculara kurulması istenildiği durumda hangi bileşen kurulcaksa o bileşen seçilir ve erişim bilgileri girilir.
 Aşağıdaki resimde bileşenlerin ayrı ayrı sunuculara kurulması durumu gösterilmiştir.
 
-![2](./images/2.png)
+![2](./images/inst3.1.png)
 
 Sunucu erişim bilgileri girildikten sonra "**Bağlantıyı Kontrol Et**" butonuna tıklanarak sunucuya erişim olup olmadığı kontrol edilir.
 

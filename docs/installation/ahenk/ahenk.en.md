@@ -1,4 +1,4 @@
-**Lider-Ahenk Repo Defining**
+**Liderahenk Repo Defining**
 
 The Ahenk package is available at "repo.liderahenk.org". On Pardus computers, this address is defined and the Ahenk package
 can be downloaded from the repository. In the terminal (console) to define this repository to your system;

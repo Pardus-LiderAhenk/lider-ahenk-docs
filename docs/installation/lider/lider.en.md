@@ -62,12 +62,12 @@ The installation application is run with the command.
 It is the area where the leader server components (Database, OpenLDAP, XMPP and Leader) will be installed on which server or servers are determined. If all components will be installed on a single server, the "**Install All Components on Single Server**" option is selected.
 The image below shows the installation of components on a single server.
 
-![1](./images/1.png)
+![1](./images/inst3.1.png)
 
 In case components are required to be installed on separate servers, the component to be installed is selected and access information is entered.
 The image below shows the installation of components on individual servers.
 
-![2](./images/2.png)
+![2](./images/inst3.1.png)
 
 After entering the server access information, the "**Check Connection**" button is clicked to check whether there is access to the server.
 

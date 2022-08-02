@@ -1,4 +1,4 @@
-**Lider-Ahenk Repo Tanımlama**
+**Liderahenk Repo Tanımlama**
 
 Ahenk paketi "repo.liderahenk.org" adresinde sunulmaktadır. Pardus bilgisayarlarda bu adres tanımlanarak ahenk paketi 
 depodan yüklenebilmektedir. Bu deponun sisteminize tanımlanması için uçbirim(konsol)da;
