@@ -85,12 +85,20 @@ Lider sunucu konfigürasyonları için aşağıdaki alanların girilmesi gerekme
 ![3](./images/3.png)
 
 **LDAP Base DN:** LDAP temel düğümü,<br>
-**Sistem Admin Parolası:** Lider Ahenk bileşenleri için admin yönetici parolası,<br>
+**Sistem Admin Parolası:** Liderahenk bileşenleri için admin yönetici parolası,<br>
 **Lider Arayüz Kullanıcı Adı:** Lider arayüzü kullanacak kullanıcı adı (Lider Admini veya Sistem Yönetici), <br>
 **Lider Arayüz Kullanıcı Parolası:** Lider arayüzü kullanacak kullanıcı parolası, <br>
 **Lider Arayüz Kullanıcı Mail Adresi:** Lider arayüz kullanısının parolasını unuttuğunda kullanabileceği mail adresi.
 
 
-**Kuruluma Başla** butonuna tıklanarak Lider Ahenk sunucu kurulumu başlatılır.
+**Kuruluma Başla** butonuna tıklanarak Liderahenk sunucu kurulumu başlatılır. 
+
+Kurulum tamamlandıktan sonra internet taraycısına
+aşağıdaki gibi adres girilerek Lider Arayüze giriş sağlanır.
+
+````
+$lider_server_address:8080
+````
+
 
 <link href=/lider2.0/assets/style.css rel=stylesheet></link>

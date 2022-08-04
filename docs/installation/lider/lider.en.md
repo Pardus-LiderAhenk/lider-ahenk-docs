@@ -85,12 +85,19 @@ The following fields must be entered for Lider server configurations.
 ![3](./images/3.png)
 
 **LDAP Base DN:** LDAP base node,<br>
-**System Admin Password:** Admin password for Lider Ahenk components,<br>
+**System Admin Password:** Admin password for Liderahenk components,<br>
 **Lider Interface Username:** Username to use the Lider Interface (Lider Admin or System Administrator), <br>
 **Lider Interface User Password:** User password to use the Lider Interface, <br>
 **Lider Interface User Email Address:** The e-mail address that the Lider interface user can use when she forgets his/her password.
 
 
- By clicking the **Start Installation** button, Lider Ahenk server installation is started.
+ By clicking the **Start Installation** button, Liderahenk server installation is started.
+
+After the installation is complete, go to the web browser.
+By entering the address as below, access to the Lider Inferfaces is provided.
+
+````
+$lider_server_address:8080
+````
 
 <link href=/lider2.0/assets/style.css rel=stylesheet></link>

@@ -93,4 +93,12 @@ Lider sunucu konfigürasyonları için aşağıdaki alanların girilmesi gerekme
 
 **Kuruluma Başla** butonuna tıklanarak Lider Ahenk sunucu kurulumu başlatılır.
 
+Kurulum tamamlandıktan sonra internet taraycısına
+aşağıdaki gibi adres girilerek Lider Arayüze giriş sağlanır.
+
+````
+$lider_server_address:8080
+````
+
+
 <link href=/lider2.0/assets/style.css rel=stylesheet></link>
