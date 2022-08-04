@@ -81,6 +81,7 @@ nav:
                 - Kurulu Paket Yönetimi: lider3.0/computerManagement/computerManagement/installedPackageManagement.md
                 - Paket Kur veya Kaldır: lider3.0/computerManagement/computerManagement/packageInstallUninstall.md
                 - Paket Kontrolü: lider3.0/computerManagement/computerManagement/packageControl.md
+                - Uzak Erişim: lider3.0/computerManagement/computerManagement/remoteAccess.md
                 - Servis Yönetimi: lider3.0/computerManagement/computerManagement/serviceManagement.md                
                 - Betik : lider3.0/computerManagement/computerManagement/script.md
                 - Ağ Yönetimi: lider3.0/computerManagement/computerManagement/networkManagement.md
@@ -215,6 +216,7 @@ plugins:
           İnternet Tarayıcı Ayarları: Browser Profile
           Rsyslog Ayarları: Rsyslog Profile
           Betik Ayarları: Script Profile
+          Uzak Erişim: Remote Access
           Oturum Yönetim Ayarları: Session Management Profile
           Sistem Gözlemcisi Ayarları: System Monitoring Profile
           USB Erişim Ayarları: Usb Profile
