@@ -24,13 +24,13 @@ By typing ** $lider_server_ip_address:8080 ** in the internet browser, Liderahen
 
 1) Liderahenk Central Management System application is entered by entering Lider Interface user name and password.
 
-[![Liderahenk Login](./images/upgrade-1.png)](./upgrade-1.png)
+[![Liderahenk Login](./images/upgrade-1.png)](./images/upgrade-1.png)
 
 
 2) The Server Settings page opened by clicking on the Settings button.
 
-[![Liderahenk Settings](./images/upgrade-2.png)](./upgrade-2.png)
+[![Liderahenk Settings](./images/upgrade-2.png)](./images/upgrade-2.png)
 
 3) By clicking on the Other Settings tab, the changes are saved by selecting ** from which domain the users will be authorized (sudo) ** and ** according to which registration template type the clients will register ** settings according to the authorization and registration template policies in Lider v2.0 version.
 
-[![Liderahenk Other Settings](./images/upgrade-3.png)](./upgrade-3.png)
+[![Liderahenk Other Settings](./images/upgrade-3.png)](./images/upgrade-3.png)

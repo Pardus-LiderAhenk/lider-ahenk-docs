@@ -24,13 +24,13 @@ sudo /bin/bash liderahenk_v2_to_v3.sh $lider_server_ip_address
 
 **1)** Lider Arayüz kullanıcı adı ve parolası girilerek Liderahenk MYS uygulamasını giriş yapılır.
 
-[![Liderahenk Login](./images/upgrade-1.png)](./upgrade-1.png)
+[![Liderahenk Login](./images/upgrade-1.png)](./images/upgrade-1.png)
 
 
 **2)** Ayarlar butonuna tıklanarak Sunucu Ayarları sayfası açılır.
 
-[![Liderahenk Settings](./images/upgrade-2.png)](./upgrade-2.png)
+[![Liderahenk Settings](./images/upgrade-2.png)](./images/upgrade-2.png)
 
 **3)** Diğer Ayarlar sekmesine tıklanarak ** Kullanıcıların hangi etki alanından yetkilendirileceğini(sudo) ** ile  ** İstemcilerin hangi kayıt şablon tipine göre kayıt olacağını ** ayarları Lider v2.0 sürümündeki yetkilendirme ve kayıt şablonu politikalarına göre seçilerek değişiklikler kaydedilir.
 
-[![Liderahenk Other Settings](./images/upgrade-3.png)](./upgrade-3.png)
+[![Liderahenk Other Settings](./images/upgrade-3.png)](./images/upgrade-3.png)
