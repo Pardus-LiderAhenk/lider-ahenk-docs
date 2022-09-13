@@ -3,11 +3,11 @@
 The Ahenk package is available at "repo.liderahenk.org". On Pardus computers, this address is defined and the Ahenk package
 can be downloaded from the repository. In the terminal (console) to define this repository to your system;
 
-    sudo wget http://repo.liderahenk.org/liderahenk-archive-keyring.asc && sudo apt-key add liderahenk-archive-keyring.asc &&  rm liderahenk-archive-keyring.asc
+    sudo wget https://repo.liderahenk.org/liderahenk-archive-keyring.asc && sudo apt-key add liderahenk-archive-keyring.asc &&  rm liderahenk-archive-keyring.asc
     
 The "liderahenk-archive-keyring.asc" key file should be downloaded and installed on the system with the commands. Next;
 
-    sudo printf  "deb [arch=amd64] http://repo.liderahenk.org/liderahenk stable main" | sudo tee -a /etc/apt/sources.list
+    sudo printf  "deb [arch=amd64] https://repo.liderahenk.org/liderahenk stable main" | sudo tee -a /etc/apt/sources.list
     
 The repository address is added to the "/etc/apt/sources.list" file with the command.
 
