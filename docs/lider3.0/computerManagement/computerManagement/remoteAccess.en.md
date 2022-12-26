@@ -14,6 +14,10 @@ It consists of 2 options.
 
 [![Uzak Bağlantı VNC](../images/computerManagement/remoteAccessVnc.png)](../images/computerManagement/remoteAccessVnc.png)
 
+The IP you want to connect to the selected client is selected from the upper right corner.
+
+[![Uzak Bağlantı VNC](../images/computerManagement/remoteAccessIpSelection.png)](../images/computerManagement/remoteAccessVnc.png)
+
 **Connect via SSH**
 
 SSH connection is provided to the selected client by entering the IP address, username and password.

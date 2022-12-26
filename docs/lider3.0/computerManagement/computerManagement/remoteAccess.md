@@ -14,6 +14,10 @@ olmak üzere 2 seçenekten oluşmaktadır.
 
 [![Uzak Bağlantı VNC](../images/computerManagement/remoteAccessVnc.png)](../images/computerManagement/remoteAccessVnc.png)
 
+Seçilen istemciye bağlanmak istediğiniz IP seçimi sağ üst köşeden yapılır.
+
+[![Uzak Bağlantı VNC](../images/computerManagement/remoteAccessIpSelection.png)](../images/computerManagement/remoteAccessVnc.png)
+
 **SSH ile Bağlan**
 
 IP adresi, kullanıcı adı ve parola girilerek seçilen istemciye SSH bağlantısı sağlanır.
