@@ -30,7 +30,7 @@ pymdown-extensions==9.5
 pyparsing==3.0.9
 python-dateutil==2.8.2
 python-i18n==0.3.9
-PyYAML==5.3.1
+PyYAML==5.4
 pyyaml-env-tag==0.1
 six==1.16.0
 smmap==5.0.0
