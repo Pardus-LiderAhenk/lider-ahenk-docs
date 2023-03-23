@@ -111,6 +111,7 @@ nav:
             - Profiller: 
                 - Genel Bilgi: lider3.0/policyManagement/profiles/profiles.md
                 - İnternet Tarayıcı Ayarları: lider3.0/policyManagement/profiles/browserProfile.md
+                - Chrome Tarayıcı Ayarları: lider3.0/policyManagement/profiles/chromeBrowserProfile.md
                 - Rsyslog Ayarları: lider3.0/policyManagement/profiles/rsyslogProfile.md
                 - Betik Ayarları: lider3.0/policyManagement/profiles/scriptProfile.md
                 - Oturum Yönetim Ayarları: lider3.0/policyManagement/profiles/sessionManagementProfile.md
@@ -214,6 +215,7 @@ plugins:
           Politikalar: Policies
           Profiller: Profiles
           İnternet Tarayıcı Ayarları: Browser Profile
+          Chrome Tarayıcı Ayarları: Chrome Browser Profile
           Rsyslog Ayarları: Rsyslog Profile
           Betik Ayarları: Script Profile
           Uzak Erişim: Remote Access
