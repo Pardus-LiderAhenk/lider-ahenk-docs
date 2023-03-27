@@ -214,14 +214,14 @@ plugins:
           Politika Yönetimi: Policies Management
           Politikalar: Policies
           Profiller: Profiles
-          İnternet Tarayıcı Ayarları: Browser Profile
-          Chrome Tarayıcı Ayarları: Chrome Browser Profile
-          Rsyslog Ayarları: Rsyslog Profile
-          Betik Ayarları: Script Profile
+          İnternet Tarayıcı Profili: Browser Profile
+          Chrome Tarayıcı Profili: Chrome Browser Profile
+          Rsyslog Profili: Rsyslog Profile
+          Betik Profili: Script Profile
           Uzak Erişim: Remote Access
-          Oturum Yönetim Ayarları: Session Management Profile
-          Sistem Gözlemcisi Ayarları: System Monitoring Profile
-          USB Erişim Ayarları: Usb Profile
+          Oturum Yönetim Profili: Session Management Profile
+          Sistem Gözlemcisi Profili: System Monitoring Profile
+          USB Erişim Profili: Usb Profile
           Raporlar: Reports
           Detaylı İstemci Raporu: Detailed Agent Report
           Çalıştırılan Görev Raporu: Executed Task Report
