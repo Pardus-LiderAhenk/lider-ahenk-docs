@@ -110,13 +110,13 @@ nav:
             - Politikalar: lider3.0/policyManagement/policies/policies.md
             - Profiller: 
                 - Genel Bilgi: lider3.0/policyManagement/profiles/profiles.md
-                - İnternet Tarayıcı Ayarları: lider3.0/policyManagement/profiles/browserProfile.md
-                - Chrome Tarayıcı Ayarları: lider3.0/policyManagement/profiles/chromeBrowserProfile.md
-                - Rsyslog Ayarları: lider3.0/policyManagement/profiles/rsyslogProfile.md
-                - Betik Ayarları: lider3.0/policyManagement/profiles/scriptProfile.md
-                - Oturum Yönetim Ayarları: lider3.0/policyManagement/profiles/sessionManagementProfile.md
-                - Sistem Gözlemcisi Ayarları: lider3.0/policyManagement/profiles/systemMonitoringProfile.md
-                - USB Erişim Ayarları: lider3.0/policyManagement/profiles/usbProfile.md
+                - İnternet Tarayıcı Profili: lider3.0/policyManagement/profiles/browserProfile.md
+                - Chrome Tarayıcı Profili: lider3.0/policyManagement/profiles/chromeBrowserProfile.md
+                - Rsyslog Profili: lider3.0/policyManagement/profiles/rsyslogProfile.md
+                - Betik Profili: lider3.0/policyManagement/profiles/scriptProfile.md
+                - Oturum Yönetim Profili: lider3.0/policyManagement/profiles/sessionManagementProfile.md
+                - Sistem Gözlemcisi Profili: lider3.0/policyManagement/profiles/systemMonitoringProfile.md
+                - USB Erişim Profili: lider3.0/policyManagement/profiles/usbProfile.md
         - Raporlar:
             - Detaylı İstemci Raporu: lider3.0/reports/detailedAgentReport/detailedAgentReport.md
             - Çalıştırılan Görev Raporu: lider3.0/reports/executedTaskReport/executedTaskReport.md
