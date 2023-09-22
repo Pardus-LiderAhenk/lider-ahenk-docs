@@ -130,6 +130,7 @@ nav:
                 - Dosya Sunucusu Ayarları: lider3.0/settings/serverSettings/fileServerSettings.md
                 - Email Sunucusu Ayarları: lider3.0/settings/serverSettings/mailSettings.md
                 - Diğer Ayarlar: lider3.0/settings/serverSettings/otherSettings.md
+            - Sunucu Bilgileri: lider3.0/settings/serverInformations/serverInformations.md
             - Sistem Gözlemcisi Ayarları: lider3.0/settings/systemMonitoringDefinitons/systemMonitoringDefinition.md
             - Betik Tanımları: lider3.0/settings/scriptDefinition/script.md
             - Kayıt Şablonları: lider3.0/settings/registirationTemplate/registirationTemplate.md      
@@ -234,6 +235,7 @@ plugins:
           XMPP Sunucusu Ayarları: XMPP Settings
           Dosya Sunucusu Ayarları: File Server Settings
           Email Sunucusu Ayarları: Mail Server Settings
+          Sunucu Bilgileri: Server Informations
           Diğer Ayarlar: Other Settings
           Betik Tanımları: Script Definition
           Kayıt Şablonları: Registiration Template
