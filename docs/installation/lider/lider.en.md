@@ -3,11 +3,11 @@
 
 **NOTE :**  Follow the installation steps in order. 
 
-**1)**  For setup application : Pardus-21.0-GNOME version  https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-GNOME-amd64.iso or Pardus-21.0-XFCE version https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-XFCE-amd64.iso can be installed.
+**1)**  For setup application : Pardus-23.0-GNOME version  https://indir.pardus.org.tr/ISO/Pardus23/Pardus-23.1-GNOME-amd64.iso or Pardus-23.0-XFCE version https://indir.pardus.org.tr/ISO/Pardus23/Pardus-23.1-XFCE-amd64.iso can be installed.
 
-**2)** You can download the Pardus-21.0-SERVER version for the Lider server from https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-SERVER-amd64.iso. Set the server language to English.
+**2)** You can download the Pardus-23.1-SERVER version for the Lider server from https://indir.pardus.org.tr/ISO/Pardus23/Pardus-23.1-SERVER-amd64.iso. Set the server language to English.
 
-**3)** The next steps are the necessary steps to run the Lider Server Installation Application. ( Please run the commands below on the version of Pardus-21.0-GNOME or Pardus-21.0-XFCE that you installed in step **1**.)
+**3)** The next steps are the necessary steps to run the Lider Server Installation Application. ( Please run the commands below on the version of Pardus-23.0-GNOME or Pardus-23.0-XFCE that you installed in step **1**.)
 
 **Installing Dependencies**
 
@@ -19,9 +19,12 @@ sudo apt-get install python3-paramiko python3-pyqt5 python3-pip python3-psutil x
 ````
 
 ````
-pip install mysql-connector-python argon2-cffi
+sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 ````
 
+````
+pip install mysql-connector-python argon2-cffi
+````
 
 **Downloading the Application**
 

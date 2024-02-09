@@ -3,11 +3,11 @@
 
 **NOT :**  Kurulum adımlarını sıra ile uygulayınız. 
 
-**1)**  Kurulum uygulaması için : Pardus-21.0-GNOME sürümü  https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-GNOME-amd64.iso veya Pardus-21.0-XFCE sürümü https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-XFCE-amd64.iso kurulur.
+**1)**  Kurulum uygulaması için : Pardus-23.0-GNOME sürümü  https://indir.pardus.org.tr/ISO/Pardus23/Pardus-23.1-GNOME-amd64.iso veya Pardus-23.0-XFCE sürümü https://indir.pardus.org.tr/ISO/Pardus23/Pardus-23.1-XFCE-amd64.iso kurulur.
 
-**2)** Lider sunucusu için Pardus-21.0-SERVER sürümünü https://indir.pardus.org.tr/ISO/Pardus21/Pardus-21.0-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
+**2)** Lider sunucusu için Pardus-23.1-SERVER sürümünü https://indir.pardus.org.tr/ISO/Pardus23/Pardus-23.1-SERVER-amd64.iso adresinden indirebilirsiniz. Sunucu dilini ingilizce olarak ayarlayınız. 
 
-**3)** Sıradaki adımlar Lider Sunucu Kurulum Uygulamasını çalıştırmak için gerekenli adımlardır. ( Lütfen aşağıda bulunan komutları **1** inci adımda kurmuş olduğumuz Pardus-21.0-GNOME veya Pardus-21.0-XFCE sürümü üzerinde çalıştırınız.)
+**3)** Sıradaki adımlar Lider Sunucu Kurulum Uygulamasını çalıştırmak için gerekenli adımlardır. ( Lütfen aşağıda bulunan komutları **1** inci adımda kurmuş olduğumuz Pardus-23.0-GNOME veya Pardus-23.0-XFCE sürümü üzerinde çalıştırınız.)
 
 **Bağımlılıkların Kurulması**
 
@@ -19,9 +19,12 @@ sudo apt-get install python3-paramiko python3-pyqt5 python3-pip python3-psutil x
 ````
 
 ````
-pip install mysql-connector-python argon2-cffi
+sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 ````
 
+````
+pip install mysql-connector-python argon2-cffi
+````
 
 **Uygulamanın İndirilmesi**
 
