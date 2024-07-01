@@ -1,5 +1,11 @@
 **Zamanlanmış Görev**
 
+Zamanlanmış Görev menüsünde istemci veya istemci grupları için yer alan zamanlanmış görevlerin yönetildiği kısımdır.
+Kullanıcı bu menüden gerekli giltrelemeyi yapabilir. Aktif zamanlanmış görevin detaylarına bakabilir. Zamanlanmış 
+görevler bu menüden iptal edilebilir.
+
+[![Istemci Grup Yonetimi](../computerManagement/images/crontabDocDetail.png)](../computerManagement/images/crontabDocDetail.png)
+
 Crontab linux sistemlerinde kullanılan bir servistir. Crontab bir komutu, scripti ya da uygulamayı belirlediğiniz 
 zaman veya belirli zaman aralıklarıyla çalışmasını sağlamaktadır.
 

@@ -1,5 +1,11 @@
 **Scheduled Task**
 
+The Scheduled Tasks menu is the section where scheduled tasks for clients or client groups are managed. 
+The user can apply the necessary filters from this menu, view the details of active scheduled tasks, and 
+cancel scheduled tasks from this menu.
+
+[![Client Management](../computerManagement/images/crontabDocDetail.png)](../computerManagement/images/crontabDocDetail.png)
+
 Crontab is a service used on linux systems. Crontab is where you specify a command, script or application.
 allows it to work at certain time intervals.
 

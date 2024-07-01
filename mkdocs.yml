@@ -122,6 +122,9 @@ nav:
             - Çalıştırılan Görev Raporu: lider3.0/reports/executedTaskReport/executedTaskReport.md
             - Sistem Güncesi Raporu: lider3.0/reports/systemLogReport/systemLogReport.md
             - Zamanlanmış Görev Raporu: lider3.0/reports/scheduledTaskReport/scheduledTaskReport.md
+            - Kullanıcı Oturum Raporu:
+                - İstemci Oturumları: lider3.0/reports/userSessionReport/clientSessionReport.md
+                - Kullanıcı Oturumları: lider3.0/reports/userSessionReport/userSessionReport.md
         - Ayarlar:
             - Arayüz Kullanıcı Ayarları: lider3.0/settings/consoleUserSettings/consoleUserSettings.md
             - Sunucu Ayarları:
@@ -228,6 +231,8 @@ plugins:
           Çalıştırılan Görev Raporu: Executed Task Report
           Sistem Güncesi Raporu: System Log Report
           Zamanlanmış Görev Raporu: Scheduled Task Report
+          İstemci Oturumları: Client Sessions
+          Kullanıcı Oturumları: User Sessions
           Ayarlar: Settings
           Arayüz Kullanıcı Ayarları: Console User Settings
           Sunucu Ayarları: Server Settings
