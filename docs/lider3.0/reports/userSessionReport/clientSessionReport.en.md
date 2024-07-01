@@ -1,7 +1,8 @@
-**User Sessions**
+**Client Report**
 
-On the User Sessions page, the users logged in on the clients are displayed, and the page can 
-be filtered by client, username, and date.
+On the Client Sessions page, the users logged in on the clients are displayed, and the 
+clients are filtered by: Computer Name, MAC Address, IP Address, DN, Status, Phase, Brand, 
+Operating System, Version, Ahenk version, and Creation Date. By clicking the details button, 
+users who have logged in and logged out on the client can be observed.
 
-
-[![User Sessions Reports](../images/userSessionReport/userSessionReport.png)](../images/userSessionReport/userSessionReport.png)
+[![User Session Report](../images/userSessionReport/clientSessionReport.png)](../images/userSessionReport/clientSessionReport.png)

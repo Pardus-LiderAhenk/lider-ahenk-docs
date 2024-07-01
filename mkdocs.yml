@@ -231,6 +231,7 @@ plugins:
           Çalıştırılan Görev Raporu: Executed Task Report
           Sistem Güncesi Raporu: System Log Report
           Zamanlanmış Görev Raporu: Scheduled Task Report
+          Kullanıcı Oturum Raporu: User Session Report
           İstemci Oturumları: Client Sessions
           Kullanıcı Oturumları: User Sessions
           Ayarlar: Settings
