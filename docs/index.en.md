@@ -1,6 +1,6 @@
 <div align="top">
   <div style="display: flex;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        <img style="" src="./images/yeni logo kullanımı.png" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+    <img style="width: 95%; height: 55%" src="./images/yeni logo kullanımı.png" class="img-fluid" alt="">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
   </div>
 </div>
 
