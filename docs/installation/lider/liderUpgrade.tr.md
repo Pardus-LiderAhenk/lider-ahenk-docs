@@ -4,7 +4,7 @@
 Lider v2 sunucusunda sırasıyla aşağıdaki komutlar çalıştırılır;
 
 ````
-wget https://liderahenk.org/downloads/liderahenk_v2_to_v3.sh
+wget https://liderahenk.org.tr/downloads/liderahenk_v2_to_v3.sh
 ````
 
 ````

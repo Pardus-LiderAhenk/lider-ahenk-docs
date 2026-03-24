@@ -4,7 +4,7 @@ Updating from Lider v2 to Lider v3
 The following commands are run respectively on the Lider v2 server;
 
 `
-wget https://liderahenk.org/downloads/liderahenk_v2_to_v3.sh
+wget https://liderahenk.org.tr/downloads/liderahenk_v2_to_v3.sh
 `
 
 `
